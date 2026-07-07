@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<title>投資コックピット Pro連携</title>
+<!-- iOSホーム画面アプリ化 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="投資CP">
+<meta name="theme-color" content="#0C111C">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%230C111C'/%3E%3Crect x='30' y='30' width='120' height='120' rx='28' fill='%23D9A94E'/%3E%3Ctext x='90' y='118' font-size='72' font-weight='900' text-anchor='middle' fill='%230C111C' font-family='sans-serif'%3E投%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#0C111C; --panel:#141C2C; --panel-up:#1B2538; --line:#26334D;
+    --brass:#D9A94E; --brass-soft:rgba(217,169,78,.13);
+    --steel:#9DB0CC; --bright:#EFF3FA; --dim:#5C6E8C;
+    --up:#5FBF8F; --down:#E0705E; --neutral:#7A8DB0;
+    --safe-b: env(safe-area-inset-bottom, 0px);
+    --safe-t: env(safe-area-inset-top, 0px);
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent; margin:0; padding:0;}
+  html,body{height:100%;}
+  body{
+    background:#070B12; color:var(--steel);
+    font-family:'Hiragino Sans','Yu Gothic UI','Noto Sans JP',sans-serif;
+    display:flex; justify-content:center; overscroll-behavior:none;
+  }
+  #app{width:100%; max-width:430px; min-height:100dvh; background:var(--bg);
+    display:flex; flex-direction:column; position:relative;}
+  button{font-family:inherit; border:none; background:none; cursor:pointer; color:inherit;}
+  button:active{transform:scale(.97);}
+  input{font-family:inherit;}
+  input:focus{outline:1px solid var(--brass);}
+  a{color:var(--brass); text-decoration:none;}
+
+  header{position:sticky; top:0; z-index:40;
+    padding:calc(12px + var(--safe-t)) 16px 12px;
+    background:rgba(12,17,28,.92); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+    display:flex; align-items:center; justify-content:space-between;}
+  .logo{display:flex; align-items:center; gap:8px;}
+  .logo-mark{width:28px;height:28px;border-radius:8px;background:var(--brass);color:var(--bg);
+    display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;}
+  .logo-name{font-size:14px;font-weight:700;color:var(--bright);line-height:1;}
+  .logo-sub{font-size:9px;letter-spacing:.2em;color:var(--dim);margin-top:3px;}
+  .head-date{font-size:10px;color:var(--dim);text-align:right;line-height:1.4;}
+  .head-date b{color:var(--up);font-weight:600;}
+  .gear{font-size:18px;color:var(--dim);padding:4px;}
+
+  main{flex:1; padding:20px 16px calc(110px + var(--safe-b)); overflow-y:auto;}
+
+  nav.tabbar{position:fixed; bottom:0; left:50%; transform:translateX(-50%);
+    width:100%; max-width:430px; z-index:40;
+    padding:8px 24px calc(16px + var(--safe-b));
+    background:linear-gradient(180deg, transparent, var(--bg) 35%);}
+  .tabbar-inner{display:flex; border-radius:18px; padding:6px;
+    background:rgba(27,37,56,.95); border:1px solid var(--line);
+    backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+    box-shadow:0 8px 32px rgba(0,0,0,.5);}
+  .tab-btn{flex:1; padding:8px 0; border-radius:12px; display:flex; flex-direction:column;
+    align-items:center; gap:2px; color:var(--dim); transition:background .15s;}
+  .tab-btn .ic{font-size:16px; line-height:1;}
+  .tab-btn .lb{font-size:10px; font-weight:500;}
+  .tab-btn.active{background:var(--brass-soft); color:var(--brass);}
+
+  .kicker{font-size:10px; letter-spacing:.25em; color:var(--dim); margin-bottom:2px;}
+  h2.screen-title{font-size:20px; font-weight:700; color:var(--bright);}
+  .sub{font-size:11px; color:var(--dim); margin:4px 0 16px;}
+  .row{display:flex; align-items:flex-end; justify-content:space-between;}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:16px; margin-bottom:10px;}
+  .card-hi{background:linear-gradient(135deg,var(--panel-up),var(--panel)); border:1px solid rgba(217,169,78,.28);}
+  .pill{font-size:11px; padding:6px 12px; border-radius:99px; color:var(--brass); border:1px solid rgba(217,169,78,.28);}
+  .pill:disabled{opacity:.5;}
+  .tag{font-size:10px; letter-spacing:.12em; padding:2px 8px; border-radius:6px; color:var(--dim); border:1px solid var(--line);}
+  .chip{font-size:11px; padding:5px 9px; border-radius:99px; color:var(--brass); background:var(--brass-soft); border:1px solid rgba(217,169,78,.2); margin:2px 4px 2px 0; display:inline-block;}
+  .news-title{font-size:14px; font-weight:700; color:var(--bright); margin:6px 0 4px; line-height:1.5;}
+  .news-body{font-size:13px; line-height:1.7; color:var(--steel); margin-bottom:8px;}
+  .news-meta{font-size:10px; color:var(--dim); display:flex; justify-content:space-between; align-items:center;}
+  .notice{font-size:10px; line-height:1.7; color:var(--dim); padding:6px 4px;}
+  .err{background:rgba(224,112,94,.08); border:1px solid rgba(224,112,94,.3); color:var(--steel);
+    border-radius:16px; padding:14px; font-size:13px;}
+  .err button{color:var(--brass); text-decoration:underline;}
+
+  .shimmer{border-radius:18px; background:var(--panel); position:relative; overflow:hidden; margin-bottom:10px;}
+  .shimmer::after{content:''; position:absolute; inset:0;
+    background:linear-gradient(90deg,transparent,rgba(27,37,56,.9),transparent);
+    animation:sh 1.4s infinite;}
+  @keyframes sh{from{transform:translateX(-100%);}to{transform:translateX(100%);}}
+
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+  .quote{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:14px;}
+  .quote .nm{font-size:11px; color:var(--dim); margin-bottom:6px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .quote .pr{font-size:16px; font-weight:700; color:var(--bright); font-variant-numeric:tabular-nums; line-height:1.2; margin-bottom:4px;}
+  .quote .ch{font-size:12px; font-weight:500; font-variant-numeric:tabular-nums;}
+
+  .seg{display:flex; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:4px; margin-bottom:14px;}
+  .seg button{flex:1; padding:9px 0; border-radius:10px; font-size:12px; font-weight:600; color:var(--dim);}
+  .seg button.active{background:var(--brass); color:var(--bg);}
+  .seg.scenario button.active{background:transparent;}
+
+  .sheet-bg{position:fixed; inset:0; z-index:50; background:rgba(0,0,0,.65);
+    backdrop-filter:blur(2px); -webkit-backdrop-filter:blur(2px);
+    display:flex; align-items:flex-end; justify-content:center;}
+  .sheet{width:100%; max-width:430px; background:var(--panel-up); border:1px solid var(--line); border-bottom:none;
+    border-radius:24px 24px 0 0; padding:18px 20px calc(28px + var(--safe-b));
+    animation:slideup .22s ease-out; max-height:82dvh; overflow-y:auto;}
+  @keyframes slideup{from{transform:translateY(40px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+  .handle{width:40px;height:4px;border-radius:99px;background:var(--line);margin:0 auto 16px;}
+  .btn-primary{width:100%; padding:13px; border-radius:14px; background:var(--brass); color:var(--bg);
+    font-size:14px; font-weight:700;}
+  .btn-ghost{padding:13px 20px; border-radius:14px; font-size:13px; color:var(--steel); border:1px solid var(--line);}
+  .field{width:100%; background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    padding:12px 14px; font-size:14px; color:var(--bright); margin-bottom:10px;}
+  .field::placeholder{color:var(--dim);}
+
+  .cat-scroll{display:flex; gap:6px; overflow-x:auto; padding-bottom:6px; margin-bottom:12px; -webkit-overflow-scrolling:touch;}
+  .cat-scroll::-webkit-scrollbar{display:none;}
+  .cat-btn{font-size:12px; padding:7px 14px; border-radius:99px; white-space:nowrap;
+    background:var(--panel); border:1px solid var(--line); color:var(--dim);}
+  .cat-btn.active{background:var(--brass); border-color:var(--brass); color:var(--bg); font-weight:600;}
+  .g-item{width:100%; text-align:left; background:var(--panel); border:1px solid var(--line);
+    border-radius:16px; padding:14px; margin-bottom:8px;}
+  .g-word{font-size:14px; font-weight:700; color:var(--brass);}
+  .g-def{font-size:12px; line-height:1.7; color:var(--steel); margin-top:3px;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
+
+  .plan-num{width:18px;height:18px;border-radius:99px;font-size:10px;display:inline-flex;
+    align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+  .plan-row{display:flex; gap:8px; align-items:flex-start; margin-bottom:7px; font-size:13px; color:var(--bright);}
+
+  /* クイズ */
+  .quiz-opt{width:100%; text-align:left; background:var(--panel); border:1px solid var(--line);
+    border-radius:14px; padding:13px 14px; margin-bottom:8px; font-size:13px; color:var(--bright); line-height:1.5;}
+  .quiz-opt.correct{border-color:var(--up); background:rgba(95,191,143,.1);}
+  .quiz-opt.wrong{border-color:var(--down); background:rgba(224,112,94,.1);}
+  .badge{display:inline-flex; align-items:center; gap:4px; font-size:11px; padding:4px 10px;
+    border-radius:99px; background:var(--brass-soft); color:var(--brass); border:1px solid rgba(217,169,78,.25);}
+
+  @media (prefers-reduced-motion: reduce){*{animation:none !important; transition:none !important;}}
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="logo">
+      <div class="logo-mark">投</div>
+      <div><div class="logo-name">投資コックピット</div><div class="logo-sub">CLAUDE PRO LINKED</div></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <div class="head-date" id="headDate"></div>
+      <button class="gear" onclick="openInfo()">ⓘ</button>
+    </div>
+  </header>
+  <main id="main"></main>
+  <nav class="tabbar"><div class="tabbar-inner" id="tabbar"></div></nav>
+  <div id="modal"></div>
+</div>
+
+<script>
+"use strict";
+/* ============================================================
+   投資コックピット FREE — APIキー不要・完全無料の独立動作版
+   ・ニュース: 公共の無料RSSフィード(rss2jsonの無料枠で取得)
+   ・価格: CoinGecko / Frankfurter / gold-api (すべてキー不要)
+   ・学習: 内蔵辞典60語 + 用語自動ハイライト + クイズ機能
+   ============================================================ */
+
+const S = {
+  tab:"home", horizon:"short", scenario:"base",
+  glossaryCat:"すべて", glossaryQ:"",
+  aiBrief:null,
+  news:null, newsLoading:false, newsError:null, newsAt:null,
+  prices:null, pricesLoading:false, pricesError:null, pricesAt:null,
+  quiz:null, quizAnswered:null, quizScore: parseInt(localStorage.getItem("quizScore")||"0"),
+};
+const todayLabel = () => { const d=new Date(); return `${d.getMonth()+1}月${d.getDate()}日(${"日月火水木金土"[d.getDay()]})`; };
+
+// ---- Claude Pro連携 ----
+// claude.ai/new?q=... でプロンプトを事前入力した新規チャットを開く。
+// 送信はユーザーが確認して行い、利用量はProプランの範囲で消費される(API課金なし)。
+const claudeURL = (prompt) => "https://claude.ai/new?q=" + encodeURIComponent(prompt);
+window.openClaude = (prompt) => { window.open(claudeURL(prompt), "_blank", "noopener"); };
+window.copyPrompt = async (prompt, btn) => {
+  try{
+    await navigator.clipboard.writeText(prompt);
+    if(btn){ const t=btn.textContent; btn.textContent="コピーしました ✓"; setTimeout(()=>{btn.textContent=t;},1500); }
+  }catch(e){ alert("コピーに失敗しました。"); }
+};
+const PROMPTS = {
+  briefing: () =>
+`今日(${todayLabel()})の世界の金融市場・経済ニュースをweb検索して、個人投資家向けの朝刊ブリーフィングを作ってください。
+形式:
+1. 今日の市場を一言で(リード文)
+2. 重要ニュース4本(それぞれ「分類/見出し/要点2文/投資への影響(追い風・逆風・混在)」)
+3. 各ニュースに出てくる専門用語を1〜2個、初心者向けに解説
+簡潔に、断定的な売買推奨はせず判断材料として書いてください。`,
+  news: (n) =>
+`次の経済ニュースについて教えてください。
+「${n.title}」
+1. 何が起きたのか背景から初心者向けに解説
+2. 株・債券・為替・商品のどれにどんな影響がありそうか
+3. 短期・中期・長期それぞれの目線で投資家が意識すべきこと
+断定的な売買推奨はせず、判断材料として整理してください。`,
+  term: (w) =>
+`投資用語「${w}」について教えてください。
+1. 初心者向けの分かりやすい説明(例え話つき)
+2. いまの市場環境でなぜ重要か
+3. この用語に関連して投資家がよくする失敗
+簡潔にお願いします。`,
+  teacher: (q) =>
+`投資・経済の質問です。初心者にも分かるように、専門用語には短い補足を付けて答えてください。必要ならweb検索で最新情報も確認してください。
+質問: ${q}`,
+};
+const nowHM = () => new Date().toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"});
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const timeAgo = (d) => {
+  const m = Math.floor((Date.now()-d)/60000);
+  if(m<1) return "たった今"; if(m<60) return m+"分前";
+  const h = Math.floor(m/60); if(h<24) return h+"時間前";
+  return Math.floor(h/24)+"日前";
+};
+
+// ============ 用語辞典(60語・拡充版) ============
+const GLOSSARY = [
+  {w:"インフレ",cat:"基礎",def:"モノやサービスの値段が全体的に上がり続けること。現金の価値が目減りするため、株や実物資産で守る発想が生まれる。",kw:["インフレ","物価上昇","物価高"]},
+  {w:"デフレ",cat:"基礎",def:"物価が持続的に下がること。現金の価値は上がるが、企業収益と賃金が縮み経済が停滞する。",kw:["デフレ","物価下落"]},
+  {w:"政策金利",cat:"基礎",def:"中央銀行が決める金利の基準。上げると景気とインフレを冷やし、下げると経済を刺激する。株・債券・為替すべての土台。",kw:["政策金利"]},
+  {w:"利下げ",cat:"基礎",def:"中央銀行が政策金利を下げること。借入コストが下がり景気を刺激。一般に株やREITの追い風。",kw:["利下げ"]},
+  {w:"利上げ",cat:"基礎",def:"中央銀行が政策金利を上げること。インフレを抑えるが、株や不動産には逆風になりやすい。",kw:["利上げ"]},
+  {w:"FRB",cat:"基礎",def:"米連邦準備制度理事会。米国の中央銀行で、世界の金融市場に最も影響力を持つ。FOMCで金融政策を決定。",kw:["FRB","FOMC","米連邦準備"]},
+  {w:"日銀",cat:"基礎",def:"日本銀行。日本の中央銀行で、政策金利や国債買い入れを通じて金融政策を運営する。",kw:["日銀","日本銀行"]},
+  {w:"長期金利",cat:"基礎",def:"10年国債の利回りが代表。景気・インフレ・財政への市場の見方を映す「経済の体温計」。上昇すると高PER株や不動産に逆風。",kw:["長期金利","10年債","国債利回り"]},
+  {w:"ETF",cat:"基礎",def:"上場投資信託。株のように売買できる投資信託で、指数・セクター・金など多様な対象に低コストで分散投資できる。",kw:["ETF","上場投資信託"]},
+  {w:"REIT",cat:"基礎",def:"不動産投資信託。オフィスや物流施設などの賃料収入を投資家に分配する。金利低下局面で買われやすい。",kw:["REIT","リート"]},
+  {w:"投資信託",cat:"基礎",def:"多くの投資家から集めた資金を運用のプロが株や債券に分散投資する商品。少額から分散が効く。",kw:["投資信託","投信"]},
+  {w:"配当",cat:"基礎",def:"企業が利益の一部を株主に分配するお金。配当利回りは「株価に対して年何%もらえるか」。",kw:["配当","増配","減配"]},
+  {w:"円高",cat:"為替",def:"円の価値が他通貨に対して上がること。輸入品が安くなる一方、輸出企業の利益を圧迫する。",kw:["円高"]},
+  {w:"円安",cat:"為替",def:"円の価値が下がること。輸出企業や海外資産の円建て価値には追い風だが、輸入物価が上がり家計には逆風。",kw:["円安"]},
+  {w:"為替介入",cat:"為替",def:"政府・中央銀行が通貨を売買して為替レートを動かすこと。急激な円安・円高の抑制に使われる。",kw:["為替介入","介入"]},
+  {w:"ドローダウン",cat:"リスク",def:"資産が直近の最高値からどれだけ下落したか。「最悪のとき何%減ったか」で、リスク管理の核心指標。",kw:["ドローダウン"]},
+  {w:"ボラティリティ",cat:"リスク",def:"価格の変動の激しさ。高いほどハイリスク。イベント(選挙・紛争・決算)前に高まりやすい。",kw:["ボラティリティ","乱高下","急変動"]},
+  {w:"テールリスク",cat:"リスク",def:"確率は低いが起きると甚大な損失をもたらすリスク。戦争拡大やバブル崩壊など。事前の行動計画で備える。",kw:["テールリスク"]},
+  {w:"分散投資",cat:"リスク",def:"値動きの異なる資産に分けて投資し、一つの失敗が致命傷にならないようにする基本原則。",kw:["分散投資","分散"]},
+  {w:"リバランス",cat:"リスク",def:"値動きで崩れた資産配分を元の比率に戻すこと。「上がったものを売り、下がったものを買う」規律になる。",kw:["リバランス"]},
+  {w:"損切り",cat:"リスク",def:"損失を限定するため、値下がりした資産を売却すること。「戻るはず」という祈りを断ち切る規律。",kw:["損切り","ロスカット"]},
+  {w:"レバレッジ",cat:"リスク",def:"借入や証拠金取引で自己資金以上の投資をすること。利益も損失も拡大する諸刃の剣。",kw:["レバレッジ","信用取引"]},
+  {w:"逆イールド",cat:"マクロ",def:"短期金利が長期金利を上回る異常状態。景気後退の予兆とされる。",kw:["逆イールド"]},
+  {w:"スタグフレーション",cat:"マクロ",def:"景気停滞と物価上昇の同時進行。株にも債券にも厳しく、資源や金が相対的に強い。",kw:["スタグフレーション"]},
+  {w:"財政赤字",cat:"マクロ",def:"政府の支出が税収を上回る状態。国債増発につながり、長期金利の上昇や通貨安の圧力になる。",kw:["財政赤字","財政悪化","国債増発"]},
+  {w:"GDP",cat:"マクロ",def:"国内総生産。国の経済規模と成長率を測る最重要指標。成長率の加速・減速が市場を動かす。",kw:["GDP","国内総生産","成長率"]},
+  {w:"CPI",cat:"マクロ",def:"消費者物価指数。インフレの代表的な物差しで、中央銀行の利上げ・利下げ判断を左右する。",kw:["CPI","消費者物価"]},
+  {w:"雇用統計",cat:"マクロ",def:"米国で毎月発表される雇用関連指標。景気の体温計として、発表直後は相場が大きく動きやすい。",kw:["雇用統計","失業率"]},
+  {w:"地政学リスク",cat:"マクロ",def:"戦争・紛争・外交対立が市場に与えるリスク。エネルギー急騰、サプライチェーン寸断、安全資産への逃避を引き起こす。",kw:["地政学","紛争","戦争","中東情勢"]},
+  {w:"景気後退",cat:"マクロ",def:"経済活動が広範囲に縮小する局面。リセッション。株安・利下げ・失業増を伴いやすい。",kw:["景気後退","リセッション"]},
+  {w:"バリュエーション",cat:"株式",def:"株価が利益や資産に対して割高か割安かの評価。PERが代表。高いほど将来への期待が織り込まれている。",kw:["バリュエーション","割高","割安"]},
+  {w:"PER",cat:"株式",def:"株価収益率。株価が1株利益の何倍かを示す。高PERは成長期待の裏返しで、金利上昇や失望決算に弱い。",kw:["PER","株価収益率"]},
+  {w:"PBR",cat:"株式",def:"株価純資産倍率。株価が1株あたり純資産の何倍か。1倍割れは「解散価値以下」とされ、東証が改善を要請した指標。",kw:["PBR"]},
+  {w:"グロース株",cat:"株式",def:"高い成長が期待される株。AI関連が典型。金利上昇に弱く、期待が剥落すると下げも大きい。",kw:["グロース株","成長株","ハイテク株"]},
+  {w:"バリュー株",cat:"株式",def:"利益や資産に比べ割安に放置された株。金融・商社・素材など。金利上昇局面や景気回復期に見直されやすい。",kw:["バリュー株","割安株"]},
+  {w:"決算",cat:"株式",def:"企業が発表する業績報告。市場予想との差で株価が急変する。ガイダンス(会社見通し)も重要。",kw:["決算","業績","ガイダンス"]},
+  {w:"自社株買い",cat:"株式",def:"企業が自社の株を市場から買い戻すこと。1株あたりの価値が高まり、株主還元として好感されやすい。",kw:["自社株買い","株主還元"]},
+  {w:"セクターローテーション",cat:"株式",def:"景気サイクルに応じて買われる業種が移り変わること。回復期は金融・素材、後退期は生活必需品など。",kw:["セクターローテーション"]},
+  {w:"半導体サイクル",cat:"テーマ",def:"半導体業界の好不況の波。AI需要で拡大局面だが、設備投資の反動減が起きやすい景気敏感セクター。",kw:["半導体","エヌビディア","NVIDIA","TSMC"]},
+  {w:"AIバブル",cat:"テーマ",def:"AI関連株への過剰な期待で株価が実力以上に上がっている懸念。収益化の遅れが判明すると急落リスク。",kw:["AIバブル","AI関連","生成AI"]},
+  {w:"データセンター",cat:"テーマ",def:"AIの計算を担う施設。建設ラッシュで電力・冷却・不動産まで波及する巨大投資テーマ。",kw:["データセンター"]},
+  {w:"脱炭素",cat:"テーマ",def:"CO2排出を減らす世界的な取り組み。再エネ・原子力・EV・蓄電池などへの長期投資テーマ。",kw:["脱炭素","再生可能エネルギー","再エネ"]},
+  {w:"防衛関連",cat:"テーマ",def:"防衛装備・宇宙・サイバーを手がける企業群。各国の防衛費増額を背景に注目される政策テーマ。",kw:["防衛","軍事","防衛費"]},
+  {w:"コモディティ",cat:"商品",def:"原油・金・銅・穀物などの商品。インフレや供給ショックに強く、株・債券と違う値動きで分散効果を持つ。",kw:["コモディティ","商品市況"]},
+  {w:"原油",cat:"商品",def:"世界経済の血液。WTIやブレントが指標。中東情勢や減産合意で急変し、インフレと企業コストを左右する。",kw:["原油","WTI","OPEC"]},
+  {w:"金(ゴールド)",cat:"商品",def:"数千年の歴史を持つ価値保存手段。危機・インフレ・通貨不安で買われる。利息を生まない点が弱み。",kw:["金価格","ゴールド","金相場"]},
+  {w:"安全資産",cat:"商品",def:"危機時に買われる資産。金・米国債・円・スイスフランが代表。ただし「常に安全」ではなく局面で変わる。",kw:["安全資産","逃避"]},
+  {w:"MMF",cat:"商品",def:"マネー・マーケット・ファンド。短期国債などで運用する低リスク商品。金利ある世界では待機資金の置き場として復権。",kw:["MMF"]},
+  {w:"デュレーション",cat:"債券",def:"債券の金利感応度。長いほど金利変動で価格が大きく動く。利下げ局面では長め、金利上昇懸念では短めが定石。",kw:["デュレーション"]},
+  {w:"投資適格債",cat:"債券",def:"格付けBBB以上の信用力が高い債券。利回りは控えめだがデフォルトリスクが低く、ポートフォリオの守り役。",kw:["投資適格","社債"]},
+  {w:"ハイイールド債",cat:"債券",def:"格付けの低い企業が発行する高利回り債券。景気悪化時にデフォルトが増え、株のように下がることも。",kw:["ハイイールド","ジャンク債"]},
+  {w:"ビットコイン",cat:"暗号資産",def:"最大の暗号資産。発行上限があり「デジタルゴールド」とも。値動きは極めて激しく、少額配分が原則。",kw:["ビットコイン","BTC","暗号資産","仮想通貨"]},
+  {w:"半減期",cat:"暗号資産",def:"ビットコインの新規発行量が約4年ごとに半分になるイベント。供給減少が価格の追い風とされてきた。",kw:["半減期"]},
+  {w:"カバードコール",cat:"上級",def:"保有株のコールオプションを売って利回りを稼ぐ戦略。上昇余地を放棄する代わりに横ばい相場で収益を積める。",kw:["カバードコール","オプション"]},
+  {w:"ヘッジ",cat:"上級",def:"保有資産の値下がりリスクを、逆の値動きをする資産や取引で相殺すること。保険料のようにコストがかかる。",kw:["ヘッジ"]},
+  {w:"ドルコスト平均法",cat:"上級",def:"毎月一定額を買い続ける手法。高値では少なく安値では多く買え、タイミングを当てる必要がなくなる。",kw:["ドルコスト","積立"]},
+  {w:"複利",cat:"上級",def:"利益がさらに利益を生む仕組み。時間が長いほど雪だるま式に増える。長期投資の最大の武器。",kw:["複利"]},
+  {w:"NISA",cat:"制度",def:"日本の少額投資非課税制度。運用益が非課税になる。長期・積立・分散の土台としてまず使い切るのが定石。",kw:["NISA","ニーサ"]},
+  {w:"iDeCo",cat:"制度",def:"個人型確定拠出年金。掛金が全額所得控除になり節税効果が大きいが、原則60歳まで引き出せない。",kw:["iDeCo","イデコ","確定拠出"]},
+  {w:"米中間選挙",cat:"制度",def:"米大統領任期の中間に行われる議会選挙。政策の行方を左右し、選挙前後は財政出動や相場変動が起きやすい。",kw:["中間選挙"]},
+];
+const CATS = ["すべて", ...new Set(GLOSSARY.map(g=>g.cat))];
+
+// ============ クイズ(辞典から自動生成) ============
+function makeQuiz(){
+  const pool = [...GLOSSARY].sort(()=>Math.random()-.5).slice(0,4);
+  const q = pool[0];
+  const opts = pool.map(p=>({w:p.w, correct:p.w===q.w})).sort(()=>Math.random()-.5);
+  return {def:q.def, answer:q.w, opts};
+}
+
+// ============ 戦略コンテンツ ============
+const HORIZONS = {
+  short:{label:"短期",range:"〜1年",
+    thesis:"防御しながら金利を取る。紛争とAI決算という2つの変動源に備え、流動性とインカムを厚く。",
+    items:[
+      {t:"現金・短期債で待機資金を確保",d:"金利があるうちにMMF・短期債で利回りを確保。急落時に買い向かえる「待てる力」がリターンの源泉。",terms:["MMF","政策金利"]},
+      {t:"金・エネルギーで地政学ヘッジ",d:"中東情勢悪化への保険。金は中銀の買いと実質金利低下が追い風。エネルギー株は供給ショック時の防波堤。",terms:["安全資産","地政学リスク"]},
+      {t:"AIは握りつつ集中を解く",d:"等ウェイト型や電力・冷却など裾野への分散で、特定銘柄の決算ミスによるドローダウンを抑える。",terms:["ドローダウン","半導体サイクル"]},
+      {t:"イベント前の変動管理",d:"米中間選挙・FRB新体制などイベント続き。最小分散・生活必需品へのシフトやオプションで守る。",terms:["ボラティリティ","カバードコール"]},
+    ]},
+  mid:{label:"中期",range:"1〜5年",
+    thesis:"AIの裏側と、金利ある世界の勝者へ。電力・日本・欧州財政・選別新興国に張る。",
+    items:[
+      {t:"AIインフラ: 電力・送電網・DC",d:"AI投資の最大のボトルネックは電力。発電・送電・冷却・データセンターREITは、どのAI企業が勝っても需要が立つ。",terms:["REIT","データセンター"]},
+      {t:"日本株: 改革の収穫期",d:"賃上げ継続・ガバナンス改革・金利ある世界での金融株。PBR改善要請も追い風。",terms:["バリュー株","PBR"]},
+      {t:"欧州の防衛×インフラ財政",d:"ドイツのインフラ投資と防衛費増額は数年単位の政策コミットメント。2028年の単一市場完成も推進中。",terms:["財政赤字","防衛関連"]},
+      {t:"新興国の選別: インドとテックアジア",d:"南アジアは世界最高水準の成長率。台湾・韓国はAIサプライチェーンの中核。中国は指数でなくテーマで。",terms:["分散投資"]},
+      {t:"利下げ恩恵: REIT・中期債",d:"緩和局面で短中期金利は低下方向。中程度のデュレーションの投資適格債とREITでインカムを積む。",terms:["利下げ","デュレーション","投資適格債"]},
+    ]},
+  long:{label:"長期",range:"5〜20年",
+    thesis:"文明の設備投資に乗る。AI・エネルギー転換・人口動態・安全保障は景気循環を超える。",
+    items:[
+      {t:"AI・自動化の生産性革命",d:"成立すればリターンは巨大。全世界株を土台に、半導体・ロボティクスへ積立で時間分散しながら張り続ける。",terms:["グロース株","ドルコスト平均法"]},
+      {t:"エネルギー転換+電化",d:"再エネ・原子力・蓄電・送電網は脱炭素とAI電力需要の両面から不可逆。超長期のコアテーマ。",terms:["脱炭素","コモディティ"]},
+      {t:"人口動態の両面取り",d:"若いインド・アフリカの消費市場化と、先進国の高齢化(ヘルスケア・創薬)。確度の高い数十年トレンド。",terms:["セクターローテーション"]},
+      {t:"安全保障: 防衛・宇宙・サイバー",d:"防衛支出の急増期が頻発する構造へ。政府予算に裏付けられた長期需要。重要鉱物の国産化も。",terms:["防衛関連","地政学リスク"]},
+      {t:"実物資産で通貨価値ヘッジ",d:"公的債務の膨張は通貨の希薄化リスク。金・優良不動産、ごく一部の暗号資産(数%以内)で備える。",terms:["インフレ","金(ゴールド)","ビットコイン"]},
+      {t:"人的資本への投資",d:"AIを使いこなすスキル・健康・専門性。リターンが非課税で複利が効く、最も再現性の高い投資。",terms:["複利"]},
+    ]},
+};
+const SCENARIOS = [
+  {key:"base",label:"ベース",raw:"#7A8DB0",title:"曇り空の巡航速度",
+    d:"紛争は限定的、世界成長は減速も後退は回避。利下げとAI投資が下支え。",
+    plan:["AI集中を電力・日本・欧州へ分散","短中期債とREITでインカム","金を5〜10%保険として維持"]},
+  {key:"bull",label:"強気",raw:"#5FBF8F",title:"紛争収束×AI生産性の実証",
+    d:"エネルギー価格反落、AIの生産性効果が企業収益に出現。利下げ+財政で世界経済は再加速。",
+    plan:["株式比率を引き上げ新興国・小型株へ","景気敏感とテックの両輪","ヘッジ比率を段階縮小"]},
+  {key:"bear",label:"弱気",raw:"#E0705E",title:"紛争拡大×AIバブル崩壊",
+    d:"供給ショックとAI失望が同時発生しスタグフレーション。利下げ停止、高債務国の国債にも売り。",
+    plan:["金・エネルギー・必需品・短期債へ退避","急落したAI関連を時間分散で拾う準備","レバレッジと低流動性資産を事前圧縮"]},
+];
+
+// ============ 自動生成ブリーフィング(Actionsが毎朝コミット) ============
+async function loadStaticBrief(){
+  try{
+    const r = await fetch("data/briefing.json?t=" + Date.now(), { cache: "no-store" });
+    if(!r.ok) return;
+    const b = await r.json();
+    // 36時間以内に生成されたものだけ「今日の分」として採用
+    const age = Date.now() - new Date(b.generatedAt || b.date).getTime();
+    if(b.lead && Array.isArray(b.items) && age < 36*60*60*1000){
+      S.aiBrief = b; render();
+    }
+  }catch(e){ /* ローカル閲覧やActions未設定時は手動生成カードにフォールバック */ }
+}
+
+// ============ ニュース取得(無料RSS) ============
+// rss2json.comの無料エンドポイント経由で公共RSSをJSON化(キー不要・回数制限あり)
+const FEEDS = [
+  {name:"NHK 経済", url:"https://www.nhk.or.jp/rss/news/cat5.xml"},
+  {name:"NHK 国際", url:"https://www.nhk.or.jp/rss/news/cat6.xml"},
+];
+function detectTerms(text){
+  const found=[]; const seen=new Set();
+  for(const g of GLOSSARY){
+    for(const k of g.kw){
+      if(text.includes(k) && !seen.has(g.w)){ found.push(g.w); seen.add(g.w); break; }
+    }
+    if(found.length>=3) break;
+  }
+  return found;
+}
+function detectImpact(text){
+  const up=["上昇","最高値","好調","増益","回復","反発","急伸","買い"];
+  const down=["下落","急落","懸念","悪化","減益","不安","売り","安値","リスク"];
+  const u=up.some(w=>text.includes(w)), d=down.some(w=>text.includes(w));
+  return u&&d?"mixed":u?"up":d?"down":"mixed";
+}
+async function fetchNews(force=false){
+  const key="news:cache";
+  if(!force){
+    try{
+      const c=JSON.parse(localStorage.getItem(key)||"null");
+      if(c && Date.now()-c.ts < 30*60*1000){ S.news=c.data; S.newsAt=c.at; render(); return; }
+    }catch(e){}
+  }
+  S.newsLoading=true; S.newsError=null; render();
+  try{
+    const results = await Promise.allSettled(FEEDS.map(async f=>{
+      const r = await fetch("https://api.rss2json.com/v1/api.json?rss_url="+encodeURIComponent(f.url));
+      const j = await r.json();
+      if(j.status!=="ok") throw new Error("feed");
+      return (j.items||[]).slice(0,6).map(it=>({
+        src:f.name, title:it.title, link:it.link,
+        desc:(it.description||"").replace(/<[^>]+>/g,"").slice(0,120),
+        date:new Date(it.pubDate).getTime(),
+      }));
+    }));
+    let items = results.filter(r=>r.status==="fulfilled").flatMap(r=>r.value);
+    if(items.length===0) throw new Error("all failed");
+    items.sort((a,b)=>b.date-a.date);
+    items = items.slice(0,10).map(it=>({
+      ...it,
+      terms:detectTerms(it.title+it.desc),
+      impact:detectImpact(it.title+it.desc),
+    }));
+    S.news=items; S.newsAt=nowHM();
+    localStorage.setItem(key, JSON.stringify({data:items, at:S.newsAt, ts:Date.now()}));
+  }catch(e){
+    S.newsError=true;
+  }
+  S.newsLoading=false; render();
+}
+
+// ============ 価格取得(キー不要API) ============
+async function fetchPrices(force=false){
+  const key="prices:cache";
+  if(!force){
+    try{
+      const c=JSON.parse(localStorage.getItem(key)||"null");
+      if(c && Date.now()-c.ts < 10*60*1000){ S.prices=c.data; S.pricesAt=c.at; render(); return; }
+    }catch(e){}
+  }
+  S.pricesLoading=true; S.pricesError=null; render();
+  const out=[];
+  const jobs = [
+    // 暗号資産(CoinGecko: 24h変化率つき)
+    (async()=>{
+      const r=await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=jpy&include_24hr_change=true");
+      const j=await r.json();
+      const b=j.bitcoin, e=j.ethereum;
+      out.push({name:"ビットコイン",price:"¥"+Math.round(b.jpy).toLocaleString(),chg:(b.jpy_24h_change>=0?"+":"")+b.jpy_24h_change.toFixed(1)+"% (24h)",dir:b.jpy_24h_change>=0?"up":"down"});
+      out.push({name:"イーサリアム",price:"¥"+Math.round(e.jpy).toLocaleString(),chg:(e.jpy_24h_change>=0?"+":"")+e.jpy_24h_change.toFixed(1)+"% (24h)",dir:e.jpy_24h_change>=0?"up":"down"});
+    })(),
+    // 為替(Frankfurter: 当日と前営業日を比較)
+    (async()=>{
+      const [r1,r2]=await Promise.all([
+        fetch("https://api.frankfurter.app/latest?from=USD&to=JPY,EUR"),
+        fetch("https://api.frankfurter.app/latest?from=EUR&to=JPY"),
+      ]);
+      const j1=await r1.json(), j2=await r2.json();
+      out.push({name:"ドル円 (USD/JPY)",price:j1.rates.JPY.toFixed(2)+" 円",chg:"ECB日次レート",dir:"flat"});
+      out.push({name:"ユーロ円 (EUR/JPY)",price:j2.rates.JPY.toFixed(2)+" 円",chg:"ECB日次レート",dir:"flat"});
+    })(),
+    // 金・銀(gold-api: キー不要)
+    (async()=>{
+      const [rg,rs]=await Promise.all([
+        fetch("https://api.gold-api.com/price/XAU"),
+        fetch("https://api.gold-api.com/price/XAG"),
+      ]);
+      const g=await rg.json(), s=await rs.json();
+      out.push({name:"金 (XAU/USD)",price:"$"+Math.round(g.price).toLocaleString(),chg:"スポット",dir:"flat"});
+      out.push({name:"銀 (XAG/USD)",price:"$"+s.price.toFixed(2),chg:"スポット",dir:"flat"});
+    })(),
+  ];
+  await Promise.allSettled(jobs);
+  if(out.length===0){ S.pricesError=true; }
+  else{
+    // 表示順を安定させる
+    const order=["ビットコイン","イーサリアム","ドル円 (USD/JPY)","ユーロ円 (EUR/JPY)","金 (XAU/USD)","銀 (XAG/USD)"];
+    out.sort((a,b)=>order.indexOf(a.name)-order.indexOf(b.name));
+    S.prices=out; S.pricesAt=nowHM();
+    localStorage.setItem(key, JSON.stringify({data:out, at:S.pricesAt, ts:Date.now()}));
+  }
+  S.pricesLoading=false; render();
+}
+
+// ============ 描画 ============
+const $=(id)=>document.getElementById(id);
+function impactHTML(im){
+  const c=im==="up"?"var(--up)":im==="down"?"var(--down)":"var(--brass)";
+  const l=im==="up"?"追い風?":im==="down"?"逆風?":"要注視";
+  return `<span style="font-size:10px;font-weight:500;color:${c};display:inline-flex;align-items:center;gap:5px"><span style="width:6px;height:6px;border-radius:99px;background:${c};display:inline-block"></span>${l}</span>`;
+}
+function chipsHTML(terms){
+  return (terms||[]).map(w=>`<button class="chip" onclick="openTerm('${esc(w)}')">${esc(w)} ?</button>`).join("");
+}
+
+function renderHome(){
+  let body="";
+  if(S.newsLoading){
+    body=`<div class="shimmer" style="height:110px"></div>`.repeat(4);
+  } else if(S.newsError){
+    body=`<div class="err">ニュースの取得に失敗しました。通信環境を確認してください。<button onclick="fetchNews(true)">再試行</button></div>`;
+  } else if(S.news){
+    const bp = PROMPTS.briefing();
+    let briefBlock;
+    if(S.aiBrief){
+      const b = S.aiBrief;
+      briefBlock = `
+      <div class="card card-hi">
+        <div class="row" style="align-items:center;margin-bottom:6px">
+          <div class="kicker" style="color:var(--brass);margin:0">AI BRIEFING — 毎朝6時 自動生成</div>
+          <span class="tag">${esc(b.date||"")}</span>
+        </div>
+        <div style="font-size:15px;font-weight:600;color:var(--bright);line-height:1.6">${esc(b.lead)}</div>
+      </div>` +
+      (b.items||[]).map(n=>`
+      <article class="card" style="border-left:3px solid var(--brass)">
+        <div class="row" style="align-items:center"><span class="tag">✦ ${esc(n.cat)}</span>${impactHTML(n.impact)}</div>
+        <div class="news-title">${esc(n.title)}</div>
+        <p class="news-body">${esc(n.body)}</p>
+        ${(n.terms||[]).length?`<div style="margin-bottom:8px">${(n.terms||[]).map(t=>
+          `<button class="chip" onclick='openTermDef(${esc(JSON.stringify(t.word))},${esc(JSON.stringify(t.def||""))})'>${esc(t.word)} ?</button>`).join("")}</div>`:""}
+        ${n.link?`<div class="news-meta"><span></span><a href="${esc(n.link)}" target="_blank" rel="noopener">元記事を読む →</a></div>`:""}
+      </article>`).join("") +
+      `<div style="height:8px"></div><div class="kicker" style="margin-bottom:8px">LATEST HEADLINES — 速報フィード</div>`;
+    } else {
+      briefBlock = `
+      <div class="card card-hi">
+        <div class="kicker" style="color:var(--brass)">AI BRIEFING — Proプランで生成</div>
+        <p class="news-body" style="margin:6px 0 12px">自動生成ブリーフィングが未設定または本日分が未取得です。ボタンでClaudeアプリを開いてその場で生成するか、READMEの手順でGitHub Actionsの自動更新を設定してください。</p>
+        <div style="display:flex;gap:8px">
+          <button class="btn-primary" style="flex:1" onclick='openClaude(${JSON.stringify(bp)})'>Claudeで今日のブリーフィングを生成</button>
+          <button class="btn-ghost" onclick='copyPrompt(${JSON.stringify(bp)}, this)'>コピー</button>
+        </div>
+      </div>`;
+    }
+    body = briefBlock +
+      S.news.map(n=>`
+      <article class="card">
+        <div class="row" style="align-items:center"><span class="tag">${esc(n.src)}</span>${impactHTML(n.impact)}</div>
+        <div class="news-title">${esc(n.title)}</div>
+        ${n.desc?`<p class="news-body">${esc(n.desc)}…</p>`:""}
+        ${n.terms.length?`<div style="margin-bottom:8px">${chipsHTML(n.terms)}</div>`:""}
+        <div class="news-meta">
+          <span>${timeAgo(n.date)}</span>
+          <span style="display:flex;gap:12px">
+            <button style="color:var(--brass);font-size:10px" onclick='openClaude(${esc(JSON.stringify(PROMPTS.news(n)))})'>✦ Claudeで解説</button>
+            <a href="${esc(n.link)}" target="_blank" rel="noopener">全文を読む →</a>
+          </span>
+        </div>
+      </article>`).join("") +
+      `<p class="notice">出典: NHKニュースRSS(無料公開フィード)。見出しに含まれる用語を自動検出して解説チップを表示しています。「追い風?/逆風?」は見出しの語句からの簡易判定で、参考程度にご覧ください。</p>`;
+  } else {
+    body=`<div class="card"><p class="news-body">「↻ 更新」で最新ニュースを取得します。</p></div>`;
+  }
+  return `
+    <div class="row">
+      <div><div class="kicker">DAILY NEWS</div><h2 class="screen-title">今日の経済ニュース</h2></div>
+      <button class="pill" onclick="fetchNews(true)" ${S.newsLoading?"disabled":""}>${S.newsLoading?"更新中…":"↻ 更新"}</button>
+    </div>
+    <div class="sub">${todayLabel()}${S.newsAt?` ・ ${S.newsAt} 取得 ・ 30分キャッシュ`:""}</div>
+    ${body}`;
+}
+
+function renderMarket(){
+  let body="";
+  if(S.pricesLoading){
+    body=`<div class="grid2">${'<div class="shimmer" style="height:92px;margin:0"></div>'.repeat(6)}</div>`;
+  } else if(S.pricesError){
+    body=`<div class="err">価格データの取得に失敗しました。<button onclick="fetchPrices(true)">再試行</button></div>`;
+  } else if(S.prices){
+    const arrow=d=>d==="up"?"▲":d==="down"?"▼":"–";
+    const col=d=>d==="up"?"var(--up)":d==="down"?"var(--down)":"var(--dim)";
+    body=`<div class="grid2">`+S.prices.map(p=>`
+      <div class="quote">
+        <div class="nm">${esc(p.name)}</div>
+        <div class="pr">${esc(p.price)}</div>
+        <div class="ch" style="color:${col(p.dir)}">${arrow(p.dir)} ${esc(p.chg)}</div>
+      </div>`).join("")+`</div>
+      <div class="card" style="margin-top:12px">
+        <div style="font-size:12px;font-weight:600;color:var(--brass);margin-bottom:8px">株価指数を見るには</div>
+        <p class="news-body" style="margin:0">日経平均・S&P500などの指数はキー不要APIでの安定配信がないため、下の公式無料ページを利用してください(ブックマーク推奨)。</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px">
+          <a class="pill" href="https://www.google.com/finance/quote/NI225:INDEXNIKKEI" target="_blank" rel="noopener">日経平均</a>
+          <a class="pill" href="https://www.google.com/finance/quote/.INX:INDEXSP" target="_blank" rel="noopener">S&P500</a>
+          <a class="pill" href="https://www.google.com/finance/quote/.IXIC:INDEXNASDAQ" target="_blank" rel="noopener">NASDAQ</a>
+          <a class="pill" href="https://www.google.com/finance/quote/CL=F:NYMEX" target="_blank" rel="noopener">WTI原油</a>
+        </div>
+      </div>
+      <p class="notice">BTC/ETH: CoinGecko、為替: 欧州中銀(Frankfurter)、金/銀: gold-api。すべて無料・キー不要の公開データです。遅延・誤差を含む参考値のため、売買時は証券会社の情報をご確認ください。</p>`;
+  } else {
+    body=`<div class="card"><p class="news-body">「↻ 更新」で最新価格を取得します。</p></div>`;
+  }
+  return `
+    <div class="row">
+      <div><div class="kicker">FREE MARKETS</div><h2 class="screen-title">市況ボード</h2></div>
+      <button class="pill" onclick="fetchPrices(true)" ${S.pricesLoading?"disabled":""}>${S.pricesLoading?"取得中…":"↻ 更新"}</button>
+    </div>
+    <div class="sub">${S.pricesAt?`${S.pricesAt} 取得 ・ 10分キャッシュ`:"キー不要の公開APIから取得します"}</div>
+    ${body}`;
+}
+
+function renderStrategy(){
+  const h=HORIZONS[S.horizon];
+  const sc=SCENARIOS.find(s=>s.key===S.scenario);
+  return `
+    <div class="kicker">STRATEGY</div>
+    <h2 class="screen-title" style="margin-bottom:14px">時間軸とシナリオ</h2>
+    <div class="seg">${Object.entries(HORIZONS).map(([k,v])=>
+      `<button class="${S.horizon===k?"active":""}" onclick="setHorizon('${k}')">${v.label} <span style="font-weight:400;opacity:.7">${v.range}</span></button>`).join("")}
+    </div>
+    <div class="card card-hi"><div style="font-size:13px;line-height:1.7;color:var(--bright)">${h.thesis}</div></div>
+    ${h.items.map(s=>`
+      <div class="card">
+        <div class="news-title" style="margin-top:0">${s.t}</div>
+        <p class="news-body">${s.d}</p>
+        <div>${chipsHTML(s.terms)}</div>
+      </div>`).join("")}
+    <div class="kicker" style="margin:24px 0 8px">SCENARIO PLANNING</div>
+    <div class="seg scenario">${SCENARIOS.map(s=>
+      `<button class="${S.scenario===s.key?"active":""}" onclick="setScenario('${s.key}')"
+        style="${S.scenario===s.key?`background:${s.raw}22;border:1px solid ${s.raw};color:${s.raw};`:""}">${s.label}</button>`).join("")}
+    </div>
+    <div class="card" style="border-color:${sc.raw}55">
+      <div class="news-title" style="margin-top:0;color:${sc.raw}">${sc.title}</div>
+      <p class="news-body">${sc.d}</p>
+      ${sc.plan.map((p,i)=>`<div class="plan-row"><span class="plan-num" style="background:${sc.raw}22;color:${sc.raw}">${i+1}</span><span>${p}</span></div>`).join("")}
+    </div>
+    <p class="notice">※ 2026年半ば時点の世界情勢(中東紛争・AI投資ブーム・利下げ局面・日本の金利正常化)を前提とした整理です。前提が変わったら見直してください。</p>`;
+}
+
+function renderLearn(){
+  const list=GLOSSARY.filter(g=>
+    (S.glossaryCat==="すべて"||g.cat===S.glossaryCat) &&
+    (S.glossaryQ===""||g.w.includes(S.glossaryQ)||g.def.includes(S.glossaryQ)));
+  // クイズ
+  if(!S.quiz) S.quiz=makeQuiz();
+  const q=S.quiz;
+  const quizHTML=`
+    <div class="card card-hi" style="margin-bottom:16px">
+      <div class="row" style="align-items:center;margin-bottom:10px">
+        <div style="font-size:12px;font-weight:600;color:var(--brass)">今日の一問クイズ</div>
+        <span class="badge">🏅 正解数 ${S.quizScore}</span>
+      </div>
+      <p class="news-body" style="color:var(--bright)">「${esc(q.def)}」<br>— この説明に当てはまる用語は?</p>
+      ${q.opts.map((o,i)=>{
+        let cls="quiz-opt";
+        if(S.quizAnswered!==null){
+          if(o.correct) cls+=" correct";
+          else if(S.quizAnswered===i) cls+=" wrong";
+        }
+        return `<button class="${cls}" onclick="answerQuiz(${i})" ${S.quizAnswered!==null?"disabled":""}>${esc(o.w)}</button>`;
+      }).join("")}
+      ${S.quizAnswered!==null?`<button class="btn-primary" style="margin-top:6px" onclick="nextQuiz()">次の問題へ</button>`:""}
+    </div>`;
+  return `
+    <div class="kicker">LEARN</div>
+    <h2 class="screen-title" style="margin-bottom:14px">投資用語辞典 <span style="font-size:12px;color:var(--dim);font-weight:400">全${GLOSSARY.length}語</span></h2>
+    ${quizHTML}
+    <input class="field" id="gq" placeholder="用語を検索(例: 金利)" value="${esc(S.glossaryQ)}" oninput="setGlossaryQ(this.value)">
+    <div class="cat-scroll">${CATS.map(c=>
+      `<button class="cat-btn ${S.glossaryCat===c?"active":""}" onclick="setGlossaryCat('${c}')">${c}</button>`).join("")}
+    </div>
+    ${list.map(g=>`
+      <button class="g-item" onclick="openTerm('${esc(g.w)}')">
+        <span class="g-word">${g.w}</span> <span class="tag">${g.cat}</span>
+        <div class="g-def">${g.def}</div>
+      </button>`).join("") || `<p class="sub" style="text-align:center;padding:24px 0">該当する用語がありません。</p>`}
+    <div class="card card-hi" style="margin-top:16px">
+      <div style="font-size:12px;font-weight:600;color:var(--brass);margin-bottom:8px">✦ AI先生に質問(Proプラン内)</div>
+      <p class="sub" style="margin:0 0 10px">質問を入力すると、Claudeアプリがプロンプト入力済みで開きます。</p>
+      <div style="display:flex;gap:8px">
+        <input class="field" id="aiq" style="margin:0;flex:1;min-width:0" placeholder="例: なぜ金利が上がると株が下がるの?" onkeydown="if(event.key==='Enter')teacherToClaude()">
+        <button class="btn-primary" style="width:auto;padding:0 18px" onclick="teacherToClaude()">質問</button>
+      </div>
+    </div>`;
+}
+
+const TABS=[
+  {id:"home",label:"今日",ic:"◉",fn:renderHome},
+  {id:"market",label:"市況",ic:"¥",fn:renderMarket},
+  {id:"strategy",label:"戦略",ic:"♟",fn:renderStrategy},
+  {id:"learn",label:"学ぶ",ic:"❖",fn:renderLearn},
+];
+
+function render(){
+  $("headDate").innerHTML=`${todayLabel()}<br><b>✦ Pro連携</b>`;
+  $("tabbar").innerHTML=TABS.map(t=>
+    `<button class="tab-btn ${S.tab===t.id?"active":""}" onclick="setTab('${t.id}')">
+      <span class="ic">${t.ic}</span><span class="lb">${t.label}</span></button>`).join("");
+  $("main").innerHTML=TABS.find(t=>t.id===S.tab).fn();
+}
+
+// ============ 操作 ============
+window.setTab=(t)=>{ S.tab=t; render(); window.scrollTo(0,0);
+  if(t==="home"&&!S.news&&!S.newsLoading) fetchNews();
+  if(t==="market"&&!S.prices&&!S.pricesLoading) fetchPrices(); };
+window.setHorizon=(h)=>{ S.horizon=h; render(); };
+window.setScenario=(s)=>{ S.scenario=s; render(); };
+window.setGlossaryCat=(c)=>{ S.glossaryCat=c; render(); };
+window.setGlossaryQ=(q)=>{ S.glossaryQ=q; render();
+  const el=$("gq"); if(el){el.focus(); el.setSelectionRange(q.length,q.length);} };
+window.fetchNews=fetchNews;
+window.fetchPrices=fetchPrices;
+window.teacherToClaude=()=>{
+  const el=$("aiq"); const q=el?el.value.trim():"";
+  if(!q) return;
+  openClaude(PROMPTS.teacher(q));
+};
+window.answerQuiz=(i)=>{
+  S.quizAnswered=i;
+  if(S.quiz.opts[i].correct){ S.quizScore++; localStorage.setItem("quizScore",String(S.quizScore)); }
+  render();
+};
+window.nextQuiz=()=>{ S.quiz=makeQuiz(); S.quizAnswered=null; render(); };
+
+window.openTermDef=(word, def)=>{
+  const local = GLOSSARY.find(x=>x.w===word);
+  const d = def || (local ? local.def : "");
+  $("modal").innerHTML=`
+    <div class="sheet-bg" onclick="if(event.target===this)closeModal()">
+      <div class="sheet">
+        <div class="handle"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+          <span class="tag">用語</span>
+          <span style="font-size:18px;font-weight:700;color:var(--brass)">${esc(word)}</span>
+        </div>
+        ${d?`<p style="font-size:14px;line-height:1.9;color:var(--steel);margin-bottom:16px">${esc(d)}</p>`:""}
+        <button class="btn-primary" style="margin-bottom:8px" onclick='openClaude(${esc(JSON.stringify(PROMPTS.term(word)))})'>✦ Claudeで詳しく聞く(Pro内)</button>
+        <div style="display:flex;gap:8px">
+          <a class="btn-ghost" style="flex:1;text-align:center" href="https://www.google.com/search?q=${encodeURIComponent(word+" 投資 わかりやすく")}" target="_blank" rel="noopener">Webで調べる</a>
+          <button class="btn-ghost" onclick="closeModal()">閉じる</button>
+        </div>
+      </div>
+    </div>`;
+};
+window.openTerm=(word)=>{
+  const g=GLOSSARY.find(x=>x.w===word);
+  if(!g) return;
+  $("modal").innerHTML=`
+    <div class="sheet-bg" onclick="if(event.target===this)closeModal()">
+      <div class="sheet">
+        <div class="handle"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+          <span class="tag">${esc(g.cat)}</span>
+          <span style="font-size:18px;font-weight:700;color:var(--brass)">${esc(g.w)}</span>
+        </div>
+        <p style="font-size:14px;line-height:1.9;color:var(--steel);margin-bottom:16px">${esc(g.def)}</p>
+        <button class="btn-primary" style="margin-bottom:8px" onclick='openClaude(${JSON.stringify(PROMPTS.term(g.w))})'>✦ Claudeで詳しく聞く(Pro内)</button>
+        <div style="display:flex;gap:8px">
+          <a class="btn-ghost" style="flex:1;text-align:center" href="https://www.google.com/search?q=${encodeURIComponent(g.w+" 投資 わかりやすく")}" target="_blank" rel="noopener">Webで調べる</a>
+          <button class="btn-ghost" onclick="closeModal()">閉じる</button>
+        </div>
+      </div>
+    </div>`;
+};
+window.openInfo=()=>{
+  $("modal").innerHTML=`
+    <div class="sheet-bg" onclick="if(event.target===this)closeModal()">
+      <div class="sheet">
+        <div class="handle"></div>
+        <div style="font-size:16px;font-weight:700;color:var(--bright);margin-bottom:10px">このアプリについて</div>
+        <p class="sub" style="line-height:1.9;margin-bottom:14px">
+          APIキー・追加課金が不要の「Claude Pro連携版」です。<br>
+          ・ニュース/価格/辞典/クイズ: 無料の公開データと内蔵データで動作<br>
+          ・✦マークのAI機能: Claudeアプリをプロンプト入力済みで開き、あなたのProプランの利用枠内で実行(API課金なし)<br>
+          データはあなたの端末のブラウザ内にのみ保存されます。
+        </p>
+        <div style="border-top:1px solid var(--line);padding-top:14px;margin-bottom:14px">
+          <div style="font-size:12px;font-weight:600;color:var(--brass);margin-bottom:8px">✦ AI機能の仕組み</div>
+          <p class="sub" style="line-height:1.9">ボタンを押すとclaude.ai(またはClaudeアプリ)が開き、このアプリが組み立てた質問文がプロンプト欄に入力済みになっています。<b style="color:var(--bright)">内容を確認してから送信ボタンを押してください</b>。回答はClaude側に表示されます。うまく開かない場合は「コピー」ボタンでプロンプトをコピーし、Claudeに貼り付けてください。</p>
+        </div>
+        <div style="border-top:1px solid var(--line);padding-top:14px;margin-bottom:14px">
+          <div style="font-size:12px;font-weight:600;color:var(--brass);margin-bottom:8px">iPhoneでアプリのように使う</div>
+          <p class="sub" style="line-height:1.9">Safariでこのページを開く → 共有ボタン → 「ホーム画面に追加」。全画面・専用アイコンで起動できます。Androidは Chrome →「ホーム画面に追加」。</p>
+        </div>
+        <p class="notice">本アプリは情報整理と学習を支援する教育的ツールであり、特定の金融商品の売買を推奨するものではありません。「戦略」タブの内容は2026年半ば時点の市場環境を前提とした一つの整理です。投資判断はご自身の責任で行ってください。</p>
+        <button class="btn-primary" style="margin-top:10px" onclick="closeModal()">閉じる</button>
+      </div>
+    </div>`;
+};
+window.closeModal=()=>{ $("modal").innerHTML=""; };
+
+// 起動
+render();
+loadStaticBrief();
+fetchNews();
+</script>
+</body>
+</html>
