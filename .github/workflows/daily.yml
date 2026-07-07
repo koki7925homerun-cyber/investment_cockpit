@@ -1,0 +1,80 @@
+# .github/workflows/daily.yml
+# 毎朝6:00 JST (21:00 UTC) に自動実行:
+#   1. RSSニュースと価格を取得 (無料APIのみ)
+#   2. Claude Code がニュースを読んでAIブリーフィングを生成
+#      → 認証は CLAUDE_CODE_OAUTH_TOKEN (Pro/Maxプランの利用枠を消費、API課金なし)
+#   3. 結果をリポジトリにコミット → GitHub Pages のアプリに即反映
+name: daily-update
+
+on:
+  schedule:
+    - cron: "0 21 * * *"   # 21:00 UTC = 翌朝 6:00 JST
+  workflow_dispatch:        # 手動実行も可能(Actionsタブの Run workflow)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: ニュース・価格データを取得
+        run: node scripts/fetch-data.mjs
+
+      - name: Claude Codeでブリーフィング生成 (Proプラン枠内)
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: "--max-turns 8"
+          prompt: |
+            あなたは個人投資家向け朝刊ブリーフィングの編集者です。
+            data/news-raw.json を読み、重要なニュースを4件選んで data/briefing.json に書き出してください。
+
+            出力形式(このJSONスキーマに厳密に従うこと):
+            {
+              "date": "YYYY-MM-DD (今日の日付)",
+              "generatedAt": "ISO8601タイムスタンプ",
+              "lead": "今日の市場を一言で(40字以内)",
+              "items": [
+                {
+                  "cat": "分類(株式/金利/地政学/為替/商品/企業など)",
+                  "title": "見出し(25字以内・自分の言葉で)",
+                  "body": "要点2文(90字以内・記事の文をそのまま写さず必ず自分の言葉で要約)",
+                  "impact": "up | down | mixed (投資家にとって追い風/逆風/混在)",
+                  "link": "元記事のURL(news-raw.jsonのlinkをそのまま)",
+                  "terms": [{ "word": "本文中の重要な投資用語", "def": "初心者向け説明(40字以内)" }]
+                }
+              ]
+            }
+
+            ルール:
+            - itemsは必ず4件、termsは各記事1〜2個
+            - 断定的な売買推奨は書かない(判断材料の整理に徹する)
+            - data/briefing.json 以外のファイルは変更しない
+            - 有効なJSONであることを確認してから書き込むこと
+
+      - name: 生成結果を検証
+        run: |
+          node -e "
+            const b = require('./data/briefing.json');
+            if(!b.lead || !Array.isArray(b.items) || b.items.length < 1) throw new Error('briefing invalid');
+            console.log('briefing OK:', b.date, '-', b.lead);
+          "
+
+      - name: コミット & プッシュ
+        run: |
+          git config user.name "cockpit-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "daily update: $(date -u +%Y-%m-%d)"
+          git push
