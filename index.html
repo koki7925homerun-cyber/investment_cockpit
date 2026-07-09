@@ -173,7 +173,7 @@ const S = {
   aiBrief:null,
   news:null, newsLoading:false, newsError:null, newsAt:null,
   prices:null, pricesLoading:false, pricesError:null, pricesAt:null,
-  quiz:null, quizAnswered:null, quizScore: parseInt(localStorage.getItem("quizScore")||"0"),
+  quiz:null, quizAnswered:null, quizLevel:1,
 };
 const todayLabel = () => { const d=new Date(); return `${d.getMonth()+1}月${d.getDate()}日(${"日月火水木金土"[d.getDay()]})`; };
 
@@ -287,12 +287,48 @@ const GLOSSARY = [
 ];
 const CATS = ["すべて", ...new Set(GLOSSARY.map(g=>g.cat))];
 
-// ============ クイズ(辞典から自動生成) ============
+// ============ クイズ(問題バンク: data/quiz.json、進捗: localStorage) ============
+let QUIZ=null, quizError=false;
+const QUIZ_LEVELS=[[1,"初級"],[2,"中級"],[3,"上級"]];
+const QS=(()=>{ try{ return JSON.parse(localStorage.getItem("quizStats_v2"))||{}; }catch(e){ return {}; } })();
+QS.total=QS.total||0; QS.correct=QS.correct||0; QS.streak=QS.streak||0; QS.best=QS.best||0;
+QS.wrong=QS.wrong||[]; QS.done=QS.done||{};
+function saveQS(){ try{ localStorage.setItem("quizStats_v2", JSON.stringify(QS)); }catch(e){} }
+async function loadQuiz(){
+  try{
+    const r = await fetch("data/quiz.json?t=" + Date.now(), { cache: "no-store" });
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    const qs = (await r.json()).questions;
+    if(!Array.isArray(qs) || !qs.length) throw new Error("bad format");
+    QUIZ = qs;
+    QS.wrong = QS.wrong.filter(id=>qs.some(q=>q.id===id)); // 削除された問題を掃除
+  }catch(e){ quizError=true; }
+  render();
+}
+function quizRank(){
+  const t=QS.total, a=t?QS.correct/t:0;
+  if(t>=90&&a>=.85) return "殿堂入り投資家";
+  if(t>=70&&a>=.8)  return "ファンドマネージャー";
+  if(t>=45&&a>=.7)  return "シニアアナリスト";
+  if(t>=25&&a>=.6)  return "アナリスト";
+  if(t>=10) return "駆け出しトレーダー";
+  return "見習い";
+}
+// 出題: 復習モードは間違えた問題から、通常は「間違えた>未回答>正解済み」の重みで抽選
 function makeQuiz(){
-  const pool = [...GLOSSARY].sort(()=>Math.random()-.5).slice(0,4);
-  const q = pool[0];
-  const opts = pool.map(p=>({w:p.w, correct:p.w===q.w})).sort(()=>Math.random()-.5);
-  return {def:q.def, answer:q.w, opts};
+  if(!QUIZ) return null;
+  const pool = S.quizLevel==="review"
+    ? QUIZ.filter(q=>QS.wrong.includes(q.id))
+    : QUIZ.filter(q=>q.level===S.quizLevel);
+  if(!pool.length) return null;
+  const cand = pool.filter(q=>!S.quiz||q.id!==S.quiz.id);
+  const list = cand.length?cand:pool;
+  const weight = q => QS.wrong.includes(q.id)?4 : !QS.done[q.id]?3 : 1;
+  let r = Math.random()*list.reduce((a,q)=>a+weight(q),0), chosen=list[0];
+  for(const q of list){ r-=weight(q); if(r<=0){ chosen=q; break; } }
+  // opts[0]が正解の形式で保存されているため、表示用にシャッフル
+  const opts = chosen.opts.map((t,i)=>({t, correct:i===0})).sort(()=>Math.random()-.5);
+  return {id:chosen.id, level:chosen.level, q:chosen.q, exp:chosen.exp, opts};
 }
 
 // ============ 戦略コンテンツ(data/strategy.json から読み込み。週次Actionsが更新) ============
@@ -597,26 +633,56 @@ function renderLearn(){
   const list=GLOSSARY.filter(g=>
     (S.glossaryCat==="すべて"||g.cat===S.glossaryCat) &&
     (S.glossaryQ===""||g.w.includes(S.glossaryQ)||g.def.includes(S.glossaryQ)));
-  // クイズ
-  if(!S.quiz) S.quiz=makeQuiz();
-  const q=S.quiz;
-  const quizHTML=`
-    <div class="card card-hi" style="margin-bottom:16px">
-      <div class="row" style="align-items:center;margin-bottom:10px">
-        <div style="font-size:12px;font-weight:600;color:var(--brass)">今日の一問クイズ</div>
-        <span class="badge">🏅 正解数 ${S.quizScore}</span>
+  // クイズ道場
+  let quizHTML;
+  if(!QUIZ){
+    quizHTML=`<div class="card card-hi" style="margin-bottom:16px"><p class="news-body" style="margin:0">${quizError
+      ?"クイズデータ(data/quiz.json)を読み込めませんでした。GitHub Pages上でご利用ください。"
+      :"クイズを読み込み中…"}</p></div>`;
+  } else {
+    if(!S.quiz) S.quiz=makeQuiz();
+    const q=S.quiz;
+    const acc=QS.total?Math.round(QS.correct/QS.total*100):0;
+    const lvName={1:"初級",2:"中級",3:"上級",review:"復習"}[S.quizLevel];
+    const cleared=S.quizLevel==="review"?null:QUIZ.filter(x=>x.level===S.quizLevel&&QS.done[x.id]===1).length;
+    const lvTotal=S.quizLevel==="review"?QS.wrong.length:QUIZ.filter(x=>x.level===S.quizLevel).length;
+    const header=`
+      <div class="row" style="align-items:center;margin-bottom:6px">
+        <div style="font-size:12px;font-weight:600;color:var(--brass)">クイズ道場</div>
+        <span class="badge">🎖 ${quizRank()}</span>
       </div>
-      <p class="news-body" style="color:var(--bright)">「${esc(q.def)}」<br>— この説明に当てはまる用語は?</p>
-      ${q.opts.map((o,i)=>{
-        let cls="quiz-opt";
-        if(S.quizAnswered!==null){
-          if(o.correct) cls+=" correct";
-          else if(S.quizAnswered===i) cls+=" wrong";
-        }
-        return `<button class="${cls}" onclick="answerQuiz(${i})" ${S.quizAnswered!==null?"disabled":""}>${esc(o.w)}</button>`;
-      }).join("")}
-      ${S.quizAnswered!==null?`<button class="btn-primary" style="margin-top:6px" onclick="nextQuiz()">次の問題へ</button>`:""}
-    </div>`;
+      <div class="sub" style="margin-bottom:4px">🔥 連続正解 ${QS.streak}(最高 ${QS.best}) ・ 正答率 ${acc}%(${QS.correct}/${QS.total}問)</div>
+      <div class="cat-scroll" style="margin:8px 0 10px">${
+        QUIZ_LEVELS.map(([k,l])=>`<button class="cat-btn ${S.quizLevel===k?"active":""}" onclick="setQuizLevel(${k})">${l}</button>`).join("")
+      }<button class="cat-btn ${S.quizLevel==="review"?"active":""}" onclick="setQuizLevel('review')">復習 ${QS.wrong.length}</button></div>`;
+    let bodyHTML;
+    if(!q){
+      bodyHTML=`<p class="news-body" style="margin:0">${S.quizLevel==="review"
+        ?"復習する問題はありません。間違えた問題が自動的にここに溜まります。💮"
+        :"この難易度の問題がありません。"}</p>`;
+    } else {
+      const answered=S.quizAnswered!==null;
+      const ok=answered&&q.opts[S.quizAnswered].correct;
+      bodyHTML=`
+        <div class="sub" style="margin-bottom:4px">${lvName}${cleared!==null?` ・ 正解済み ${cleared}/${lvTotal}問`:` ・ 残り ${lvTotal}問`}</div>
+        <p class="news-body" style="color:var(--bright)">${esc(q.q)}</p>
+        ${q.opts.map((o,i)=>{
+          let cls="quiz-opt";
+          if(answered){
+            if(o.correct) cls+=" correct";
+            else if(S.quizAnswered===i) cls+=" wrong";
+          }
+          return `<button class="${cls}" onclick="answerQuiz(${i})" ${answered?"disabled":""}>${esc(o.t)}</button>`;
+        }).join("")}
+        ${answered?`
+          <div style="margin-top:10px;padding:10px 12px;border-left:3px solid ${ok?"var(--up)":"var(--down)"};background:${ok?"rgba(95,191,143,.07)":"rgba(224,112,94,.07)"};border-radius:0 8px 8px 0">
+            <div style="font-size:12px;font-weight:700;color:${ok?"var(--up)":"var(--down)"};margin-bottom:4px">${ok?`⭕ 正解!${QS.streak>=3?` 🔥${QS.streak}連続!`:""}`:"❌ 不正解(復習リストに追加)"}</div>
+            <p class="news-body" style="margin:0">💡 ${esc(q.exp)}</p>
+          </div>
+          <button class="btn-primary" style="margin-top:10px" onclick="nextQuiz()">次の問題へ</button>`:""}`;
+    }
+    quizHTML=`<div class="card card-hi" style="margin-bottom:16px">${header}${bodyHTML}</div>`;
+  }
   return `
     <div class="kicker">LEARN</div>
     <h2 class="screen-title" style="margin-bottom:14px">投資用語辞典 <span style="font-size:12px;color:var(--dim);font-weight:400">全${GLOSSARY.length}語</span></h2>
@@ -672,11 +738,23 @@ window.teacherToClaude=()=>{
   openClaude(PROMPTS.teacher(q));
 };
 window.answerQuiz=(i)=>{
+  if(S.quizAnswered!==null||!S.quiz) return;
   S.quizAnswered=i;
-  if(S.quiz.opts[i].correct){ S.quizScore++; localStorage.setItem("quizScore",String(S.quizScore)); }
+  const q=S.quiz, ok=q.opts[i].correct;
+  QS.total++;
+  if(ok){
+    QS.correct++; QS.streak++; QS.best=Math.max(QS.best,QS.streak);
+    QS.wrong=QS.wrong.filter(id=>id!==q.id); QS.done[q.id]=1;
+  }else{
+    QS.streak=0;
+    if(!QS.wrong.includes(q.id)) QS.wrong.push(q.id);
+    QS.done[q.id]=-1;
+  }
+  saveQS();
   render();
 };
 window.nextQuiz=()=>{ S.quiz=makeQuiz(); S.quizAnswered=null; render(); };
+window.setQuizLevel=(l)=>{ S.quizLevel=l; S.quiz=null; S.quizAnswered=null; render(); };
 
 window.openTermDef=(word, def)=>{
   const local = GLOSSARY.find(x=>x.w===word);
@@ -747,6 +825,7 @@ window.closeModal=()=>{ $("modal").innerHTML=""; };
 
 // 起動
 render();
+loadQuiz();
 loadStrategy();
 loadStaticBrief();
 fetchNews();
