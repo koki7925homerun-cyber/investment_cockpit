@@ -295,47 +295,21 @@ function makeQuiz(){
   return {def:q.def, answer:q.w, opts};
 }
 
-// ============ 戦略コンテンツ ============
-const HORIZONS = {
-  short:{label:"短期",range:"〜1年",
-    thesis:"防御しながら金利を取る。紛争とAI決算という2つの変動源に備え、流動性とインカムを厚く。",
-    items:[
-      {t:"現金・短期債で待機資金を確保",d:"金利があるうちにMMF・短期債で利回りを確保。急落時に買い向かえる「待てる力」がリターンの源泉。",terms:["MMF","政策金利"]},
-      {t:"金・エネルギーで地政学ヘッジ",d:"中東情勢悪化への保険。金は中銀の買いと実質金利低下が追い風。エネルギー株は供給ショック時の防波堤。",terms:["安全資産","地政学リスク"]},
-      {t:"AIは握りつつ集中を解く",d:"等ウェイト型や電力・冷却など裾野への分散で、特定銘柄の決算ミスによるドローダウンを抑える。",terms:["ドローダウン","半導体サイクル"]},
-      {t:"イベント前の変動管理",d:"米中間選挙・FRB新体制などイベント続き。最小分散・生活必需品へのシフトやオプションで守る。",terms:["ボラティリティ","カバードコール"]},
-    ]},
-  mid:{label:"中期",range:"1〜5年",
-    thesis:"AIの裏側と、金利ある世界の勝者へ。電力・日本・欧州財政・選別新興国に張る。",
-    items:[
-      {t:"AIインフラ: 電力・送電網・DC",d:"AI投資の最大のボトルネックは電力。発電・送電・冷却・データセンターREITは、どのAI企業が勝っても需要が立つ。",terms:["REIT","データセンター"]},
-      {t:"日本株: 改革の収穫期",d:"賃上げ継続・ガバナンス改革・金利ある世界での金融株。PBR改善要請も追い風。",terms:["バリュー株","PBR"]},
-      {t:"欧州の防衛×インフラ財政",d:"ドイツのインフラ投資と防衛費増額は数年単位の政策コミットメント。2028年の単一市場完成も推進中。",terms:["財政赤字","防衛関連"]},
-      {t:"新興国の選別: インドとテックアジア",d:"南アジアは世界最高水準の成長率。台湾・韓国はAIサプライチェーンの中核。中国は指数でなくテーマで。",terms:["分散投資"]},
-      {t:"利下げ恩恵: REIT・中期債",d:"緩和局面で短中期金利は低下方向。中程度のデュレーションの投資適格債とREITでインカムを積む。",terms:["利下げ","デュレーション","投資適格債"]},
-    ]},
-  long:{label:"長期",range:"5〜20年",
-    thesis:"文明の設備投資に乗る。AI・エネルギー転換・人口動態・安全保障は景気循環を超える。",
-    items:[
-      {t:"AI・自動化の生産性革命",d:"成立すればリターンは巨大。全世界株を土台に、半導体・ロボティクスへ積立で時間分散しながら張り続ける。",terms:["グロース株","ドルコスト平均法"]},
-      {t:"エネルギー転換+電化",d:"再エネ・原子力・蓄電・送電網は脱炭素とAI電力需要の両面から不可逆。超長期のコアテーマ。",terms:["脱炭素","コモディティ"]},
-      {t:"人口動態の両面取り",d:"若いインド・アフリカの消費市場化と、先進国の高齢化(ヘルスケア・創薬)。確度の高い数十年トレンド。",terms:["セクターローテーション"]},
-      {t:"安全保障: 防衛・宇宙・サイバー",d:"防衛支出の急増期が頻発する構造へ。政府予算に裏付けられた長期需要。重要鉱物の国産化も。",terms:["防衛関連","地政学リスク"]},
-      {t:"実物資産で通貨価値ヘッジ",d:"公的債務の膨張は通貨の希薄化リスク。金・優良不動産、ごく一部の暗号資産(数%以内)で備える。",terms:["インフレ","金(ゴールド)","ビットコイン"]},
-      {t:"人的資本への投資",d:"AIを使いこなすスキル・健康・専門性。リターンが非課税で複利が効く、最も再現性の高い投資。",terms:["複利"]},
-    ]},
-};
-const SCENARIOS = [
-  {key:"base",label:"ベース",raw:"#7A8DB0",title:"曇り空の巡航速度",
-    d:"紛争は限定的、世界成長は減速も後退は回避。利下げとAI投資が下支え。",
-    plan:["AI集中を電力・日本・欧州へ分散","短中期債とREITでインカム","金を5〜10%保険として維持"]},
-  {key:"bull",label:"強気",raw:"#5FBF8F",title:"紛争収束×AI生産性の実証",
-    d:"エネルギー価格反落、AIの生産性効果が企業収益に出現。利下げ+財政で世界経済は再加速。",
-    plan:["株式比率を引き上げ新興国・小型株へ","景気敏感とテックの両輪","ヘッジ比率を段階縮小"]},
-  {key:"bear",label:"弱気",raw:"#E0705E",title:"紛争拡大×AIバブル崩壊",
-    d:"供給ショックとAI失望が同時発生しスタグフレーション。利下げ停止、高債務国の国債にも売り。",
-    plan:["金・エネルギー・必需品・短期債へ退避","急落したAI関連を時間分散で拾う準備","レバレッジと低流動性資産を事前圧縮"]},
-];
+// ============ 戦略コンテンツ(data/strategy.json から読み込み。週次Actionsが更新) ============
+let STRATEGY = null;
+let strategyError = false;
+async function loadStrategy(){
+  try{
+    const r = await fetch("data/strategy.json?t=" + Date.now(), { cache: "no-store" });
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    const st = await r.json();
+    if(!st.horizons || !Array.isArray(st.scenarios)) throw new Error("bad format");
+    STRATEGY = st;
+  }catch(e){
+    strategyError = true; // ローカル(file://)閲覧などfetch不可の環境
+  }
+  render();
+}
 
 // ============ 自動生成ブリーフィング(Actionsが毎朝コミット) ============
 async function loadStaticBrief(){
@@ -580,11 +554,19 @@ function renderMarket(){
 }
 
 function renderStrategy(){
-  const h=HORIZONS[S.horizon];
-  const sc=SCENARIOS.find(s=>s.key===S.scenario);
-  return `
+  const head=`
     <div class="kicker">STRATEGY</div>
-    <h2 class="screen-title" style="margin-bottom:14px">時間軸とシナリオ</h2>
+    <h2 class="screen-title" style="margin-bottom:14px">時間軸とシナリオ</h2>`;
+  if(!STRATEGY){
+    return head + `<div class="card"><p class="news-body">${strategyError
+      ? "戦略データ(data/strategy.json)を読み込めませんでした。GitHub Pages上でご利用ください。"
+      : "戦略データを読み込み中…"}</p></div>`;
+  }
+  const HORIZONS=STRATEGY.horizons, SCENARIOS=STRATEGY.scenarios;
+  const h=HORIZONS[S.horizon]||HORIZONS.short;
+  const sc=SCENARIOS.find(s=>s.key===S.scenario)||SCENARIOS[0];
+  const upd=STRATEGY.updatedAt?new Date(STRATEGY.updatedAt).toLocaleDateString("ja-JP"):"";
+  return head + `
     <div class="seg">${Object.entries(HORIZONS).map(([k,v])=>
       `<button class="${S.horizon===k?"active":""}" onclick="setHorizon('${k}')">${v.label} <span style="font-weight:400;opacity:.7">${v.range}</span></button>`).join("")}
     </div>
@@ -598,14 +580,17 @@ function renderStrategy(){
     <div class="kicker" style="margin:24px 0 8px">SCENARIO PLANNING</div>
     <div class="seg scenario">${SCENARIOS.map(s=>
       `<button class="${S.scenario===s.key?"active":""}" onclick="setScenario('${s.key}')"
-        style="${S.scenario===s.key?`background:${s.raw}22;border:1px solid ${s.raw};color:${s.raw};`:""}">${s.label}</button>`).join("")}
+        style="${S.scenario===s.key?`background:${s.raw}22;border:1px solid ${s.raw};color:${s.raw};`:""}">${s.label}${typeof s.prob==="number"?` <span style="font-weight:400;opacity:.75">${s.prob}%</span>`:""}</button>`).join("")}
     </div>
     <div class="card" style="border-color:${sc.raw}55">
-      <div class="news-title" style="margin-top:0;color:${sc.raw}">${sc.title}</div>
+      <div class="row" style="align-items:baseline">
+        <div class="news-title" style="margin-top:0;color:${sc.raw}">${sc.title}</div>
+        ${typeof sc.prob==="number"?`<span class="badge" style="color:${sc.raw}">想定確率 ${sc.prob}%</span>`:""}
+      </div>
       <p class="news-body">${sc.d}</p>
       ${sc.plan.map((p,i)=>`<div class="plan-row"><span class="plan-num" style="background:${sc.raw}22;color:${sc.raw}">${i+1}</span><span>${p}</span></div>`).join("")}
     </div>
-    <p class="notice">※ 2026年半ば時点の世界情勢(中東紛争・AI投資ブーム・利下げ局面・日本の金利正常化)を前提とした整理です。前提が変わったら見直してください。</p>`;
+    <p class="notice">※ ${upd?`${upd}更新。`:""}${STRATEGY.note?`${STRATEGY.note}。`:""}シナリオ確率は最新ニュースを踏まえた週次の目安であり、将来を保証するものではありません。前提が変わったら見直してください。</p>`;
 }
 
 function renderLearn(){
@@ -762,6 +747,7 @@ window.closeModal=()=>{ $("modal").innerHTML=""; };
 
 // 起動
 render();
+loadStrategy();
 loadStaticBrief();
 fetchNews();
 </script>
