@@ -375,6 +375,53 @@ async function loadStaticBrief(){
   }catch(e){ /* ローカル閲覧やActions未設定時は手動生成カードにフォールバック */ }
 }
 
+// ============ 速報フィードのAI注釈(Actionsが3時間おきにコミット) ============
+let HEADANN = null; // link -> {soWhat, assets, horizon, impact}
+async function loadHeadlineAnnotations(){
+  try{
+    const r = await fetch("data/headlines.json?t=" + Date.now(), { cache: "no-store" });
+    if(!r.ok) return;
+    const h = await r.json();
+    if(!Array.isArray(h.items)) return;
+    HEADANN = {};
+    for(const a of h.items) if(a && a.link) HEADANN[a.link] = a;
+    render();
+  }catch(e){ /* ローカル閲覧やActions未実行時はルールエンジンのみで表示 */ }
+}
+
+// ============ 内蔵ルールエンジン(AI注釈がない記事への参考判定) ============
+// キーワード→影響の一般則マッピング。あくまでヒューリスティックで、上から順に最初の一致を採用。
+const NEWS_RULES = [
+  {re:/上方修正|最高益|増益/, im:"up", hz:"short", up:["当該企業・同業種"], down:[], so:"業績の上振れは一般に株価の支援材料。同業他社への波及も判断材料になる。"},
+  {re:/下方修正|減益|赤字転落|赤字に/, im:"down", hz:"short", up:[], down:["当該企業・同業種"], so:"業績悪化は一般に売り材料。一時要因か構造要因かの見極めが判断材料になる。"},
+  {re:/増配|自社株買い|株主還元/, im:"up", hz:"short", up:["当該企業","高配当株"], down:[], so:"株主還元の強化は定石として株価の支援材料とされる。継続性が焦点。"},
+  {re:/円高/, im:"mixed", hz:"short", up:["輸入企業","内需株"], down:["輸出企業","海外資産(円建て)"], so:"円高は一般に輸出企業の収益に逆風、輸入コスト低下は内需に追い風とされる。"},
+  {re:/円安/, im:"mixed", hz:"short", up:["輸出企業","インバウンド関連"], down:["輸入企業","家計の購買力"], so:"円安は一般に輸出企業に追い風だが、輸入物価の上昇が内需の重しになりうる。"},
+  {re:/利上げ|金融引き締め|引き締め/, im:"mixed", hz:"short", up:["銀行株","預金金利"], down:["グロース株","REIT","債券価格"], so:"利上げは一般に銀行に追い風、高PER株や債券価格には逆風とされる。"},
+  {re:/利下げ|金融緩和|緩和的/, im:"up", hz:"short", up:["グロース株","REIT","債券価格"], down:["銀行株"], so:"利下げは一般に株式・債券価格の支援材料だが、その背景(景気減速)にも注意。"},
+  {re:/(金利|利回り).{0,12}(上昇|上回|高水準)/, im:"mixed", hz:"short", up:["銀行株","MMF・短期債"], down:["長期債","REIT","高PER株"], so:"金利上昇は一般に長期債や高PER株の逆風。住宅ローン金利への波及も判断材料。"},
+  {re:/(金利|利回り).{0,12}(低下|下落)/, im:"up", hz:"short", up:["長期債","REIT","グロース株"], down:["銀行株"], so:"金利低下は一般に債券価格やREITの追い風とされる。低下の理由が焦点。"},
+  {re:/原油.{0,10}(高騰|上昇|急騰)|原油高/, im:"mixed", hz:"short", up:["エネルギー株","資源国資産"], down:["航空・運輸","化学・素材"], so:"原油高はエネルギー関連に追い風の一方、燃料コスト増が広く企業収益の重しに。"},
+  {re:/原油.{0,10}(下落|急落|安)/, im:"mixed", hz:"short", up:["航空・運輸","内需株"], down:["エネルギー株"], so:"原油安はコスト低下を通じ多くの企業に追い風だが、資源関連には逆風とされる。"},
+  {re:/インフレ|物価.{0,6}(上昇|高)|消費者物価/, im:"mixed", hz:"mid", up:["実物資産","金"], down:["現金・預金","債券"], so:"物価上昇は現金・債券の実質価値を目減りさせる。中央銀行の対応が次の焦点。"},
+  {re:/賃上げ|賃金.{0,6}(上昇|引き上げ)/, im:"mixed", hz:"mid", up:["内需・消費関連"], down:["人件費比率の高い企業"], so:"賃上げは消費の追い風となる一方、企業のコスト増。物価との綱引きが判断材料。"},
+  {re:/攻撃|紛争|ミサイル|戦闘|侵攻|軍事/, im:"down", hz:"short", up:["金","原油","防衛関連"], down:["株式全般","新興国資産"], so:"地政学リスクの高まりは一般にリスク資産の売り、安全資産の買い要因とされる。"},
+  {re:/半導体|エヌビディア|TSMC|台湾積体/, im:"mixed", hz:"mid", up:["半導体関連","AIインフラ"], down:[], so:"半導体は業績の山谷が大きいシクリカル業種。サイクルのどこにいるかが判断材料。"},
+  {re:/生成AI|人工知能|データセンター|AI(?![A-Za-z])/, im:"mixed", hz:"mid", up:["AI関連","電力・インフラ"], down:[], so:"AI投資の持続性と収益化が焦点。電力などボトルネック産業への波及も判断材料。"},
+  {re:/(株価|ダウ|日経平均|ナスダック).{0,14}(最高値|急伸|大幅.{0,4}上昇|値上がり)/, im:"up", hz:"short", up:["株式全般"], down:[], so:"株高局面では過熱感にも注意。上昇の主因が業績か金利かで持続力の見方が変わる。"},
+  {re:/(株価|ダウ|日経平均|ナスダック).{0,14}(急落|大幅.{0,4}下落|値下がり|続落)/, im:"down", hz:"short", up:["安全資産"], down:["株式全般"], so:"下落の理由(金利・業績・外部ショック)の切り分けが、押し目か警戒かの判断材料。"},
+  {re:/関税|貿易摩擦|輸出規制/, im:"down", hz:"mid", up:["国内生産回帰関連"], down:["輸出企業","海運"], so:"通商摩擦は一般にグローバル企業の逆風。対象品目と報復の有無が判断材料になる。"},
+  {re:/破綻|倒産|債務不履行|デフォルト/, im:"down", hz:"short", up:["安全資産"], down:["金融株","低格付け社債"], so:"信用不安は金融システムへの波及が焦点。関連セクターの連鎖に注意が必要とされる。"},
+  {re:/地震|台風|豪雨|災害/, im:"mixed", hz:"short", up:["建設・復興関連"], down:["保険","観光・運輸"], so:"災害は短期的に保険・観光の逆風、復興需要は建設関連の材料とされる。規模が焦点。"},
+  {re:/選挙|政権|首相|大統領選/, im:"mixed", hz:"short", up:[], down:[], so:"政治イベント前後は政策期待と不透明感で変動が出やすい。公約の実現性が判断材料。"},
+];
+function ruleAnnotate(text){
+  for(const r of NEWS_RULES){
+    if(r.re.test(text)) return {soWhat:r.so, assets:{up:r.up, down:r.down}, horizon:r.hz, impact:r.im, rule:true};
+  }
+  return null;
+}
+
 // ============ ニュース取得(無料RSS) ============
 // rss2json.comの無料エンドポイント経由で公共RSSをJSON化(キー不要・回数制限あり)
 const FEEDS = [
@@ -496,6 +543,24 @@ function impactHTML(im){
 function chipsHTML(terms){
   return (terms||[]).map(w=>`<button class="chip" onclick="openTerm('${esc(w)}')">${esc(w)} ?</button>`).join("");
 }
+const HZ={short:"短期",mid:"中期",long:"長期"};
+// So What + 資産チップの共通ブロック(rule=trueならルールエンジンの参考判定として控えめに表示)
+function annotBlockHTML(ann){
+  const up=(ann.assets&&Array.isArray(ann.assets.up)?ann.assets.up:[]).filter(Boolean);
+  const dn=(ann.assets&&Array.isArray(ann.assets.down)?ann.assets.down:[]).filter(Boolean);
+  const isRule=!!ann.rule;
+  return `
+    ${ann.soWhat?`<div class="sowhat"${isRule?` style="border-left-color:var(--neutral);background:rgba(122,141,176,.08)"`:""}>
+      <div class="sw-label"${isRule?` style="color:var(--neutral)"`:""}>${isRule?"参考(自動判定) — 一般的な傾向":"SO WHAT? — 投資家への示唆"}</div>
+      <p class="news-body" style="margin:0;color:var(--bright)">${esc(ann.soWhat)}</p>
+    </div>`:""}
+    ${(up.length||dn.length)?`<details class="fold"><summary>影響資産の目安</summary>
+      <div style="margin-top:2px">
+        ${up.map(a=>`<span class="achip au">↑ ${esc(a)}</span>`).join("")}
+        ${dn.map(a=>`<span class="achip ad">↓ ${esc(a)}</span>`).join("")}
+      </div>
+    </details>`:""}`;
+}
 
 function renderHome(){
   let body="";
@@ -508,7 +573,6 @@ function renderHome(){
     let briefBlock;
     if(S.aiBrief){
       const b = S.aiBrief;
-      const HZ={short:"短期",mid:"中期",long:"長期"};
       briefBlock = `
       <div class="card card-hi">
         <div class="row" style="align-items:center;margin-bottom:6px">
@@ -561,11 +625,21 @@ function renderHome(){
       </div>`;
     }
     body = briefBlock +
-      S.news.map(n=>`
-      <article class="card">
-        <div class="row" style="align-items:center"><span class="tag">${esc(n.src)}</span>${impactHTML(n.impact)}</div>
+      S.news.map(n=>{
+        const ai = HEADANN && HEADANN[n.link];
+        const ann = ai || ruleAnnotate(n.title + (n.desc||""));
+        return `
+      <article class="card"${ai?` style="border-left:3px solid var(--brass)"`:""}>
+        <div class="row" style="align-items:center"><span class="tag">${esc(n.src)}</span>
+          <span style="display:inline-flex;gap:8px;align-items:center">
+            ${ai?`<span class="badge" style="font-size:9px;padding:2px 8px">✦ AI注釈</span>`:ann?`<span class="tag">参考(自動判定)</span>`:""}
+            ${ann&&HZ[ann.horizon]?`<span class="tag">${HZ[ann.horizon]}</span>`:""}
+            ${impactHTML(ann?ann.impact:n.impact)}
+          </span>
+        </div>
         <div class="news-title">${esc(n.title)}</div>
         ${n.desc?`<p class="news-body">${esc(n.desc)}…</p>`:""}
+        ${ann?annotBlockHTML(ann):""}
         ${n.terms.length?`<div style="margin-bottom:8px">${chipsHTML(n.terms)}</div>`:""}
         <div class="news-meta">
           <span>${timeAgo(n.date)}</span>
@@ -574,8 +648,8 @@ function renderHome(){
             <a href="${esc(n.link)}" target="_blank" rel="noopener">全文を読む →</a>
           </span>
         </div>
-      </article>`).join("") +
-      `<p class="notice">出典: NHKニュースRSS(無料公開フィード)。見出しに含まれる用語を自動検出して解説チップを表示しています。「追い風?/逆風?」は見出しの語句からの簡易判定で、参考程度にご覧ください。</p>`;
+      </article>`;}).join("") +
+      `<p class="notice">出典: NHKニュースRSS(無料公開フィード)。見出しに含まれる用語を自動検出して解説チップを表示しています。「✦ AI注釈」は3時間おきに自動生成される注釈、「参考(自動判定)」はキーワードに基づく内蔵ルールでの一般則にすぎないヒューリスティック判定です。いずれも個別の状況を保証するものではなく、参考程度にご覧ください。</p>`;
   } else {
     body=`<div class="card"><p class="news-body">「↻ 更新」で最新ニュースを取得します。</p></div>`;
   }
@@ -865,6 +939,7 @@ render();
 loadQuiz();
 loadStrategy();
 loadStaticBrief();
+loadHeadlineAnnotations();
 fetchNews();
 </script>
 </body>

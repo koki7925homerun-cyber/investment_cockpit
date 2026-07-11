@@ -2,8 +2,13 @@ name: Daily market briefing
 
 on:
   schedule:
-    - cron: "0 21 * * *" # 06:00 JST
+    - cron: "0 */3 * * *" # 3時間おき。briefing.jsonは21:00 UTC(06:00 JST)の回のみ生成
   workflow_dispatch:
+    inputs:
+      force_briefing:
+        description: "briefing.jsonも強制生成する"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -19,19 +24,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate data/briefing.json
+      - name: Generate data/briefing.json (06:00 JST run only)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/generate-briefing.mjs
+          FORCE_BRIEFING: ${{ inputs.force_briefing }}
+        run: |
+          # スケジュール遅延に備えて21時台・22時台を朝6時(JST)の回とみなす
+          hour=$(date -u +%H)
+          if [ "$hour" = "21" ] || [ "$hour" = "22" ] || [ "$FORCE_BRIEFING" = "true" ]; then
+            node scripts/generate-briefing.mjs
+          else
+            echo "skip briefing.json (hour=$hour UTC, not the 21:00 UTC run)"
+          fi
+
+      - name: Generate data/headlines.json (every run)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-headlines.mjs
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/briefing.json
+          git add data/briefing.json data/headlines.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: update daily briefing ($(date -u +%Y-%m-%d))"
+            git commit -m "chore: update briefing/headlines ($(date -u +'%Y-%m-%d %H:%M UTC'))"
             git push
           fi
