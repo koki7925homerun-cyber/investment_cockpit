@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-07-11T14:00:33.680Z",
+  "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174571000",
+      "soWhat": "ホルムズ海峡の情勢はエネルギー価格に影響を与える可能性があるため注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174371000",
+      "soWhat": "ベネズエラの大地震は国際的な人道支援の必要性を高め、関連企業に影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "医療関連"
+        ],
+        "down": [
+          "保険関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174521000",
+      "soWhat": "ドジャースのホワイトハウス訪問は、スポーツ関連株にポジティブな影響を与えるかもしれない。",
+      "assets": {
+        "up": [
+          "スポーツ関連"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174501000",
+      "soWhat": "移民問題の影響が広がる中、関連企業やセクターに注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "移民関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174451000",
+      "soWhat": "北朝鮮の内部統制強化は、地域の政治リスクを高める要因となるため注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "地域関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174381000",
+      "soWhat": "アップルの訴訟はテクノロジー業界全体に影響を与える可能性があり、関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "テクノロジー関連"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174341000",
+      "soWhat": "ロシアの政治的緊張が高まる中、関連企業のリスクが増すため注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "ロシア関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174291000",
+      "soWhat": "王室の動向は英国経済に影響を与える可能性があり、関連株に注目が必要。",
+      "assets": {
+        "up": [
+          "観光関連"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174311000",
+      "soWhat": "米・イランの緊張が高まる中、エネルギー市場への影響が懸念されるため注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174281000",
+      "soWhat": "SKハイニックスの上場は半導体市場にポジティブな影響を与える可能性があり注目。",
+      "assets": {
+        "up": [
+          "半導体関連"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    }
+  ]
+}
