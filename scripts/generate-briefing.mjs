@@ -51,6 +51,12 @@ function nowJst() {
   return { date: d.toISOString().slice(0, 10), generatedAt: new Date().toISOString() };
 }
 
+const BANNED = ["買うべき", "売るべき", "必ず上がる", "必ず下がる", "確実に儲", "全力で買", "全力で売", "今すぐ買", "今すぐ売"];
+const safeText = (s, n) => {
+  const t = cut(s, n);
+  return BANNED.some((w) => t.includes(w)) ? "" : t;
+};
+
 function fallbackBriefing(feeds) {
   // 経済・国際から交互に先頭記事を取り、機械的に4件組み立てる(創作はしない)
   const picked = [];
@@ -64,6 +70,7 @@ function fallbackBriefing(feeds) {
     date,
     generatedAt,
     lead: cut("自動要約が利用できないため主要見出しのみ表示中", 40),
+    events: [],
     items: picked.map((p) => ({
       cat: p.cat,
       title: cut(p.title, 25),
@@ -71,6 +78,10 @@ function fallbackBriefing(feeds) {
       impact: "mixed",
       link: p.link,
       terms: [],
+      soWhat: "",
+      assets: { up: [], down: [] },
+      horizon: "short",
+      watch: "",
     })),
   };
 }
@@ -80,6 +91,7 @@ function validate(b, allowedLinks) {
   if (!Array.isArray(b.items) || b.items.length !== 4) return false;
   for (const it of b.items) {
     if (!it || typeof it.title !== "string" || typeof it.body !== "string") return false;
+    if (typeof it.soWhat !== "string" || !it.soWhat.trim()) return false;
     if (!["up", "down", "mixed"].includes(it.impact)) return false;
     if (!allowedLinks.has(it.link)) return false;
     if (!Array.isArray(it.terms)) return false;
@@ -92,10 +104,13 @@ function validate(b, allowedLinks) {
 
 function tighten(b) {
   const { date, generatedAt } = nowJst();
+  const strList = (a, n, len) =>
+    (Array.isArray(a) ? a : []).filter((x) => typeof x === "string" && x.trim()).slice(0, n).map((x) => cut(x, len));
   return {
     date,
     generatedAt,
     lead: cut(b.lead, 40),
+    events: strList(b.events, 3, 40),
     items: b.items.map((it) => ({
       cat: cut(it.cat || "経済", 10),
       title: cut(it.title, 25),
@@ -106,6 +121,13 @@ function tighten(b) {
         word: cut(t.word, 20),
         def: cut(t.def, 40),
       })),
+      soWhat: safeText(it.soWhat, 110),
+      assets: {
+        up: strList(it.assets?.up, 3, 15),
+        down: strList(it.assets?.down, 3, 15),
+      },
+      horizon: ["short", "mid", "long"].includes(it.horizon) ? it.horizon : "short",
+      watch: safeText(it.watch, 45),
     })),
   };
 }
@@ -119,14 +141,23 @@ async function aiBriefing(feeds) {
 以下のNHKニュース一覧から、投資家(株式・為替・金利に関心)に最も重要な4件を選び、指定のJSONだけを出力してください。
 
 ルール:
+- 「事実」と「解釈」を区別する。body=記事から読み取れる事実の要約、soWhat=あなたの解釈(投資家への示唆)
 - 記事の文章をそのまま写さず、必ず自分の言葉で要約する
-- 断定的な売買推奨(買うべき/売るべき等)は書かない
+- soWhatは「このニュースが読者のポートフォリオに何を意味しうるか」を1〜2文で。断定的な売買推奨(買うべき/売るべき等)は書かず、「〜に注意」「〜が判断材料」など判断材料の提示にとどめる
 - linkは一覧に記載されたURLをそのまま使う(変更・創作禁止)
 - lead: 今日の市場を一言で40字以内
-- 各item: cat=分類(経済/国際など短く), title=見出し25字以内, body=2文で90字以内, impact=up|down|mixed(市場への影響方向), terms=初心者が知らなそうな重要用語1〜2個(defは40字以内の平易な説明)
+- events: 今日〜今週の注目経済イベントを最大3件(例: 日銀金融政策決定会合、米CPI発表)。ニュースから読み取れるもの・一般に知られる定例イベントのみ。日付が不確かなら「今週」等と表現し、創作しない。該当なしなら空配列
+- 各item:
+  - cat=分類(経済/国際など短く), title=見出し25字以内, body=事実の要約2文90字以内
+  - impact=up|down|mixed(市場全体への影響方向)
+  - soWhat=投資家への示唆1〜2文100字以内
+  - assets={"up":[恩恵を受けやすい資産・セクター2〜3個],"down":[打撃を受けやすいもの2〜3個]}(各要素は「日本株」「輸出企業」「金」など15字以内)
+  - horizon=short|mid|long(影響が効く時間軸: short=〜1年, mid=1〜5年, long=5年超)
+  - watch=次に確認すべき指標・日付・イベントを1つ40字以内(例: 「来週の米CPI」「日銀総裁会見」)
+  - terms=初心者が知らなそうな重要用語1〜2個(defは40字以内の平易な説明)
 
 出力形式(このJSONオブジェクトのみ):
-{"lead":"...","items":[{"cat":"...","title":"...","body":"...","impact":"mixed","link":"...","terms":[{"word":"...","def":"..."}]}]}
+{"lead":"...","events":["..."],"items":[{"cat":"...","title":"...","body":"...","impact":"mixed","soWhat":"...","assets":{"up":["..."],"down":["..."]},"horizon":"short","watch":"...","link":"...","terms":[{"word":"...","def":"..."}]}]}
 
 ニュース一覧:
 ${list}`;

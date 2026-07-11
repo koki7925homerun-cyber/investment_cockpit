@@ -138,6 +138,20 @@
   .badge{display:inline-flex; align-items:center; gap:4px; font-size:11px; padding:4px 10px;
     border-radius:99px; background:var(--brass-soft); color:var(--brass); border:1px solid rgba(217,169,78,.25);}
 
+  /* AIブリーフィング: So What・折りたたみ・資産チップ */
+  .sowhat{margin:2px 0 10px; padding:8px 10px 8px 12px; border-left:3px solid var(--brass);
+    background:var(--brass-soft); border-radius:0 10px 10px 0;}
+  .sowhat .sw-label{font-size:10px; font-weight:700; color:var(--brass); letter-spacing:.08em; margin-bottom:3px;}
+  .fold{margin:0 0 8px;}
+  .fold summary{cursor:pointer; font-size:11px; color:var(--dim); list-style:none; -webkit-tap-highlight-color:transparent;
+    display:flex; align-items:center; gap:5px; padding:2px 0;}
+  .fold summary::-webkit-details-marker{display:none;}
+  .fold summary::before{content:"▸"; font-size:10px; transition:transform .15s;}
+  .fold[open] summary::before{transform:rotate(90deg);}
+  .achip{display:inline-block; font-size:10px; padding:3px 9px; border-radius:99px; margin:3px 4px 0 0; border:1px solid;}
+  .achip.au{color:var(--up); border-color:rgba(95,191,143,.4); background:rgba(95,191,143,.08);}
+  .achip.ad{color:var(--down); border-color:rgba(224,112,94,.4); background:rgba(224,112,94,.08);}
+
   @media (prefers-reduced-motion: reduce){*{animation:none !important; transition:none !important;}}
 </style>
 </head>
@@ -494,6 +508,7 @@ function renderHome(){
     let briefBlock;
     if(S.aiBrief){
       const b = S.aiBrief;
+      const HZ={short:"短期",mid:"中期",long:"長期"};
       briefBlock = `
       <div class="card card-hi">
         <div class="row" style="align-items:center;margin-bottom:6px">
@@ -501,16 +516,38 @@ function renderHome(){
           <span class="tag">${esc(b.date||"")}</span>
         </div>
         <div style="font-size:15px;font-weight:600;color:var(--bright);line-height:1.6">${esc(b.lead)}</div>
+        ${(b.events||[]).length?`
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--line)">
+          <div style="font-size:10px;font-weight:700;color:var(--brass);letter-spacing:.08em;margin-bottom:4px">📅 今日の注目イベント</div>
+          ${b.events.map(e=>`<div style="font-size:11px;color:var(--steel);line-height:1.8">・${esc(e)}</div>`).join("")}
+        </div>`:""}
       </div>` +
-      (b.items||[]).map(n=>`
+      (b.items||[]).map(n=>{
+        const up=(n.assets&&Array.isArray(n.assets.up))?n.assets.up.filter(Boolean):[];
+        const dn=(n.assets&&Array.isArray(n.assets.down))?n.assets.down.filter(Boolean):[];
+        const hasDetail=up.length||dn.length||n.watch;
+        return `
       <article class="card" style="border-left:3px solid var(--brass)">
-        <div class="row" style="align-items:center"><span class="tag">✦ ${esc(n.cat)}</span>${impactHTML(n.impact)}</div>
+        <div class="row" style="align-items:center"><span class="tag">✦ ${esc(n.cat)}</span>
+          <span style="display:inline-flex;gap:8px;align-items:center">${HZ[n.horizon]?`<span class="tag">${HZ[n.horizon]}</span>`:""}${impactHTML(n.impact)}</span>
+        </div>
         <div class="news-title">${esc(n.title)}</div>
         <p class="news-body">${esc(n.body)}</p>
+        ${n.soWhat?`<div class="sowhat">
+          <div class="sw-label">SO WHAT? — 投資家への示唆</div>
+          <p class="news-body" style="margin:0;color:var(--bright)">${esc(n.soWhat)}</p>
+        </div>`:""}
+        ${hasDetail?`<details class="fold"><summary>影響資産と注目ポイント</summary>
+          ${up.length||dn.length?`<div style="margin-top:2px">
+            ${up.map(a=>`<span class="achip au">↑ ${esc(a)}</span>`).join("")}
+            ${dn.map(a=>`<span class="achip ad">↓ ${esc(a)}</span>`).join("")}
+          </div>`:""}
+          ${n.watch?`<div style="font-size:11px;color:var(--steel);margin-top:7px">👁 次を見る: ${esc(n.watch)}</div>`:""}
+        </details>`:""}
         ${(n.terms||[]).length?`<div style="margin-bottom:8px">${(n.terms||[]).map(t=>
           `<button class="chip" onclick='openTermDef(${esc(JSON.stringify(t.word))},${esc(JSON.stringify(t.def||""))})'>${esc(t.word)} ?</button>`).join("")}</div>`:""}
         ${n.link?`<div class="news-meta"><span></span><a href="${esc(n.link)}" target="_blank" rel="noopener">元記事を読む →</a></div>`:""}
-      </article>`).join("") +
+      </article>`;}).join("") +
       `<div style="height:8px"></div><div class="kicker" style="margin-bottom:8px">LATEST HEADLINES — 速報フィード</div>`;
     } else {
       briefBlock = `
