@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-07-11T14:00:33.680Z",
+  "generatedAt": "2026-07-11T18:06:43.924Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174681000",
+      "soWhat": "中朝関係の強化は地域の地政学リスクを高めるため、投資家は注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "アジア株式",
+          "資源関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015174571000",
       "soWhat": "ホルムズ海峡の情勢はエネルギー価格に影響を与える可能性があるため注意が必要。",
