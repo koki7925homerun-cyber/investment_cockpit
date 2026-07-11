@@ -1,6 +1,108 @@
 {
-  "generatedAt": "2026-07-11T18:06:43.924Z",
+  "generatedAt": "2026-07-11T21:38:24.968Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015140931000",
+      "soWhat": "ロシアの軍事侵攻が続く中、エネルギー価格の変動に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "旅行関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015140921000",
+      "soWhat": "軍事侵攻の継続は市場の不安定要因となり、リスク回避の動きが強まる可能性がある。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "旅行関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174751000",
+      "soWhat": "ウクライナの攻撃による死者増加は、国際的な支援やエネルギー市場に影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": [
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174741000",
+      "soWhat": "イランの海峡開放に関する報道は、エネルギー供給に影響を与える可能性があり注視が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174731000",
+      "soWhat": "大統領専用機の報道は、政治的不安定要因として市場に影響を及ぼす可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "防衛関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174671000",
+      "soWhat": "ロシアのガソリン不足は、エネルギー市場の供給不安を引き起こし、価格上昇の要因となる可能性がある。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174401000",
+      "soWhat": "アマゾンの植物減少は、環境関連ビジネスや持続可能性に関する投資判断に影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "環境関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174721000",
+      "soWhat": "ベネズエラの地震による死者増加は、復興関連投資や国際支援の動向に影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "復興関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015174681000",
       "soWhat": "中朝関係の強化は地域の地政学リスクを高めるため、投資家は注意が必要。",
