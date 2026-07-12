@@ -1,6 +1,33 @@
 {
-  "generatedAt": "2026-07-11T21:38:24.968Z",
+  "generatedAt": "2026-07-12T01:25:55.231Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174811000",
+      "soWhat": "地政学リスクの高まりに注意が必要。原油価格への影響が懸念される。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "輸送業",
+          "観光業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015174741000",
+      "soWhat": "イランの海峡開放に関する報道は、エネルギー供給に影響を与える可能性があり注視が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015140931000",
       "soWhat": "ロシアの軍事侵攻が続く中、エネルギー価格の変動に注意が必要。",
@@ -41,18 +68,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015174741000",
-      "soWhat": "イランの海峡開放に関する報道は、エネルギー供給に影響を与える可能性があり注視が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
       "impact": "mixed"
     },
     {
