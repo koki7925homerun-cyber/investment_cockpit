@@ -187,7 +187,7 @@ const S = {
   aiBrief:null,
   news:null, newsLoading:false, newsError:null, newsAt:null,
   prices:null, pricesLoading:false, pricesError:null, pricesAt:null,
-  quiz:null, quizAnswered:null, quizLevel:1,
+  quizMode:"daily", quizAnswered:null, reviewQ:null,
 };
 const todayLabel = () => { const d=new Date(); return `${d.getMonth()+1}月${d.getDate()}日(${"日月火水木金土"[d.getDay()]})`; };
 
@@ -301,48 +301,61 @@ const GLOSSARY = [
 ];
 const CATS = ["すべて", ...new Set(GLOSSARY.map(g=>g.cat))];
 
-// ============ クイズ(問題バンク: data/quiz.json、進捗: localStorage) ============
-let QUIZ=null, quizError=false;
-const QUIZ_LEVELS=[[1,"初級"],[2,"中級"],[3,"上級"]];
-const QS=(()=>{ try{ return JSON.parse(localStorage.getItem("quizStats_v2"))||{}; }catch(e){ return {}; } })();
-QS.total=QS.total||0; QS.correct=QS.correct||0; QS.streak=QS.streak||0; QS.best=QS.best||0;
-QS.wrong=QS.wrong||[]; QS.done=QS.done||{};
-function saveQS(){ try{ localStorage.setItem("quizStats_v2", JSON.stringify(QS)); }catch(e){} }
+// ============ 日替わりクイズ(今日の10問: data/quiz.json、進捗: localStorage) ============
+let DAILYQ=null, dailyqError=false;
+const DQ=(()=>{ try{ return JSON.parse(localStorage.getItem("dailyQuiz_v1"))||{}; }catch(e){ return {}; } })();
+if(!DQ.stats){
+  DQ.stats={total:0, correct:0};
+  try{ // 旧クイズ道場(quizStats_v2)の通算成績を引き継ぐ
+    const o=JSON.parse(localStorage.getItem("quizStats_v2"));
+    if(o){ DQ.stats.total=o.total||0; DQ.stats.correct=o.correct||0; }
+  }catch(e){}
+}
+DQ.wrong=DQ.wrong||[];  // 間違えた問題を「問題データごと」保存(翌日quiz.jsonが変わっても復習可能)
+DQ.days=DQ.days||{};    // 日別進捗 {"YYYY-MM-DD":{i,correct,finished}}
+function saveDQ(){ try{ localStorage.setItem("dailyQuiz_v1", JSON.stringify(DQ)); }catch(e){} }
 async function loadQuiz(){
   try{
     const r = await fetch("data/quiz.json?t=" + Date.now(), { cache: "no-store" });
     if(!r.ok) throw new Error("HTTP " + r.status);
-    const qs = (await r.json()).questions;
-    if(!Array.isArray(qs) || !qs.length) throw new Error("bad format");
-    QUIZ = qs;
-    QS.wrong = QS.wrong.filter(id=>qs.some(q=>q.id===id)); // 削除された問題を掃除
-  }catch(e){ quizError=true; }
+    const q = await r.json();
+    if(!q.date || !Array.isArray(q.questions) || !q.questions.length) throw new Error("bad format");
+    DAILYQ = q;
+    if(!DQ.days[q.date]) DQ.days[q.date]={i:0, correct:0, finished:false};
+    // 日別進捗は直近7日分だけ保持
+    const keys=Object.keys(DQ.days).sort();
+    while(keys.length>7) delete DQ.days[keys.shift()];
+    saveDQ();
+  }catch(e){ dailyqError=true; }
   render();
 }
-function quizRank(){
-  const t=QS.total, a=t?QS.correct/t:0;
-  if(t>=90&&a>=.85) return "殿堂入り投資家";
-  if(t>=70&&a>=.8)  return "ファンドマネージャー";
-  if(t>=45&&a>=.7)  return "シニアアナリスト";
-  if(t>=25&&a>=.6)  return "アナリスト";
-  if(t>=10) return "駆け出しトレーダー";
-  return "見習い";
+function quizComment(c, n){
+  const r=c/n;
+  if(r>=0.9) return "素晴らしい判断力。相場の定石がしっかり身についています。";
+  if(r>=0.7) return "好成績。間違えた問題だけ復習すれば盤石です。";
+  if(r>=0.4) return "合格圏。解説を読み込むと応用が効くようになります。";
+  return "難問揃いの日。復習モードでじっくり解き直しましょう。";
 }
-// 出題: 復習モードは間違えた問題から、通常は「間違えた>未回答>正解済み」の重みで抽選
-function makeQuiz(){
-  if(!QUIZ) return null;
-  const pool = S.quizLevel==="review"
-    ? QUIZ.filter(q=>QS.wrong.includes(q.id))
-    : QUIZ.filter(q=>q.level===S.quizLevel);
-  if(!pool.length) return null;
-  const cand = pool.filter(q=>!S.quiz||q.id!==S.quiz.id);
-  const list = cand.length?cand:pool;
-  const weight = q => QS.wrong.includes(q.id)?4 : !QS.done[q.id]?3 : 1;
-  let r = Math.random()*list.reduce((a,q)=>a+weight(q),0), chosen=list[0];
-  for(const q of list){ r-=weight(q); if(r<=0){ chosen=q; break; } }
-  // opts[0]が正解の形式で保存されているため、表示用にシャッフル
-  const opts = chosen.opts.map((t,i)=>({t, correct:i===0})).sort(()=>Math.random()-.5);
-  return {id:chosen.id, level:chosen.level, q:chosen.q, exp:chosen.exp, opts};
+// 問題カード共通描画(回答後は正誤に関わらず解説whyを表示)
+function questionHTML(q, answeredIdx, handler, nextHandler, nextLabel){
+  const answered=answeredIdx!==null;
+  const ok=answered&&answeredIdx===q.answer;
+  return `
+    <p class="news-body" style="color:var(--bright)">${esc(q.q)}</p>
+    ${q.opts.map((o,i)=>{
+      let cls="quiz-opt";
+      if(answered){
+        if(i===q.answer) cls+=" correct";
+        else if(i===answeredIdx) cls+=" wrong";
+      }
+      return `<button class="${cls}" onclick="${handler}(${i})" ${answered?"disabled":""}>${esc(o)}</button>`;
+    }).join("")}
+    ${answered?`
+      <div style="margin-top:10px;padding:10px 12px;border-left:3px solid ${ok?"var(--up)":"var(--down)"};background:${ok?"rgba(95,191,143,.07)":"rgba(224,112,94,.07)"};border-radius:0 8px 8px 0">
+        <div style="font-size:12px;font-weight:700;color:${ok?"var(--up)":"var(--down)"};margin-bottom:4px">${ok?"⭕ 正解!":"❌ 不正解(復習リストに追加)"}</div>
+        <p class="news-body" style="margin:0">💡 ${esc(q.why)}</p>
+      </div>
+      <button class="btn-primary" style="margin-top:10px" onclick="${nextHandler}()">${nextLabel}</button>`:""}`;
 }
 
 // ============ 戦略コンテンツ(data/strategy.json から読み込み。週次Actionsが更新) ============
@@ -744,56 +757,55 @@ function renderLearn(){
   const list=GLOSSARY.filter(g=>
     (S.glossaryCat==="すべて"||g.cat===S.glossaryCat) &&
     (S.glossaryQ===""||g.w.includes(S.glossaryQ)||g.def.includes(S.glossaryQ)));
-  // クイズ道場
-  let quizHTML;
-  if(!QUIZ){
-    quizHTML=`<div class="card card-hi" style="margin-bottom:16px"><p class="news-body" style="margin:0">${quizError
-      ?"クイズデータ(data/quiz.json)を読み込めませんでした。GitHub Pages上でご利用ください。"
-      :"クイズを読み込み中…"}</p></div>`;
-  } else {
-    if(!S.quiz) S.quiz=makeQuiz();
-    const q=S.quiz;
-    const acc=QS.total?Math.round(QS.correct/QS.total*100):0;
-    const lvName={1:"初級",2:"中級",3:"上級",review:"復習"}[S.quizLevel];
-    const cleared=S.quizLevel==="review"?null:QUIZ.filter(x=>x.level===S.quizLevel&&QS.done[x.id]===1).length;
-    const lvTotal=S.quizLevel==="review"?QS.wrong.length:QUIZ.filter(x=>x.level===S.quizLevel).length;
-    const header=`
+  // 今日の10問(日替わりクイズ)
+  const header=`
+    <div class="row" style="align-items:center;margin-bottom:4px">
+      <div style="font-size:12px;font-weight:600;color:var(--brass)">今日の10問</div>
+      ${DAILYQ?`<span class="tag">${esc(DAILYQ.date)}</span>`:""}
+    </div>
+    <div class="sub" style="margin-bottom:10px">通算正解 ${DQ.stats.correct}/${DQ.stats.total}問 ・ 復習残り ${DQ.wrong.length}問</div>`;
+  let bodyHTML;
+  if(S.quizMode==="review"){
+    // 復習モード: 間違えた問題(保存済みデータ)を解き直し。正解したらリストから外れる
+    const q=S.reviewQ;
+    bodyHTML = `
       <div class="row" style="align-items:center;margin-bottom:6px">
-        <div style="font-size:12px;font-weight:600;color:var(--brass)">クイズ道場</div>
-        <span class="badge">🎖 ${quizRank()}</span>
-      </div>
-      <div class="sub" style="margin-bottom:4px">🔥 連続正解 ${QS.streak}(最高 ${QS.best}) ・ 正答率 ${acc}%(${QS.correct}/${QS.total}問)</div>
-      <div class="cat-scroll" style="margin:8px 0 10px">${
-        QUIZ_LEVELS.map(([k,l])=>`<button class="cat-btn ${S.quizLevel===k?"active":""}" onclick="setQuizLevel(${k})">${l}</button>`).join("")
-      }<button class="cat-btn ${S.quizLevel==="review"?"active":""}" onclick="setQuizLevel('review')">復習 ${QS.wrong.length}</button></div>`;
-    let bodyHTML;
-    if(!q){
-      bodyHTML=`<p class="news-body" style="margin:0">${S.quizLevel==="review"
-        ?"復習する問題はありません。間違えた問題が自動的にここに溜まります。💮"
-        :"この難易度の問題がありません。"}</p>`;
+        <span class="badge">🔁 復習モード(残り ${DQ.wrong.length}問)</span>
+        <button class="pill" onclick="exitReview()">戻る</button>
+      </div>` +
+      (q ? questionHTML(q, S.quizAnswered, "answerReview", "nextReview", DQ.wrong.length?"次の復習問題へ":"復習を終える")
+         : `<p class="news-body" style="margin:0">復習する問題はありません。全部クリアしました!💮</p>`);
+  } else if(DAILYQ===null && !dailyqError){
+    bodyHTML = `<p class="news-body" style="margin:0">今日の問題を読み込み中…</p>`;
+  } else if(dailyqError || !DAILYQ){
+    // quiz.jsonが取得できない日は復習モードのみ
+    bodyHTML = `
+      <p class="news-body">今日の問題を取得できませんでした(ローカル閲覧または生成前)。復習モードをご利用ください。</p>
+      ${DQ.wrong.length?`<button class="btn-primary" onclick="startReview()">🔁 間違えた問題を復習する(${DQ.wrong.length}問)</button>`
+        :`<p class="sub" style="margin:0">復習リストは空です。</p>`}`;
+  } else {
+    const day=DQ.days[DAILYQ.date];
+    const total=DAILYQ.questions.length;
+    if(day.finished){
+      bodyHTML = `
+        <div style="text-align:center;padding:10px 0 4px">
+          <div style="font-size:34px;font-weight:700;color:var(--brass)">${day.correct} <span style="font-size:15px;color:var(--dim)">/ ${total}問 正解</span></div>
+          <p class="news-body" style="margin:10px 0 14px">${quizComment(day.correct, total)}</p>
+          ${DQ.wrong.length?`<button class="btn-primary" onclick="startReview()">🔁 間違えた問題を復習する(${DQ.wrong.length}問)</button>`
+            :`<p class="sub" style="margin:0">復習リストも空です。また明日の10問で!</p>`}
+        </div>`;
     } else {
-      const answered=S.quizAnswered!==null;
-      const ok=answered&&q.opts[S.quizAnswered].correct;
-      bodyHTML=`
-        <div class="sub" style="margin-bottom:4px">${lvName}${cleared!==null?` ・ 正解済み ${cleared}/${lvTotal}問`:` ・ 残り ${lvTotal}問`}</div>
-        <p class="news-body" style="color:var(--bright)">${esc(q.q)}</p>
-        ${q.opts.map((o,i)=>{
-          let cls="quiz-opt";
-          if(answered){
-            if(o.correct) cls+=" correct";
-            else if(S.quizAnswered===i) cls+=" wrong";
-          }
-          return `<button class="${cls}" onclick="answerQuiz(${i})" ${answered?"disabled":""}>${esc(o.t)}</button>`;
-        }).join("")}
-        ${answered?`
-          <div style="margin-top:10px;padding:10px 12px;border-left:3px solid ${ok?"var(--up)":"var(--down)"};background:${ok?"rgba(95,191,143,.07)":"rgba(224,112,94,.07)"};border-radius:0 8px 8px 0">
-            <div style="font-size:12px;font-weight:700;color:${ok?"var(--up)":"var(--down)"};margin-bottom:4px">${ok?`⭕ 正解!${QS.streak>=3?` 🔥${QS.streak}連続!`:""}`:"❌ 不正解(復習リストに追加)"}</div>
-            <p class="news-body" style="margin:0">💡 ${esc(q.exp)}</p>
-          </div>
-          <button class="btn-primary" style="margin-top:10px" onclick="nextQuiz()">次の問題へ</button>`:""}`;
+      const q=DAILYQ.questions[day.i];
+      bodyHTML = `
+        <div class="row" style="align-items:center;margin-bottom:6px">
+          <span class="sub" style="margin:0">問題 ${day.i+1}/${total}</span>
+          <span class="sub" style="margin:0">ここまで ${day.correct}問正解</span>
+        </div>
+        <div style="height:4px;background:var(--line);border-radius:99px;margin-bottom:12px"><div style="height:4px;width:${Math.round(day.i/total*100)}%;background:var(--brass);border-radius:99px"></div></div>
+        ${questionHTML(q, S.quizAnswered, "answerQuiz", "nextQuiz", day.i+1>=total?"結果を見る":"次の問題へ")}`;
     }
-    quizHTML=`<div class="card card-hi" style="margin-bottom:16px">${header}${bodyHTML}</div>`;
   }
+  const quizHTML=`<div class="card card-hi" style="margin-bottom:16px">${header}${bodyHTML}</div>`;
   return `
     <div class="kicker">LEARN</div>
     <h2 class="screen-title" style="margin-bottom:14px">投資用語辞典 <span style="font-size:12px;color:var(--dim);font-weight:400">全${GLOSSARY.length}語</span></h2>
@@ -848,24 +860,46 @@ window.teacherToClaude=()=>{
   if(!q) return;
   openClaude(PROMPTS.teacher(q));
 };
+// 今日の10問: 回答→解説表示→次へ
 window.answerQuiz=(i)=>{
-  if(S.quizAnswered!==null||!S.quiz) return;
+  if(S.quizAnswered!==null||!DAILYQ) return;
+  const day=DQ.days[DAILYQ.date];
+  if(!day||day.finished) return;
   S.quizAnswered=i;
-  const q=S.quiz, ok=q.opts[i].correct;
-  QS.total++;
+  const q=DAILYQ.questions[day.i], ok=i===q.answer;
+  DQ.stats.total++;
   if(ok){
-    QS.correct++; QS.streak++; QS.best=Math.max(QS.best,QS.streak);
-    QS.wrong=QS.wrong.filter(id=>id!==q.id); QS.done[q.id]=1;
-  }else{
-    QS.streak=0;
-    if(!QS.wrong.includes(q.id)) QS.wrong.push(q.id);
-    QS.done[q.id]=-1;
+    DQ.stats.correct++; day.correct++;
+    DQ.wrong=DQ.wrong.filter(w=>w.id!==q.id);
+  }else if(!DQ.wrong.some(w=>w.id===q.id)){
+    DQ.wrong.push({id:q.id, q:q.q, opts:q.opts, answer:q.answer, why:q.why});
   }
-  saveQS();
+  saveDQ(); render();
+};
+window.nextQuiz=()=>{
+  if(!DAILYQ) return;
+  const day=DQ.days[DAILYQ.date];
+  day.i++;
+  if(day.i>=DAILYQ.questions.length) day.finished=true;
+  S.quizAnswered=null; saveDQ(); render();
+};
+// 復習モード: 正解したらリストから外れる
+window.startReview=()=>{ S.quizMode="review"; S.quizAnswered=null; S.reviewQ=DQ.wrong[0]||null; render(); };
+window.exitReview=()=>{ S.quizMode="daily"; S.quizAnswered=null; S.reviewQ=null; render(); };
+window.answerReview=(i)=>{
+  if(S.quizAnswered!==null||!S.reviewQ) return;
+  S.quizAnswered=i;
+  const q=S.reviewQ, ok=i===q.answer;
+  DQ.stats.total++;
+  if(ok){ DQ.stats.correct++; DQ.wrong=DQ.wrong.filter(w=>w.id!==q.id); }
+  saveDQ(); render();
+};
+window.nextReview=()=>{
+  S.quizAnswered=null;
+  S.reviewQ=DQ.wrong.find(w=>w.id!==(S.reviewQ&&S.reviewQ.id))||DQ.wrong[0]||null;
+  if(!S.reviewQ) S.quizMode="daily";
   render();
 };
-window.nextQuiz=()=>{ S.quiz=makeQuiz(); S.quizAnswered=null; render(); };
-window.setQuizLevel=(l)=>{ S.quizLevel=l; S.quiz=null; S.quizAnswered=null; render(); };
 
 window.openTermDef=(word, def)=>{
   const local = GLOSSARY.find(x=>x.w===word);
