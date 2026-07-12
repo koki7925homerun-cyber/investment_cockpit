@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T07:55:53.048Z",
+  "generatedAt": "2026-07-12T10:17:23.090Z",
   "items": [
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015174811000",
@@ -15,6 +15,32 @@
       },
       "horizon": "short",
       "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175051000",
+      "soWhat": "ウクライナの攻撃強化がエネルギー市場に影響を与える可能性に注意。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "ロシア関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175031000",
+      "soWhat": "ベネズエラの地震による建物崩壊が保険業界に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "保険関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015175001000",
