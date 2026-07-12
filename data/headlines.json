@@ -1,6 +1,68 @@
 {
-  "generatedAt": "2026-07-12T18:45:45.754Z",
+  "generatedAt": "2026-07-12T21:38:40.502Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175211000",
+      "soWhat": "南シナ海の緊張が高まる中、地域の安定性に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "関連企業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175271000",
+      "soWhat": "ロシアの石油供給が減少する可能性があり、エネルギー市場に影響を与える。",
+      "assets": {
+        "up": [
+          "エネルギー関連"
+        ],
+        "down": [
+          "ロシア関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175251000",
+      "soWhat": "フランスの観光業に影響が出ており、関連株に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "観光関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175261000",
+      "soWhat": "ベネズエラの地震被害が深刻で、国際支援の動向が注目される。",
+      "assets": {
+        "up": [],
+        "down": [
+          "インフラ関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175291000",
+      "soWhat": "タイの火災事故が飲食業界に影響を及ぼす可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "飲食関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015174811000",
       "soWhat": "地政学リスクの高まりに注意が必要。原油価格への影響が懸念される。",
