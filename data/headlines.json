@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T05:46:18.383Z",
+  "generatedAt": "2026-07-12T07:55:53.048Z",
   "items": [
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015174811000",
@@ -11,6 +11,34 @@
         "down": [
           "輸送業",
           "観光業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175001000",
+      "soWhat": "代替ルートでの原油調達進展は、エネルギー供給の安定性向上に注意。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "原油価格"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175001000",
+      "soWhat": "代替ルートでの原油調達進展は、エネルギー供給の安定性向上に注意。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "原油価格"
         ]
       },
       "horizon": "short",
