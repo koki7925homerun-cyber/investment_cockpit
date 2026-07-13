@@ -1,6 +1,21 @@
 {
-  "generatedAt": "2026-07-13T19:08:36.875Z",
+  "generatedAt": "2026-07-13T21:43:00.857Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176181000",
+      "soWhat": "ベネズエラの大地震は、国際的な人道支援の必要性を示唆し、関連企業に影響が出る可能性がある。",
+      "assets": {
+        "up": [
+          "人道支援関連"
+        ],
+        "down": [
+          "保険業界",
+          "建設業界"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015176161000",
       "soWhat": "ホルムズ海峡の封鎖再開はエネルギー価格に影響する可能性があるため注意が必要。",
@@ -14,6 +29,21 @@
       },
       "horizon": "short",
       "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175471000",
+      "soWhat": "円安が経済に与える悪影響が多くの人に認識され、輸入関連企業の業績に影響を及ぼす可能性がある。",
+      "assets": {
+        "up": [
+          "輸出関連",
+          "観光業"
+        ],
+        "down": [
+          "輸入関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015175941000",
@@ -361,32 +391,6 @@
         ]
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175031000",
-      "soWhat": "ベネズエラの地震による建物崩壊が保険業界に影響を与える可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "保険関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175001000",
-      "soWhat": "代替ルートでの原油調達進展は、エネルギー供給の安定性向上に注意。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "原油価格"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     }
   ]
