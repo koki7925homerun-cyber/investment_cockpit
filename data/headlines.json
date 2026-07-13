@@ -1,19 +1,79 @@
 {
-  "generatedAt": "2026-07-13T01:27:09.407Z",
+  "generatedAt": "2026-07-13T05:57:00.911Z",
   "items": [
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175431000",
-      "soWhat": "円安進行は輸出関連企業にプラスだが、輸入コスト上昇に注意。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175681000",
+      "soWhat": "南シナ海問題は地政学リスクを高め、関連企業に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "関連企業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175291000",
+      "soWhat": "タイの火災事故が飲食業界に影響を及ぼす可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "飲食関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175501000",
+      "soWhat": "原油価格の上昇はエネルギー関連株に影響、警戒感が広がる。",
       "assets": {
         "up": [
-          "輸出関連株",
-          "原油関連株"
+          "エネルギー関連株"
         ],
         "down": [
           "輸入関連株"
         ]
       },
       "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175481000",
+      "soWhat": "コンビニ衣料品の過熱は小売業の競争激化を示唆、注視が必要。",
+      "assets": {
+        "up": [
+          "小売業"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175281000",
+      "soWhat": "日本がロシアの調達拠点とされることで、国際的な制裁の影響を受けるリスクが増大。",
+      "assets": {
+        "up": [],
+        "down": [
+          "日本企業",
+          "ハイテク株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175211000",
+      "soWhat": "南シナ海の緊張が高まる中、地域の安定性に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "関連企業"
+        ]
+      },
+      "horizon": "mid",
       "impact": "mixed"
     },
     {
@@ -31,6 +91,21 @@
       "impact": "up"
     },
     {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175431000",
+      "soWhat": "円安進行は輸出関連企業にプラスだが、輸入コスト上昇に注意。",
+      "assets": {
+        "up": [
+          "輸出関連株",
+          "原油関連株"
+        ],
+        "down": [
+          "輸入関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
       "link": "https://news.web.nhk/newsweb/na/na-k10015175331000",
       "soWhat": "ネタニヤフ首相の続投が決まれば、地域の緊張が高まり、投資環境に影響する可能性。",
       "assets": {
@@ -41,19 +116,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175281000",
-      "soWhat": "日本がロシアの調達拠点とされることで、国際的な制裁の影響を受けるリスクが増大。",
-      "assets": {
-        "up": [],
-        "down": [
-          "日本企業",
-          "ハイテク株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015175241000",
@@ -80,18 +142,6 @@
       "impact": "mixed"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175291000",
-      "soWhat": "タイの火災事故が飲食業界に影響を及ぼす可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "飲食関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
       "link": "https://news.web.nhk/newsweb/na/na-k10015175161000",
       "soWhat": "ホルムズ海峡の封鎖表明は原油価格の急騰を招く恐れがあり、関連株の動向に注意が必要。",
       "assets": {
@@ -102,18 +152,6 @@
       },
       "horizon": "short",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175211000",
-      "soWhat": "南シナ海の緊張が高まる中、地域の安定性に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "関連企業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015175271000",
@@ -348,42 +386,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015174521000",
-      "soWhat": "ドジャースのホワイトハウス訪問は、スポーツ関連株にポジティブな影響を与えるかもしれない。",
-      "assets": {
-        "up": [
-          "スポーツ関連"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015174501000",
-      "soWhat": "移民問題の影響が広がる中、関連企業やセクターに注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "移民関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015174451000",
-      "soWhat": "北朝鮮の内部統制強化は、地域の政治リスクを高める要因となるため注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "地域関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
     }
   ]
 }
