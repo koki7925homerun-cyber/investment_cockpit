@@ -1,6 +1,72 @@
 {
-  "generatedAt": "2026-07-13T05:57:00.911Z",
+  "generatedAt": "2026-07-13T08:56:02.908Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175301000",
+      "soWhat": "イランへの攻撃は中東情勢を不安定化させ、原油価格の上昇要因となる可能性。",
+      "assets": {
+        "up": [
+          "原油関連株"
+        ],
+        "down": [
+          "観光関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175791000",
+      "soWhat": "三菱UFJの株価上昇は金融セクターに注目を促す要因となる。",
+      "assets": {
+        "up": [
+          "金融セクター",
+          "大型株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175261000",
+      "soWhat": "ベネズエラの地震被害が深刻で、国際支援の動向が注目される。",
+      "assets": {
+        "up": [],
+        "down": [
+          "インフラ関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015175501000",
+      "soWhat": "原油価格の上昇はエネルギー関連株に影響、警戒感が広がる。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "輸入関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015140941000",
+      "soWhat": "ロシアの軍事侵攻は地政学リスクを高め、投資判断に影響を与える。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー関連",
+          "防衛関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015175681000",
       "soWhat": "南シナ海問題は地政学リスクを高め、関連企業に注意が必要。",
@@ -20,20 +86,6 @@
         "up": [],
         "down": [
           "飲食関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175501000",
-      "soWhat": "原油価格の上昇はエネルギー関連株に影響、警戒感が広がる。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "輸入関連株"
         ]
       },
       "horizon": "short",
@@ -75,20 +127,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175301000",
-      "soWhat": "イランへの攻撃は中東情勢を不安定化させ、原油価格の上昇要因となる可能性。",
-      "assets": {
-        "up": [
-          "原油関連株"
-        ],
-        "down": [
-          "観光関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015175431000",
@@ -178,18 +216,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175261000",
-      "soWhat": "ベネズエラの地震被害が深刻で、国際支援の動向が注目される。",
-      "assets": {
-        "up": [],
-        "down": [
-          "インフラ関連"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015174811000",
@@ -359,32 +385,6 @@
         ]
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015174571000",
-      "soWhat": "ホルムズ海峡の情勢はエネルギー価格に影響を与える可能性があるため注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015174371000",
-      "soWhat": "ベネズエラの大地震は国際的な人道支援の必要性を高め、関連企業に影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "医療関連"
-        ],
-        "down": [
-          "保険関連"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     }
   ]
