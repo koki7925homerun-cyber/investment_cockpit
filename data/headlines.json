@@ -1,6 +1,122 @@
 {
-  "generatedAt": "2026-07-13T21:43:00.857Z",
+  "generatedAt": "2026-07-14T01:16:16.543Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176111000",
+      "soWhat": "ロシアの反撃示唆はエネルギー市場に影響を与える可能性あり。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "輸入依存国"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176171000",
+      "soWhat": "フォルクスワーゲンの人員削減は自動車業界全体に波及する可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "自動車関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176241000",
+      "soWhat": "イランの攻撃は中東の地政学リスクを高め、エネルギー価格に影響するかもしれない。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "輸入依存国"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176251000",
+      "soWhat": "新たな防空システム開発は防衛関連株にプラスの影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": []
+      },
+      "horizon": "long",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176101000",
+      "soWhat": "SNS利用制限はテクノロジー企業に影響を及ぼす可能性があり、注視が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "テクノロジー関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176051000",
+      "soWhat": "国内市場縮小に伴う海外展開はビール業界の成長戦略として注目される。",
+      "assets": {
+        "up": [
+          "海外事業関連株"
+        ],
+        "down": [
+          "国内ビール株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176201000",
+      "soWhat": "ナスダックの下落はハイテク株全体に影響を与え、投資家は注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "ハイテク株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176201000",
+      "soWhat": "ナスダックの下落はハイテク株全体に影響を与え、投資家は注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "ハイテク株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176211000",
+      "soWhat": "アメリカの攻撃開始は中東の緊張を高め、エネルギー市場に影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "輸入依存国"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015176181000",
       "soWhat": "ベネズエラの大地震は、国際的な人道支援の必要性を示唆し、関連企業に影響が出る可能性がある。",
@@ -44,19 +160,6 @@
       },
       "horizon": "mid",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175941000",
-      "soWhat": "韓国市場の不安定さが影響し、日本株にも波及する可能性に注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "韓国株",
-          "アジア株式"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015175941000",
@@ -288,109 +391,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175331000",
-      "soWhat": "ネタニヤフ首相の続投が決まれば、地域の緊張が高まり、投資環境に影響する可能性。",
-      "assets": {
-        "up": [],
-        "down": [
-          "中東関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175241000",
-      "soWhat": "ミャンマー情勢の進展はASEANの安定性に影響し、関連企業の投資判断に影響を与える。",
-      "assets": {
-        "up": [],
-        "down": [
-          "ASEAN関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175341000",
-      "soWhat": "グラム議員の死去は対イラン政策に影響を及ぼし、米国の中東戦略に変化をもたらす可能性。",
-      "assets": {
-        "up": [],
-        "down": [
-          "中東関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175161000",
-      "soWhat": "ホルムズ海峡の封鎖表明は原油価格の急騰を招く恐れがあり、関連株の動向に注意が必要。",
-      "assets": {
-        "up": [
-          "原油関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175271000",
-      "soWhat": "ロシアの石油供給が減少する可能性があり、エネルギー市場に影響を与える。",
-      "assets": {
-        "up": [
-          "エネルギー関連"
-        ],
-        "down": [
-          "ロシア関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175251000",
-      "soWhat": "フランスの観光業に影響が出ており、関連株に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "観光関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015174811000",
-      "soWhat": "地政学リスクの高まりに注意が必要。原油価格への影響が懸念される。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "輸送業",
-          "観光業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015175051000",
-      "soWhat": "ウクライナの攻撃強化がエネルギー市場に影響を与える可能性に注意。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "ロシア関連株"
-        ]
-      },
-      "horizon": "mid",
       "impact": "mixed"
     }
   ]
