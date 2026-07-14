@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-07-14T13:02:17.849Z",
+  "generatedAt": "2026-07-14T16:07:37.453Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176841000",
+      "soWhat": "中国の政治的安定性に影響を及ぼす可能性があり、投資判断材料に注意。",
+      "assets": {
+        "up": [],
+        "down": [
+          "中国関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176831000",
+      "soWhat": "カンボジアの観光業に対する注目が高まり、関連株に影響を与える可能性あり。",
+      "assets": {
+        "up": [
+          "観光関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015176211000",
       "soWhat": "アメリカの攻撃開始は中東の緊張を高め、エネルギー市場に影響を与える可能性がある。",
@@ -14,6 +38,42 @@
       },
       "horizon": "mid",
       "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177041000",
+      "soWhat": "米国の物価上昇率の鈍化は、利上げのペースに影響し、投資戦略の見直しが必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "金利敏感株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177041000",
+      "soWhat": "米国の物価上昇率の鈍化は、利上げのペースに影響し、投資戦略の見直しが必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "金利敏感株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177021000",
+      "soWhat": "ノルウェーのサッカー成功は、スポーツ関連ビジネスの活性化に寄与する可能性がある。",
+      "assets": {
+        "up": [
+          "スポーツ関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015176861000",
@@ -317,70 +377,6 @@
         "up": [],
         "down": [
           "自動車関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176241000",
-      "soWhat": "イランの攻撃は中東の地政学リスクを高め、エネルギー価格に影響するかもしれない。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "輸入依存国"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176251000",
-      "soWhat": "新たな防空システム開発は防衛関連株にプラスの影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": []
-      },
-      "horizon": "long",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176101000",
-      "soWhat": "SNS利用制限はテクノロジー企業に影響を及ぼす可能性があり、注視が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "テクノロジー関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176051000",
-      "soWhat": "国内市場縮小に伴う海外展開はビール業界の成長戦略として注目される。",
-      "assets": {
-        "up": [
-          "海外事業関連株"
-        ],
-        "down": [
-          "国内ビール株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176201000",
-      "soWhat": "ナスダックの下落はハイテク株全体に影響を与え、投資家は注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "ハイテク株"
         ]
       },
       "horizon": "short",
