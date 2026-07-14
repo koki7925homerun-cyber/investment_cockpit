@@ -1,6 +1,85 @@
 {
-  "generatedAt": "2026-07-14T18:58:48.508Z",
+  "generatedAt": "2026-07-14T21:45:34.562Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176951000",
+      "soWhat": "国内EV市場の成長は関連企業に追い風となるが、競争激化に注意。",
+      "assets": {
+        "up": [
+          "EV関連株",
+          "自動車産業",
+          "再生可能エネルギー"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176971000",
+      "soWhat": "ナフサ供給の不安定化は化学業界に影響を及ぼす可能性があり注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "化学製品",
+          "ナフサ関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177191000",
+      "soWhat": "FRBのインフレ抑制姿勢は金利上昇を招く可能性があり、投資戦略の見直しが必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "債券市場",
+          "成長株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177001000",
+      "soWhat": "ホルムズ海峡の封鎖はエネルギー価格に影響を与える可能性があり、注視が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "輸送業界",
+          "原油価格"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177041000",
+      "soWhat": "米国の物価上昇率の鈍化は、利上げのペースに影響し、投資戦略の見直しが必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "金利敏感株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177041000",
+      "soWhat": "米国の物価上昇率の鈍化は、利上げのペースに影響し、投資戦略の見直しが必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "金利敏感株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015176841000",
       "soWhat": "中国の政治的安定性に影響を及ぼす可能性があり、投資判断材料に注意。",
@@ -37,30 +116,6 @@
         ]
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177041000",
-      "soWhat": "米国の物価上昇率の鈍化は、利上げのペースに影響し、投資戦略の見直しが必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "金利敏感株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177041000",
-      "soWhat": "米国の物価上昇率の鈍化は、利上げのペースに影響し、投資戦略の見直しが必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "金利敏感株"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     },
     {
@@ -329,58 +384,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176451000",
-      "soWhat": "中東の緊張が高まる中、関連企業のリスク管理が重要な判断材料となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "航空業",
-          "エネルギー関連"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176361000",
-      "soWhat": "中国製ロボットの導入は、日本の製造業の競争力に影響を与える可能性あり。",
-      "assets": {
-        "up": [
-          "製造業",
-          "ロボット関連"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176111000",
-      "soWhat": "ロシアの反撃示唆はエネルギー市場に影響を与える可能性あり。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "輸入依存国"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176171000",
-      "soWhat": "フォルクスワーゲンの人員削減は自動車業界全体に波及する可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "自動車関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     }
   ]
 }
