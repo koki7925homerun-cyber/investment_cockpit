@@ -1,6 +1,21 @@
 {
-  "generatedAt": "2026-07-15T10:40:54.301Z",
+  "generatedAt": "2026-07-15T13:05:41.378Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177811000",
+      "soWhat": "中東情勢の緊迫化がエネルギー市場に影響を与える可能性に注意。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "観光業",
+          "輸出企業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015177751000",
       "soWhat": "ニチレイのサイバー攻撃は、冷凍食品業界全体に影響を与える可能性があるため注意が必要。",
@@ -14,6 +29,45 @@
       },
       "horizon": "short",
       "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015140961000",
+      "soWhat": "ウクライナ情勢の悪化は、地政学リスクを高め、投資家に警戒を促す要因となる。",
+      "assets": {
+        "up": [],
+        "down": [
+          "防衛関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177761000",
+      "soWhat": "ロシアの石油供給減少が国際価格に影響を与える可能性があるため注視。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "輸入依存企業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177791000",
+      "soWhat": "バングラデシュの自然災害が農業やインフラに影響を及ぼす可能性に注意。",
+      "assets": {
+        "up": [],
+        "down": [
+          "農業関連株",
+          "インフラ関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015177231000",
@@ -61,19 +115,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177331000",
-      "soWhat": "中国のGDP成長率が低下しており、関連企業の業績に影響が出る可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "中国関連株",
-          "消費関連株"
-        ]
-      },
-      "horizon": "mid",
       "impact": "down"
     },
     {
@@ -163,18 +204,6 @@
       },
       "horizon": "short",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015140961000",
-      "soWhat": "ウクライナ情勢の悪化は、地政学リスクを高め、投資家に警戒を促す要因となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "防衛関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015177471000",
@@ -351,30 +380,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176841000",
-      "soWhat": "中国の政治的安定性に影響を及ぼす可能性があり、投資判断材料に注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "中国関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176831000",
-      "soWhat": "カンボジアの観光業に対する注目が高まり、関連株に影響を与える可能性あり。",
-      "assets": {
-        "up": [
-          "観光関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
     }
   ]
 }
