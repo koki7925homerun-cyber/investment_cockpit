@@ -1,6 +1,131 @@
 {
-  "generatedAt": "2026-07-15T07:47:44.481Z",
+  "generatedAt": "2026-07-15T10:40:54.301Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177751000",
+      "soWhat": "ニチレイのサイバー攻撃は、冷凍食品業界全体に影響を与える可能性があるため注意が必要。",
+      "assets": {
+        "up": [
+          "冷凍食品"
+        ],
+        "down": [
+          "外食産業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177231000",
+      "soWhat": "新幹線延伸は地域経済にプラス影響、関連株に注目。",
+      "assets": {
+        "up": [
+          "交通インフラ",
+          "地域開発"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177701000",
+      "soWhat": "円相場の小幅な値動きは、為替リスクを考慮する上での判断材料となる。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177651000",
+      "soWhat": "アメリカ軍の撤退完了は、中東情勢に影響を与える可能性があり、関連企業に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "防衛関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177481000",
+      "soWhat": "訪日客の減少は観光業に影響を及ぼすため、関連企業の業績に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "観光業",
+          "航空業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177331000",
+      "soWhat": "中国のGDP成長率が低下しており、関連企業の業績に影響が出る可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "中国関連株",
+          "消費関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177331000",
+      "soWhat": "中国のGDP成長率が低下しており、関連企業の業績に影響が出る可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "中国関連株",
+          "消費関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177641000",
+      "soWhat": "タイの飲食店火災は、観光業や安全対策に影響を与える可能性があるため注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "観光業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177581000",
+      "soWhat": "サッカーW杯の盛り上がりは、関連ビジネスにプラスの影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "スポーツ関連"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177371000",
+      "soWhat": "AI・半導体関連の業績が好調で、関連株の動向に注意が必要。",
+      "assets": {
+        "up": [
+          "AI関連株",
+          "半導体株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015177531000",
       "soWhat": "ガソリン価格の安定は、エネルギー関連株に影響を与える可能性がある。",
@@ -89,45 +214,6 @@
       },
       "horizon": "short",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177231000",
-      "soWhat": "新幹線延伸は地域経済にプラス影響、関連株に注目。",
-      "assets": {
-        "up": [
-          "交通インフラ",
-          "地域開発"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177371000",
-      "soWhat": "AI・半導体関連の業績が好調で、関連株の動向に注意が必要。",
-      "assets": {
-        "up": [
-          "AI関連株",
-          "半導体株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177331000",
-      "soWhat": "中国のGDP成長率が低下しており、関連企業の業績に影響が出る可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "中国関連株",
-          "消費関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015177301000",
@@ -289,93 +375,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176211000",
-      "soWhat": "アメリカの攻撃開始は中東の緊張を高め、エネルギー市場に影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "輸入依存国"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177021000",
-      "soWhat": "ノルウェーのサッカー成功は、スポーツ関連ビジネスの活性化に寄与する可能性がある。",
-      "assets": {
-        "up": [
-          "スポーツ関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176861000",
-      "soWhat": "ウクライナの軍事技術進展が防衛関連株に影響を与える可能性あり。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176911000",
-      "soWhat": "途上国の保健医療体制強化が医療関連企業にプラスの影響を与えるか注目。",
-      "assets": {
-        "up": [
-          "医療関連株"
-        ],
-        "down": []
-      },
-      "horizon": "long",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176871000",
-      "soWhat": "東和銀行の債権処理が金融セクターに影響を及ぼす可能性があるため注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "金融株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176631000",
-      "soWhat": "AIエージェントの普及が関連インフラ投資を促進するか注目。",
-      "assets": {
-        "up": [
-          "テクノロジー株",
-          "インフラ関連"
-        ],
-        "down": []
-      },
-      "horizon": "long",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176781000",
-      "soWhat": "日本郵便の不正問題が企業の信頼性に影響し、関連株に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "郵便関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     }
   ]
 }
