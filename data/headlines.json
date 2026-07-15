@@ -1,6 +1,57 @@
 {
-  "generatedAt": "2026-07-14T21:45:34.562Z",
+  "generatedAt": "2026-07-15T01:13:32.525Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177231000",
+      "soWhat": "新幹線延伸は地域経済にプラス影響、関連株に注目。",
+      "assets": {
+        "up": [
+          "交通インフラ",
+          "地域開発"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177211000",
+      "soWhat": "軍事演習の実施は防衛関連株に影響、地政学リスクに注意。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176991000",
+      "soWhat": "民間人の死傷者増加は地政学リスクを高め、資産運用に影響。",
+      "assets": {
+        "up": [],
+        "down": [
+          "リスク資産",
+          "観光業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015176961000",
+      "soWhat": "租税特別措置の見直しは企業の財務に影響、税制動向に注意。",
+      "assets": {
+        "up": [],
+        "down": [
+          "企業利益",
+          "不動産"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015176951000",
       "soWhat": "国内EV市場の成長は関連企業に追い風となるが、競争激化に注意。",
@@ -330,59 +381,6 @@
         ]
       },
       "horizon": "long",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176601000",
-      "soWhat": "GPIFの運用見直しが国内債券市場に影響を与える可能性に注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "国内債券",
-          "金融株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176481000",
-      "soWhat": "移民問題の影響が社会情勢や市場に波及する可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "社会関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176511000",
-      "soWhat": "AIによる雇用喪失リスクが経済政策に影響を与える可能性に注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "労働集約型産業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176551000",
-      "soWhat": "決済代行業者の破産は、関連業界への影響を考慮する必要あり。",
-      "assets": {
-        "up": [
-          "決済サービス",
-          "飲食業"
-        ],
-        "down": [
-          "金融業",
-          "小売業"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     }
   ]
