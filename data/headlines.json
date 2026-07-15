@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-07-15T13:05:41.378Z",
+  "generatedAt": "2026-07-15T16:12:14.319Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178011000",
+      "soWhat": "エヌビディアとの連携強化が日本のゲーム業界に影響しそう。",
+      "assets": {
+        "up": [
+          "半導体",
+          "ゲーム関連"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015177811000",
       "soWhat": "中東情勢の緊迫化がエネルギー市場に影響を与える可能性に注意。",
@@ -11,6 +24,19 @@
         "down": [
           "観光業",
           "輸出企業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177871000",
+      "soWhat": "中東産油国のパイプライン増強は原油価格に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "原油関連",
+          "エネルギー株"
         ]
       },
       "horizon": "short",
@@ -351,31 +377,6 @@
         "down": [
           "化学製品",
           "ナフサ関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177191000",
-      "soWhat": "FRBのインフレ抑制姿勢は金利上昇を招く可能性があり、投資戦略の見直しが必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "債券市場",
-          "成長株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177041000",
-      "soWhat": "米国の物価上昇率の鈍化は、利上げのペースに影響し、投資戦略の見直しが必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "金利敏感株"
         ]
       },
       "horizon": "short",
