@@ -1,6 +1,64 @@
 {
-  "generatedAt": "2026-07-15T18:52:05.700Z",
+  "generatedAt": "2026-07-15T21:45:43.150Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178061000",
+      "soWhat": "イラン情勢の緊迫化はエネルギー市場に影響を与えるため、投資家は注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "観光業",
+          "輸出企業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177941000",
+      "soWhat": "物価上昇はインフレ懸念を高め、金融政策への影響が考えられるため、投資判断に注意。",
+      "assets": {
+        "up": [
+          "インフレ関連資産"
+        ],
+        "down": [
+          "債券",
+          "消費者関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177941000",
+      "soWhat": "物価上昇はインフレ懸念を高め、金融政策への影響が考えられるため、投資判断に注意。",
+      "assets": {
+        "up": [
+          "インフレ関連資産"
+        ],
+        "down": [
+          "債券",
+          "消費者関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177911000",
+      "soWhat": "ニチレイのサイバー攻撃は業務に影響を及ぼし、投資家はリスク管理の重要性を再認識する必要がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "ニチレイ株",
+          "外食関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015178011000",
       "soWhat": "エヌビディアとの連携強化が日本のゲーム業界に影響しそう。",
@@ -325,59 +383,6 @@
           "防衛関連株"
         ],
         "down": []
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176991000",
-      "soWhat": "民間人の死傷者増加は地政学リスクを高め、資産運用に影響。",
-      "assets": {
-        "up": [],
-        "down": [
-          "リスク資産",
-          "観光業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176961000",
-      "soWhat": "租税特別措置の見直しは企業の財務に影響、税制動向に注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "企業利益",
-          "不動産"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176951000",
-      "soWhat": "国内EV市場の成長は関連企業に追い風となるが、競争激化に注意。",
-      "assets": {
-        "up": [
-          "EV関連株",
-          "自動車産業",
-          "再生可能エネルギー"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015176971000",
-      "soWhat": "ナフサ供給の不安定化は化学業界に影響を及ぼす可能性があり注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "化学製品",
-          "ナフサ関連株"
-        ]
       },
       "horizon": "short",
       "impact": "mixed"
