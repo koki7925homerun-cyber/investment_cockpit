@@ -1,6 +1,33 @@
 {
-  "generatedAt": "2026-07-15T21:45:43.150Z",
+  "generatedAt": "2026-07-16T01:22:40.708Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177851000",
+      "soWhat": "民泊規制強化が観光業や不動産市場に影響を及ぼす可能性に注意。",
+      "assets": {
+        "up": [
+          "不動産"
+        ],
+        "down": [
+          "観光業",
+          "民泊関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178121000",
+      "soWhat": "半導体関連の株価下落が続く中、投資判断に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "半導体関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015178061000",
       "soWhat": "イラン情勢の緊迫化はエネルギー市場に影響を与えるため、投資家は注意が必要。",
@@ -12,6 +39,18 @@
           "観光業",
           "輸出企業"
         ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178051000",
+      "soWhat": "ウクライナ情勢の緊迫化がエネルギー市場に影響を与える可能性に注意。",
+      "assets": {
+        "up": [
+          "エネルギー関連"
+        ],
+        "down": []
       },
       "horizon": "mid",
       "impact": "mixed"
@@ -349,43 +388,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177311000",
-      "soWhat": "データセンター建設の凍結は、AI関連企業の成長に影響を及ぼす可能性があるため注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "AI関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177241000",
-      "soWhat": "国連機能の東京誘致は、地域経済にプラスの影響を与える可能性があるため注目したい。",
-      "assets": {
-        "up": [
-          "地域経済",
-          "観光関連株"
-        ],
-        "down": []
-      },
-      "horizon": "long",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177211000",
-      "soWhat": "軍事演習の実施は防衛関連株に影響、地政学リスクに注意。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "mixed"
     }
   ]
 }
