@@ -1,13 +1,14 @@
 {
-  "generatedAt": "2026-07-16T07:52:38.507Z",
+  "generatedAt": "2026-07-16T10:47:46.372Z",
   "items": [
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178121000",
-      "soWhat": "半導体関連の株価下落が続く中、投資判断に影響を与える可能性がある。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015177911000",
+      "soWhat": "ニチレイのサイバー攻撃は業務に影響を及ぼし、投資家はリスク管理の重要性を再認識する必要がある。",
       "assets": {
         "up": [],
         "down": [
-          "半導体関連"
+          "ニチレイ株",
+          "外食関連株"
         ]
       },
       "horizon": "short",
@@ -25,6 +26,61 @@
       },
       "horizon": "mid",
       "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141071000",
+      "soWhat": "地政学リスクの高まりが資産市場に影響を与える可能性に注意。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": [
+          "観光業",
+          "エネルギー価格"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178531000",
+      "soWhat": "円相場の安定は輸出企業にとって好材料だが、変動に注意が必要。",
+      "assets": {
+        "up": [
+          "輸出関連株"
+        ],
+        "down": [
+          "輸入関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178451000",
+      "soWhat": "物価上昇の予測は消費関連株に影響を与える可能性があり、注視が必要。",
+      "assets": {
+        "up": [
+          "消費関連株"
+        ],
+        "down": [
+          "インフレヘッジ資産"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178121000",
+      "soWhat": "半導体関連の株価下落が続く中、投資判断に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "半導体関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015178391000",
@@ -64,21 +120,6 @@
       "impact": "mixed"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015141071000",
-      "soWhat": "地政学リスクの高まりが資産市場に影響を与える可能性に注意。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": [
-          "観光業",
-          "エネルギー価格"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
       "link": "https://news.web.nhk/newsweb/na/na-k10015178141000",
       "soWhat": "暗号資産の規制見直しが市場の流動性や投資家心理に影響を与えるか判断材料。",
       "assets": {
@@ -104,19 +145,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177911000",
-      "soWhat": "ニチレイのサイバー攻撃は業務に影響を及ぼし、投資家はリスク管理の重要性を再認識する必要がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "ニチレイ株",
-          "外食関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015177851000",
@@ -365,30 +393,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177501000",
-      "soWhat": "アルツハイマー新薬の進展は、製薬株にプラスの影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "製薬株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177281000",
-      "soWhat": "AI活用のスーパーマーケットは、テクノロジー関連株の注目を集める要因となる。",
-      "assets": {
-        "up": [
-          "テクノロジー関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
     }
   ]
 }
