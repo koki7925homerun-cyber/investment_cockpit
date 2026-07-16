@@ -1,6 +1,68 @@
 {
-  "generatedAt": "2026-07-16T05:30:04.626Z",
+  "generatedAt": "2026-07-16T07:52:38.507Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178121000",
+      "soWhat": "半導体関連の株価下落が続く中、投資判断に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "半導体関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178411000",
+      "soWhat": "国産AIの進展は、関連企業の成長に期待が持てる要素となる。",
+      "assets": {
+        "up": [
+          "AI関連株",
+          "半導体株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178391000",
+      "soWhat": "ダイハツのリコールは、株価に短期的な影響を及ぼす可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "自動車株",
+          "ダイハツ株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178361000",
+      "soWhat": "石油化学製品の生産増加は、関連企業の業績改善に寄与する可能性がある。",
+      "assets": {
+        "up": [
+          "石油化学株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178351000",
+      "soWhat": "韓国の利上げは、為替市場や輸出企業に影響を与える要因となる。",
+      "assets": {
+        "up": [],
+        "down": [
+          "輸出関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015141071000",
       "soWhat": "地政学リスクの高まりが資産市場に影響を与える可能性に注意。",
@@ -27,18 +89,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178121000",
-      "soWhat": "半導体関連の株価下落が続く中、投資判断に影響を与える可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "半導体関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015178061000",
@@ -94,21 +144,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177941000",
-      "soWhat": "物価上昇はインフレ懸念を高め、金融政策への影響が考えられるため、投資判断に注意。",
-      "assets": {
-        "up": [
-          "インフレ関連資産"
-        ],
-        "down": [
-          "債券",
-          "消費者関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015177941000",
@@ -351,45 +386,6 @@
           "テクノロジー関連株"
         ],
         "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177471000",
-      "soWhat": "暗号資産の法整備は、投資家の関心を高め、関連市場の活性化が期待される。",
-      "assets": {
-        "up": [
-          "暗号資産関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177461000",
-      "soWhat": "農業設備の展示会は、農業関連株に対する投資機会を示唆する材料となる。",
-      "assets": {
-        "up": [
-          "農業関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177001000",
-      "soWhat": "ホルムズ海峡の封鎖はエネルギー価格に影響を与える可能性があり、注視が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "輸送業界",
-          "原油価格"
-        ]
       },
       "horizon": "short",
       "impact": "up"
