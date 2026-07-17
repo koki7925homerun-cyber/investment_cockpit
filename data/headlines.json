@@ -1,6 +1,58 @@
 {
-  "generatedAt": "2026-07-17T18:50:20.119Z",
+  "generatedAt": "2026-07-17T21:40:46.170Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179961000",
+      "soWhat": "中国の自然災害は地域経済に影響を及ぼす可能性があるため注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "中国関連株",
+          "インフラセクター"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179791000",
+      "soWhat": "国際法の圧力は地政学リスクを高める可能性があり、投資判断に影響を与える。",
+      "assets": {
+        "up": [],
+        "down": [
+          "国際関連株",
+          "防衛関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179691000",
+      "soWhat": "輸出規制強化は日系企業の業績に影響を与える可能性があり、注視が必要。",
+      "assets": {
+        "up": [
+          "レアアース関連",
+          "日系企業"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179771000",
+      "soWhat": "ニチレイのシステム障害は流通業界全体に波及する恐れがあり、影響を見極める必要がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "冷凍食品関連",
+          "外食産業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015179891000",
       "soWhat": "地震の影響は日本にないが、地震関連株に注意が必要。",
@@ -63,18 +115,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179581000",
-      "soWhat": "キオクシアの賠償問題が業績に影響する可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "半導体セクター"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015179581000",
@@ -338,40 +378,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179041000",
-      "soWhat": "給付付き税額控除の解説は、経済政策への理解を深める材料となる。",
-      "assets": {
-        "up": [],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178941000",
-      "soWhat": "内部情報の不正利用が明るみに出たことで、関連企業の信頼性に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "関連企業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178921000",
-      "soWhat": "カナダの山火事による大気汚染が広がり、環境関連株に影響が出る可能性がある。",
-      "assets": {
-        "up": [
-          "環境関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     }
   ]
 }
