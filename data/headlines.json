@@ -1,6 +1,55 @@
 {
-  "generatedAt": "2026-07-17T12:58:45.875Z",
+  "generatedAt": "2026-07-17T16:06:44.208Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179891000",
+      "soWhat": "地震の影響は日本にないが、地震関連株に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "地震関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179761000",
+      "soWhat": "水素列車の運行開始は、再生可能エネルギー関連株の注目材料。",
+      "assets": {
+        "up": [
+          "再生可能エネルギー",
+          "交通関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179681000",
+      "soWhat": "台湾とパプアニューギニアの緊張は、地域の政治リスクを高める要因。",
+      "assets": {
+        "up": [],
+        "down": [
+          "地域関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179711000",
+      "soWhat": "ASEANとの協力強化は、日本企業の国際展開にプラスの影響を与える。",
+      "assets": {
+        "up": [
+          "国際展開企業"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015179611000",
       "soWhat": "新党首の政策が経済に与える影響に注意が必要。",
@@ -323,54 +372,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178881000",
-      "soWhat": "政治的緊張が高まる中、関連企業や市場への影響を注視する必要がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "関連企業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178901000",
-      "soWhat": "トランプ政権の動きが国際的な緊張を引き起こし、投資環境に影響を与える可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "国際企業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178731000",
-      "soWhat": "ウクライナの軍事状況が変化する中、関連企業の動向が判断材料となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "防衛関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178791000",
-      "soWhat": "ニチレイの業務再開が物流業界に与える影響に注目したい。",
-      "assets": {
-        "up": [
-          "物流関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
     }
   ]
 }
