@@ -1,17 +1,114 @@
 {
-  "generatedAt": "2026-07-17T01:25:44.953Z",
+  "generatedAt": "2026-07-17T05:31:27.895Z",
   "items": [
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178941000",
-      "soWhat": "内部情報の不正利用が明るみに出たことで、関連企業の信頼性に注意が必要。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179291000",
+      "soWhat": "改正種苗法の成立は農業関連企業に注目を促す要因となる。",
+      "assets": {
+        "up": [
+          "農業関連企業"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179291000",
+      "soWhat": "改正種苗法の成立は農業関連企業に注目を促す要因となる。",
+      "assets": {
+        "up": [
+          "農業関連企業"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141081000",
+      "soWhat": "ロシアの軍事侵攻は国際情勢を不安定化させ、投資リスクが高まる。",
       "assets": {
         "up": [],
         "down": [
-          "関連企業"
+          "防衛関連株",
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179271000",
+      "soWhat": "インドネシアLNGプロジェクトはエネルギー関連企業にとっての成長機会。",
+      "assets": {
+        "up": [
+          "エネルギー関連企業"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179271000",
+      "soWhat": "インドネシアLNGプロジェクトはエネルギー関連企業にとっての成長機会。",
+      "assets": {
+        "up": [
+          "エネルギー関連企業"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178751000",
+      "soWhat": "ホルムズ海峡の緊張が高まる中、エネルギー関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "輸送関連株"
         ]
       },
       "horizon": "short",
       "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178951000",
+      "soWhat": "グーグルのAI開発遅れが市場に影響を及ぼし、IT関連株に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "IT関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179041000",
+      "soWhat": "給付付き税額控除の解説は、経済政策への理解を深める材料となる。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179201000",
+      "soWhat": "トランプ氏の主張は米中関係に影響を及ぼし、投資戦略に留意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "中国関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015178981000",
@@ -28,16 +125,16 @@
       "impact": "down"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178951000",
-      "soWhat": "グーグルのAI開発遅れが市場に影響を及ぼし、IT関連株に注意が必要。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178941000",
+      "soWhat": "内部情報の不正利用が明るみに出たことで、関連企業の信頼性に注意が必要。",
       "assets": {
         "up": [],
         "down": [
-          "IT関連株"
+          "関連企業"
         ]
       },
       "horizon": "short",
-      "impact": "down"
+      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015178921000",
@@ -73,20 +170,6 @@
         ]
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178751000",
-      "soWhat": "ホルムズ海峡の緊張が高まる中、エネルギー関連株に注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "輸送関連株"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     },
     {
@@ -296,97 +379,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178391000",
-      "soWhat": "ダイハツのリコールは、株価に短期的な影響を及ぼす可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "自動車株",
-          "ダイハツ株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178361000",
-      "soWhat": "石油化学製品の生産増加は、関連企業の業績改善に寄与する可能性がある。",
-      "assets": {
-        "up": [
-          "石油化学株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178351000",
-      "soWhat": "韓国の利上げは、為替市場や輸出企業に影響を与える要因となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "輸出関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178141000",
-      "soWhat": "暗号資産の規制見直しが市場の流動性や投資家心理に影響を与えるか判断材料。",
-      "assets": {
-        "up": [
-          "暗号資産関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177851000",
-      "soWhat": "民泊規制強化が観光業や不動産市場に影響を及ぼす可能性に注意。",
-      "assets": {
-        "up": [
-          "不動産"
-        ],
-        "down": [
-          "観光業",
-          "民泊関連"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178051000",
-      "soWhat": "ウクライナ情勢の緊迫化がエネルギー市場に影響を与える可能性に注意。",
-      "assets": {
-        "up": [
-          "エネルギー関連"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177941000",
-      "soWhat": "物価上昇はインフレ懸念を高め、金融政策への影響が考えられるため、投資判断に注意。",
-      "assets": {
-        "up": [
-          "インフレ関連資産"
-        ],
-        "down": [
-          "債券",
-          "消費者関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
     }
   ]
 }
