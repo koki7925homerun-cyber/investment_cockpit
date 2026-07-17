@@ -1,18 +1,6 @@
 {
-  "generatedAt": "2026-07-17T07:49:44.455Z",
+  "generatedAt": "2026-07-17T10:29:01.651Z",
   "items": [
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178951000",
-      "soWhat": "グーグルのAI開発遅れが市場に影響を及ぼし、IT関連株に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "IT関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015179201000",
       "soWhat": "トランプ氏の主張は米中関係に影響を及ぼし、投資戦略に留意が必要。",
@@ -23,6 +11,129 @@
         ]
       },
       "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178981000",
+      "soWhat": "ニチレイの業務再開は一部にとどまるため、業績回復には時間がかかる可能性がある。",
+      "assets": {
+        "up": [
+          "冷凍食品"
+        ],
+        "down": [
+          "ニチレイ"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179491000",
+      "soWhat": "原子力事業への信頼低下が影響し、関連企業の株価に注意が必要。",
+      "assets": {
+        "up": [
+          "再生可能エネルギー"
+        ],
+        "down": [
+          "原子力関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179381000",
+      "soWhat": "中国のAI発展に伴い、関連企業の成長が期待されるため注視が必要。",
+      "assets": {
+        "up": [
+          "AI関連株",
+          "テクノロジー"
+        ],
+        "down": []
+      },
+      "horizon": "long",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179501000",
+      "soWhat": "決済代行サービスの破産が影響し、関連業界のリスクが高まる可能性あり。",
+      "assets": {
+        "up": [],
+        "down": [
+          "決済関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179471000",
+      "soWhat": "コメ価格の下落が農業関連企業に影響を及ぼすため、注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "農業関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179521000",
+      "soWhat": "円相場の小幅な値動きは、為替関連の投資戦略に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179391000",
+      "soWhat": "北朝鮮と中国の関係強化が地域の地政学リスクに影響するため、注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "地域関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179081000",
+      "soWhat": "トランプ大統領のSNSの新サービス開始が、メディア関連株に影響を与える可能性あり。",
+      "assets": {
+        "up": [
+          "メディア関連株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179441000",
+      "soWhat": "トラック運送の適正原価策定が業界全体に影響を与えるため、関連企業に注目。",
+      "assets": {
+        "up": [],
+        "down": [
+          "運送関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178951000",
+      "soWhat": "グーグルのAI開発遅れが市場に影響を及ぼし、IT関連株に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "IT関連株"
+        ]
+      },
+      "horizon": "short",
       "impact": "down"
     },
     {
@@ -78,18 +189,6 @@
       "impact": "mixed"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179291000",
-      "soWhat": "改正種苗法の成立は農業関連企業に注目を促す要因となる。",
-      "assets": {
-        "up": [
-          "農業関連企業"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
       "link": "https://news.web.nhk/newsweb/na/na-k10015141081000",
       "soWhat": "ロシアの軍事侵攻は国際情勢を不安定化させ、投資リスクが高まる。",
       "assets": {
@@ -101,18 +200,6 @@
       },
       "horizon": "mid",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179271000",
-      "soWhat": "インドネシアLNGプロジェクトはエネルギー関連企業にとっての成長機会。",
-      "assets": {
-        "up": [
-          "エネルギー関連企業"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015179271000",
@@ -149,20 +236,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178981000",
-      "soWhat": "ニチレイの業務再開は一部にとどまるため、業績回復には時間がかかる可能性がある。",
-      "assets": {
-        "up": [
-          "冷凍食品"
-        ],
-        "down": [
-          "ニチレイ"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015178941000",
@@ -299,86 +372,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178681000",
-      "soWhat": "TSMCの好決算は半導体関連株にプラス要因、特にAI関連銘柄に注目。",
-      "assets": {
-        "up": [
-          "半導体株",
-          "AI関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015141071000",
-      "soWhat": "地政学リスクの高まりが資産市場に影響を与える可能性に注意。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": [
-          "観光業",
-          "エネルギー価格"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178621000",
-      "soWhat": "全東信の破産は金融機関に影響を及ぼし、関連株の動向に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "金融関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178061000",
-      "soWhat": "イラン情勢の緊迫化はエネルギー市場に影響を与えるため、投資家は注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "観光業",
-          "輸出企業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178611000",
-      "soWhat": "ホルムズ海峡の安全確保はエネルギー関連株に影響、投資判断の材料となる。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015177911000",
-      "soWhat": "ニチレイのサイバー攻撃は業務に影響を及ぼし、投資家はリスク管理の重要性を再認識する必要がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "ニチレイ株",
-          "外食関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     }
   ]
 }
