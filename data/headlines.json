@@ -1,6 +1,70 @@
 {
-  "generatedAt": "2026-07-17T05:31:27.895Z",
+  "generatedAt": "2026-07-17T07:49:44.455Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178951000",
+      "soWhat": "グーグルのAI開発遅れが市場に影響を及ぼし、IT関連株に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "IT関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179201000",
+      "soWhat": "トランプ氏の主張は米中関係に影響を及ぼし、投資戦略に留意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "中国関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179331000",
+      "soWhat": "展示内容の変更は観光業や地域経済に影響を及ぼす可能性あり。",
+      "assets": {
+        "up": [
+          "観光業"
+        ],
+        "down": [
+          "地域経済"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179211000",
+      "soWhat": "海峡封鎖の可能性はエネルギー価格や輸送コストに影響を与えるため注意。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー価格",
+          "輸送コスト"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179071000",
+      "soWhat": "漁獲枠の拡大交渉の難航は水産業や関連企業に影響を及ぼす可能性あり。",
+      "assets": {
+        "up": [],
+        "down": [
+          "水産業",
+          "関連企業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015179291000",
       "soWhat": "改正種苗法の成立は農業関連企業に注目を促す要因となる。",
@@ -77,18 +141,6 @@
       "impact": "mixed"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178951000",
-      "soWhat": "グーグルのAI開発遅れが市場に影響を及ぼし、IT関連株に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "IT関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
       "link": "https://news.web.nhk/newsweb/na/na-k10015179041000",
       "soWhat": "給付付き税額控除の解説は、経済政策への理解を深める材料となる。",
       "assets": {
@@ -97,18 +149,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179201000",
-      "soWhat": "トランプ氏の主張は米中関係に影響を及ぼし、投資戦略に留意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "中国関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015178981000",
@@ -335,46 +375,6 @@
         "down": [
           "ニチレイ株",
           "外食関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178531000",
-      "soWhat": "円相場の安定は輸出企業にとって好材料だが、変動に注意が必要。",
-      "assets": {
-        "up": [
-          "輸出関連株"
-        ],
-        "down": [
-          "輸入関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178451000",
-      "soWhat": "物価上昇の予測は消費関連株に影響を与える可能性があり、注視が必要。",
-      "assets": {
-        "up": [
-          "消費関連株"
-        ],
-        "down": [
-          "インフレヘッジ資産"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178121000",
-      "soWhat": "半導体関連の株価下落が続く中、投資判断に影響を与える可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "半導体関連"
         ]
       },
       "horizon": "short",
