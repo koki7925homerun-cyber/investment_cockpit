@@ -1,17 +1,82 @@
 {
-  "generatedAt": "2026-07-17T10:29:01.651Z",
+  "generatedAt": "2026-07-17T12:58:45.875Z",
   "items": [
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179201000",
-      "soWhat": "トランプ氏の主張は米中関係に影響を及ぼし、投資戦略に留意が必要。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179611000",
+      "soWhat": "新党首の政策が経済に与える影響に注意が必要。",
       "assets": {
-        "up": [],
+        "up": [
+          "金融セクター"
+        ],
         "down": [
-          "中国関連株"
+          "輸出関連企業"
         ]
       },
       "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179581000",
+      "soWhat": "キオクシアの賠償問題が業績に影響する可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "半導体セクター"
+        ]
+      },
+      "horizon": "short",
       "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179581000",
+      "soWhat": "キオクシアの賠償問題が業績に影響する可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "半導体セクター"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179421000",
+      "soWhat": "人道的危機が国際的な影響を及ぼす可能性に注意。",
+      "assets": {
+        "up": [],
+        "down": [
+          "観光業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178751000",
+      "soWhat": "ホルムズ海峡の緊張が高まる中、エネルギー関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "輸送関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015178411000",
+      "soWhat": "国産AIの進展は、関連企業の成長に期待が持てる要素となる。",
+      "assets": {
+        "up": [
+          "AI関連株",
+          "半導体株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015178981000",
@@ -22,6 +87,18 @@
         ],
         "down": [
           "ニチレイ"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179201000",
+      "soWhat": "トランプ氏の主張は米中関係に影響を及ぼし、投資戦略に留意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "中国関連株"
         ]
       },
       "horizon": "mid",
@@ -214,20 +291,6 @@
       "impact": "up"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178751000",
-      "soWhat": "ホルムズ海峡の緊張が高まる中、エネルギー関連株に注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "輸送関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
       "link": "https://news.web.nhk/newsweb/na/na-k10015179041000",
       "soWhat": "給付付き税額控除の解説は、経済政策への理解を深める材料となる。",
       "assets": {
@@ -308,70 +371,6 @@
       },
       "horizon": "short",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178741000",
-      "soWhat": "新党首の選出がイギリスの政策に影響を及ぼす可能性があるため注視。",
-      "assets": {
-        "up": [],
-        "down": [
-          "イギリス関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178861000",
-      "soWhat": "ブラジルへの関税が貿易関連企業に影響を与えるため、動向に注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "貿易関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178831000",
-      "soWhat": "米国の消費動向が今後の市場に影響を与えるため注視が必要。",
-      "assets": {
-        "up": [
-          "消費関連株",
-          "小売業"
-        ],
-        "down": [
-          "原油関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178411000",
-      "soWhat": "国産AIの進展は、関連企業の成長に期待が持てる要素となる。",
-      "assets": {
-        "up": [
-          "AI関連株",
-          "半導体株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178711000",
-      "soWhat": "中国とロシアの動向は地域の地政学リスクを高め、投資家は警戒が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "防衛関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     }
   ]
 }
