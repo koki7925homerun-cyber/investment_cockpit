@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-07-18T07:24:39.155Z",
+  "generatedAt": "2026-07-18T10:07:28.712Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180311000",
+      "soWhat": "中国と北朝鮮の関係強化は地域の地政学リスクに注意を促す要因。",
+      "assets": {
+        "up": [
+          "資源関連株"
+        ],
+        "down": [
+          "輸出関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015180171000",
       "soWhat": "円安が進む中、iPhone価格上昇は消費者の購買意欲に影響しうる。",
@@ -382,19 +396,6 @@
       },
       "horizon": "mid",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179381000",
-      "soWhat": "中国のAI発展に伴い、関連企業の成長が期待されるため注視が必要。",
-      "assets": {
-        "up": [
-          "AI関連株",
-          "テクノロジー"
-        ],
-        "down": []
-      },
-      "horizon": "long",
-      "impact": "up"
     }
   ]
 }
