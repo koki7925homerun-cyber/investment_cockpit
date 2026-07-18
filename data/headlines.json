@@ -1,6 +1,75 @@
 {
-  "generatedAt": "2026-07-18T01:18:08.656Z",
+  "generatedAt": "2026-07-18T05:14:39.738Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180171000",
+      "soWhat": "円安が進む中、iPhone価格上昇は消費者の購買意欲に影響しうる。",
+      "assets": {
+        "up": [
+          "ITセクター",
+          "消費関連"
+        ],
+        "down": [
+          "円建て資産"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180171000",
+      "soWhat": "円安が進む中、iPhone価格上昇は消費者の購買意欲に影響しうる。",
+      "assets": {
+        "up": [
+          "ITセクター",
+          "消費関連"
+        ],
+        "down": [
+          "円建て資産"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180131000",
+      "soWhat": "米国とイランの緊張が高まる中、地政学リスクが市場に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー関連",
+          "防衛関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180111000",
+      "soWhat": "新関税措置の発表が迫る中、貿易関連株に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "輸出関連株",
+          "製造業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180091000",
+      "soWhat": "カナダの山火事が影響し、関税が上昇すれば輸入コストが増加する可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "輸入関連",
+          "エネルギー関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015179971000",
       "soWhat": "アメリカとイランの緊張が高まる中、エネルギー関連株に注意。",
@@ -71,18 +140,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015180051000",
-      "soWhat": "ナスダックの下落はハイテク株に影響を与え、投資戦略の見直しが必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "ハイテク株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015180051000",
@@ -338,52 +395,6 @@
       },
       "horizon": "long",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179501000",
-      "soWhat": "決済代行サービスの破産が影響し、関連業界のリスクが高まる可能性あり。",
-      "assets": {
-        "up": [],
-        "down": [
-          "決済関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179471000",
-      "soWhat": "コメ価格の下落が農業関連企業に影響を及ぼすため、注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "農業関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179521000",
-      "soWhat": "円相場の小幅な値動きは、為替関連の投資戦略に影響を与える可能性がある。",
-      "assets": {
-        "up": [],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179391000",
-      "soWhat": "北朝鮮と中国の関係強化が地域の地政学リスクに影響するため、注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "地域関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     }
   ]
 }
