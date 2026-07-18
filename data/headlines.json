@@ -1,6 +1,21 @@
 {
-  "generatedAt": "2026-07-18T15:42:43.301Z",
+  "generatedAt": "2026-07-18T18:43:06.811Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180431000",
+      "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "米国株",
+          "イラン関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015141091000",
       "soWhat": "地政学リスクが高まり、エネルギー関連株に注目が必要。",
@@ -383,20 +398,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178981000",
-      "soWhat": "ニチレイの業務再開は一部にとどまるため、業績回復には時間がかかる可能性がある。",
-      "assets": {
-        "up": [
-          "冷凍食品"
-        ],
-        "down": [
-          "ニチレイ"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
     }
   ]
 }
