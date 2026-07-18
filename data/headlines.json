@@ -1,6 +1,49 @@
 {
-  "generatedAt": "2026-07-18T12:45:20.794Z",
+  "generatedAt": "2026-07-18T15:42:43.301Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141091000",
+      "soWhat": "地政学リスクが高まり、エネルギー関連株に注目が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "輸出関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179971000",
+      "soWhat": "アメリカとイランの緊張が高まる中、エネルギー関連株に注意。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "観光業",
+          "輸送業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180421000",
+      "soWhat": "物流への攻撃が続く中、サプライチェーンへの影響に注意が必要。",
+      "assets": {
+        "up": [
+          "物流関連株"
+        ],
+        "down": [
+          "輸出関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015180281000",
       "soWhat": "リニア新幹線の着工は地域経済にプラス影響が期待されるため、関連株に注目。",
@@ -96,21 +139,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179971000",
-      "soWhat": "アメリカとイランの緊張が高まる中、エネルギー関連株に注意。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "観光業",
-          "輸送業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015179981000",
@@ -365,32 +393,6 @@
         ],
         "down": [
           "ニチレイ"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179201000",
-      "soWhat": "トランプ氏の主張は米中関係に影響を及ぼし、投資戦略に留意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "中国関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179491000",
-      "soWhat": "原子力事業への信頼低下が影響し、関連企業の株価に注意が必要。",
-      "assets": {
-        "up": [
-          "再生可能エネルギー"
-        ],
-        "down": [
-          "原子力関連株"
         ]
       },
       "horizon": "mid",
