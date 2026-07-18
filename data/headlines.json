@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-07-18T10:07:28.712Z",
+  "generatedAt": "2026-07-18T12:45:20.794Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180281000",
+      "soWhat": "リニア新幹線の着工は地域経済にプラス影響が期待されるため、関連株に注目。",
+      "assets": {
+        "up": [
+          "建設株",
+          "鉄道関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015180311000",
       "soWhat": "中国と北朝鮮の関係強化は地域の地政学リスクに注意を促す要因。",
@@ -108,20 +121,6 @@
         ],
         "down": [
           "エネルギー関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015180071000",
-      "soWhat": "EUの排出規制緩和が、特定産業の競争力に影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "産業関連株"
-        ],
-        "down": [
-          "環境関連株"
         ]
       },
       "horizon": "mid",
