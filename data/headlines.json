@@ -1,6 +1,137 @@
 {
-  "generatedAt": "2026-07-17T21:40:46.170Z",
+  "generatedAt": "2026-07-18T01:18:08.656Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179971000",
+      "soWhat": "アメリカとイランの緊張が高まる中、エネルギー関連株に注意。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "観光業",
+          "輸送業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179981000",
+      "soWhat": "ウクライナの安全保障政策の変化が、関連企業の株価に影響を与える可能性。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": [
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180071000",
+      "soWhat": "EUの排出規制緩和が、特定産業の競争力に影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "産業関連株"
+        ],
+        "down": [
+          "環境関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180071000",
+      "soWhat": "EUの排出規制緩和が、特定産業の競争力に影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "産業関連株"
+        ],
+        "down": [
+          "環境関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180081000",
+      "soWhat": "新首相の政策がイギリス経済に与える影響を注視する必要がある。",
+      "assets": {
+        "up": [
+          "金融関連株"
+        ],
+        "down": [
+          "不動産関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180051000",
+      "soWhat": "ナスダックの下落はハイテク株に影響を与え、投資戦略の見直しが必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "ハイテク株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180051000",
+      "soWhat": "ナスダックの下落はハイテク株に影響を与え、投資戦略の見直しが必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "ハイテク株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180041000",
+      "soWhat": "ベネズエラの地震による影響が、資源関連株に影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "資源関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179991000",
+      "soWhat": "フランスとドイツの軍事協力強化が、欧州の防衛関連株に影響を与えるか注視。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015179891000",
+      "soWhat": "地震の影響は日本にないが、地震関連株に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "地震関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015179961000",
       "soWhat": "中国の自然災害は地域経済に影響を及ぼす可能性があるため注意が必要。",
@@ -48,18 +179,6 @@
         "down": [
           "冷凍食品関連",
           "外食産業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179891000",
-      "soWhat": "地震の影響は日本にないが、地震関連株に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "地震関連株"
         ]
       },
       "horizon": "short",
@@ -265,119 +384,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179081000",
-      "soWhat": "トランプ大統領のSNSの新サービス開始が、メディア関連株に影響を与える可能性あり。",
-      "assets": {
-        "up": [
-          "メディア関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179441000",
-      "soWhat": "トラック運送の適正原価策定が業界全体に影響を与えるため、関連企業に注目。",
-      "assets": {
-        "up": [],
-        "down": [
-          "運送関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178951000",
-      "soWhat": "グーグルのAI開発遅れが市場に影響を及ぼし、IT関連株に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "IT関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179331000",
-      "soWhat": "展示内容の変更は観光業や地域経済に影響を及ぼす可能性あり。",
-      "assets": {
-        "up": [
-          "観光業"
-        ],
-        "down": [
-          "地域経済"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179211000",
-      "soWhat": "海峡封鎖の可能性はエネルギー価格や輸送コストに影響を与えるため注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "エネルギー価格",
-          "輸送コスト"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179071000",
-      "soWhat": "漁獲枠の拡大交渉の難航は水産業や関連企業に影響を及ぼす可能性あり。",
-      "assets": {
-        "up": [],
-        "down": [
-          "水産業",
-          "関連企業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179291000",
-      "soWhat": "改正種苗法の成立は農業関連企業に注目を促す要因となる。",
-      "assets": {
-        "up": [
-          "農業関連企業"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015141081000",
-      "soWhat": "ロシアの軍事侵攻は国際情勢を不安定化させ、投資リスクが高まる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "防衛関連株",
-          "エネルギー関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179271000",
-      "soWhat": "インドネシアLNGプロジェクトはエネルギー関連企業にとっての成長機会。",
-      "assets": {
-        "up": [
-          "エネルギー関連企業"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
     }
   ]
 }
