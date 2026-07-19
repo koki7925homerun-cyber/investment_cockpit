@@ -1,6 +1,56 @@
 {
-  "generatedAt": "2026-07-19T07:55:21.301Z",
+  "generatedAt": "2026-07-19T10:18:02.084Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180851000",
+      "soWhat": "中東情勢の緊迫化はエネルギー価格に影響する可能性があるため注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "旅行関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180841000",
+      "soWhat": "防衛関連の需要増加が期待されるため、関連企業の動向に注目。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180791000",
+      "soWhat": "ウクライナ情勢の悪化は市場の不安要因となり、リスク回避の動きが強まる可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "株式市場"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141101000",
+      "soWhat": "ロシアの軍事行動が続く中、国際的な緊張が高まり、投資家はリスク管理を強化する必要がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "国際株式"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015180431000",
       "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
@@ -111,21 +161,6 @@
         ]
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015180171000",
-      "soWhat": "円安が進む中、iPhone価格上昇は消費者の購買意欲に影響しうる。",
-      "assets": {
-        "up": [
-          "ITセクター",
-          "消費関連"
-        ],
-        "down": [
-          "円建て資産"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     },
     {
@@ -360,44 +395,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179611000",
-      "soWhat": "新党首の政策が経済に与える影響に注意が必要。",
-      "assets": {
-        "up": [
-          "金融セクター"
-        ],
-        "down": [
-          "輸出関連企業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179581000",
-      "soWhat": "キオクシアの賠償問題が業績に影響する可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "半導体セクター"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179421000",
-      "soWhat": "人道的危機が国際的な影響を及ぼす可能性に注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "観光業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     }
   ]
 }
