@@ -1,6 +1,35 @@
 {
-  "generatedAt": "2026-07-19T18:45:50.369Z",
+  "generatedAt": "2026-07-19T21:40:13.542Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180931000",
+      "soWhat": "米イラン情勢の緊迫化はエネルギー市場に影響を与える可能性があるため注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "航空株",
+          "観光関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015181001000",
+      "soWhat": "ロシアの攻撃が続く中、地政学リスクが高まり、投資家はリスク管理に注意が必要。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": [
+          "インフラ関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015180911000",
       "soWhat": "台湾の政治情勢が安定するか注視が必要。",
@@ -372,31 +401,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179761000",
-      "soWhat": "水素列車の運行開始は、再生可能エネルギー関連株の注目材料。",
-      "assets": {
-        "up": [
-          "再生可能エネルギー",
-          "交通関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179681000",
-      "soWhat": "台湾とパプアニューギニアの緊張は、地域の政治リスクを高める要因。",
-      "assets": {
-        "up": [],
-        "down": [
-          "地域関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     }
   ]
 }
