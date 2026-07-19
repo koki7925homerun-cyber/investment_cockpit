@@ -1,6 +1,21 @@
 {
-  "generatedAt": "2026-07-19T01:23:48.187Z",
+  "generatedAt": "2026-07-19T05:40:41.080Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180431000",
+      "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "米国株",
+          "イラン関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015180601000",
       "soWhat": "ハンガリーの政治変動はEUとの関係に影響を与える可能性があり、投資家は注視が必要。",
@@ -27,21 +42,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015180431000",
-      "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "米国株",
-          "イラン関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015141091000",
