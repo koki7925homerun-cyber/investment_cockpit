@@ -1,6 +1,33 @@
 {
-  "generatedAt": "2026-07-18T21:39:09.868Z",
+  "generatedAt": "2026-07-19T01:23:48.187Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180601000",
+      "soWhat": "ハンガリーの政治変動はEUとの関係に影響を与える可能性があり、投資家は注視が必要。",
+      "assets": {
+        "up": [
+          "EU関連株"
+        ],
+        "down": [
+          "ハンガリー株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180541000",
+      "soWhat": "ウクライナの軍事体制の変化は、地政学リスクを高める要因となり、投資判断に影響を与える。",
+      "assets": {
+        "up": [],
+        "down": [
+          "防衛関連株",
+          "ウクライナ関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015180431000",
       "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
@@ -371,33 +398,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178751000",
-      "soWhat": "ホルムズ海峡の緊張が高まる中、エネルギー関連株に注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "輸送関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015178411000",
-      "soWhat": "国産AIの進展は、関連企業の成長に期待が持てる要素となる。",
-      "assets": {
-        "up": [
-          "AI関連株",
-          "半導体株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
     }
   ]
 }
