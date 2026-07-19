@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-07-19T10:18:02.084Z",
+  "generatedAt": "2026-07-19T12:47:37.345Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015180911000",
+      "soWhat": "台湾の政治情勢が安定するか注視が必要。",
+      "assets": {
+        "up": [
+          "台湾関連株"
+        ],
+        "down": [
+          "中国関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015180851000",
       "soWhat": "中東情勢の緊迫化はエネルギー価格に影響する可能性があるため注意が必要。",
@@ -383,18 +397,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179711000",
-      "soWhat": "ASEANとの協力強化は、日本企業の国際展開にプラスの影響を与える。",
-      "assets": {
-        "up": [
-          "国際展開企業"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
     }
   ]
 }
