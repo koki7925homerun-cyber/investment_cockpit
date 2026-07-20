@@ -1,15 +1,16 @@
 {
-  "generatedAt": "2026-07-20T08:52:34.910Z",
+  "generatedAt": "2026-07-20T11:33:44.023Z",
   "items": [
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181211000",
-      "soWhat": "台湾との関係改善の可能性に注意が必要です。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015181251000",
+      "soWhat": "新首相の政策が市場に与える影響に注意が必要。",
       "assets": {
         "up": [
-          "外交関連株"
+          "英国株式",
+          "インフラ関連"
         ],
         "down": [
-          "軍需関連株"
+          "輸出企業"
         ]
       },
       "horizon": "mid",
@@ -28,6 +29,20 @@
         ]
       },
       "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015181211000",
+      "soWhat": "台湾との関係改善の可能性に注意が必要です。",
+      "assets": {
+        "up": [
+          "外交関連株"
+        ],
+        "down": [
+          "軍需関連株"
+        ]
+      },
+      "horizon": "mid",
       "impact": "mixed"
     },
     {
@@ -388,18 +403,6 @@
         "down": []
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179891000",
-      "soWhat": "地震の影響は日本にないが、地震関連株に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "地震関連株"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     }
   ]
