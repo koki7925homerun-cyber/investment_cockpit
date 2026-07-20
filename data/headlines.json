@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-07-20T11:33:44.023Z",
+  "generatedAt": "2026-07-20T13:44:11.144Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015181331000",
+      "soWhat": "竹島問題が再燃する可能性があり、地域関連株に注意。",
+      "assets": {
+        "up": [],
+        "down": [
+          "地域関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015181251000",
       "soWhat": "新首相の政策が市場に与える影響に注意が必要。",
@@ -387,18 +399,6 @@
       "assets": {
         "up": [
           "資源関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179991000",
-      "soWhat": "フランスとドイツの軍事協力強化が、欧州の防衛関連株に影響を与えるか注視。",
-      "assets": {
-        "up": [
-          "防衛関連株"
         ],
         "down": []
       },
