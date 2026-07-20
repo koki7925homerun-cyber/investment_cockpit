@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-07-20T05:58:13.748Z",
+  "generatedAt": "2026-07-20T08:52:34.910Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015181211000",
+      "soWhat": "台湾との関係改善の可能性に注意が必要です。",
+      "assets": {
+        "up": [
+          "外交関連株"
+        ],
+        "down": [
+          "軍需関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015180931000",
       "soWhat": "米イラン情勢の緊迫化はエネルギー市場に影響を与える可能性があるため注意が必要。",
@@ -383,19 +397,6 @@
         "up": [],
         "down": [
           "地震関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015179961000",
-      "soWhat": "中国の自然災害は地域経済に影響を及ぼす可能性があるため注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "中国関連株",
-          "インフラセクター"
         ]
       },
       "horizon": "short",
