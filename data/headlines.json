@@ -1,6 +1,66 @@
 {
-  "generatedAt": "2026-07-21T19:01:18.183Z",
+  "generatedAt": "2026-07-21T21:53:24.871Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182271000",
+      "soWhat": "ウクライナの軍指導部交代は地政学リスクを高め、投資家は注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "防衛関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182231000",
+      "soWhat": "中国の軍事活動強化は地域の緊張を高め、関連企業の動向が判断材料に。",
+      "assets": {
+        "up": [],
+        "down": [
+          "防衛関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182171000",
+      "soWhat": "イランとの緊張が高まる中、エネルギー関連株の動向に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182091000",
+      "soWhat": "ケンタッキーの通常営業再開は、消費関連株にとってプラス要因となる可能性。",
+      "assets": {
+        "up": [
+          "消費関連株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182261000",
+      "soWhat": "ニチレイのサイバー攻撃は業務に影響を及ぼし、投資家はリスク管理が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "食品関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182211000",
       "soWhat": "円安進行は輸出企業にプラス影響を与える可能性があるため注視が必要。",
@@ -335,70 +395,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181321000",
-      "soWhat": "トヨタの効率化戦略は、競争力強化に寄与する可能性があるため注目。",
-      "assets": {
-        "up": [
-          "自動車株",
-          "製造業"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181461000",
-      "soWhat": "米国の対イラン攻撃強化は中東情勢を不安定化させ、原油価格に影響を与える可能性あり。",
-      "assets": {
-        "up": [],
-        "down": [
-          "原油関連株",
-          "中東関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181471000",
-      "soWhat": "スペインのW杯優勝は、スポーツ関連ビジネスにプラスの影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "スポーツ関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181431000",
-      "soWhat": "南シナ海の緊張が高まる中、関連企業への影響を考慮する必要がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "海運株",
-          "アジア関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181351000",
-      "soWhat": "アリババへの制裁は、同社の業績に影響を及ぼす可能性があり、関連株に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "アリババ株",
-          "中国関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     }
   ]
 }
