@@ -1,6 +1,74 @@
 {
-  "generatedAt": "2026-07-21T08:04:48.364Z",
+  "generatedAt": "2026-07-21T10:54:38.612Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015181411000",
+      "soWhat": "地政学的リスクの高まりは、投資家にとって警戒材料となる。",
+      "assets": {
+        "up": [],
+        "down": [
+          "防衛関連",
+          "観光業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015181561000",
+      "soWhat": "新たな経済政策は市場にポジティブな影響を与える可能性があり、注視が必要。",
+      "assets": {
+        "up": [
+          "インフラ関連",
+          "金融"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015181491000",
+      "soWhat": "アメリカの攻撃が続くことで、中東の地政学リスクが高まり、投資家は注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "原油関連株",
+          "中東関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015181961000",
+      "soWhat": "イラン情勢の不透明感が円安を進行させ、輸出企業に注意が必要。",
+      "assets": {
+        "up": [
+          "輸出関連株"
+        ],
+        "down": [
+          "円建て資産"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141121000",
+      "soWhat": "ロシアの軍事侵攻が続く中、エネルギー価格や防衛関連株に影響が出る可能性がある。",
+      "assets": {
+        "up": [
+          "エネルギー株",
+          "防衛関連株"
+        ],
+        "down": [
+          "観光関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015181881000",
       "soWhat": "新築マンション価格の上昇は不動産市場の動向に注意を促す要因となる。",
@@ -12,19 +80,6 @@
         "down": [
           "住宅関連株"
         ]
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181561000",
-      "soWhat": "新たな経済政策は市場にポジティブな影響を与える可能性があり、注視が必要。",
-      "assets": {
-        "up": [
-          "インフラ関連",
-          "金融"
-        ],
-        "down": []
       },
       "horizon": "mid",
       "impact": "up"
@@ -54,32 +109,6 @@
       },
       "horizon": "short",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181491000",
-      "soWhat": "アメリカの攻撃が続くことで、中東の地政学リスクが高まり、投資家は注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "原油関連株",
-          "中東関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181411000",
-      "soWhat": "地政学的リスクの高まりは、投資家にとって警戒材料となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "防衛関連",
-          "観光業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015181811000",
@@ -371,32 +400,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015180851000",
-      "soWhat": "中東情勢の緊迫化はエネルギー価格に影響する可能性があるため注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "旅行関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015180841000",
-      "soWhat": "防衛関連の需要増加が期待されるため、関連企業の動向に注目。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
     }
   ]
 }
