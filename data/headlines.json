@@ -1,6 +1,34 @@
 {
-  "generatedAt": "2026-07-21T13:11:38.837Z",
+  "generatedAt": "2026-07-21T16:13:31.899Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182211000",
+      "soWhat": "円安進行は輸出企業にプラス影響を与える可能性があるため注視が必要。",
+      "assets": {
+        "up": [
+          "輸出関連株",
+          "観光業"
+        ],
+        "down": [
+          "輸入関連株",
+          "円建て資産"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182191000",
+      "soWhat": "ミャンマー情勢の安定化は地域経済に影響を与えるため、関連企業の動向に注意。",
+      "assets": {
+        "up": [],
+        "down": [
+          "ミャンマー関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015181941000",
       "soWhat": "高市政権の経済政策が今後の市場に影響を与える可能性に注意。",
@@ -371,33 +399,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015180931000",
-      "soWhat": "米イラン情勢の緊迫化はエネルギー市場に影響を与える可能性があるため注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "航空株",
-          "観光関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181331000",
-      "soWhat": "竹島問題が再燃する可能性があり、地域関連株に注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "地域関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     }
   ]
 }
