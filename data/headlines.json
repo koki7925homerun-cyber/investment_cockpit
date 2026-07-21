@@ -1,6 +1,59 @@
 {
-  "generatedAt": "2026-07-21T10:54:38.612Z",
+  "generatedAt": "2026-07-21T13:11:38.837Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015181941000",
+      "soWhat": "高市政権の経済政策が今後の市場に影響を与える可能性に注意。",
+      "assets": {
+        "up": [
+          "インフラ関連"
+        ],
+        "down": [
+          "消費関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182051000",
+      "soWhat": "中東情勢の不安定化がエネルギー市場に影響を及ぼす可能性がある。",
+      "assets": {
+        "up": [
+          "エネルギー関連"
+        ],
+        "down": [
+          "安全保障関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182041000",
+      "soWhat": "中国との緊張が高まる中、関連企業のリスク管理が重要になる。",
+      "assets": {
+        "up": [],
+        "down": [
+          "海運関連",
+          "資源関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182031000",
+      "soWhat": "インドの社会不安が経済成長に影響を与える可能性に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "インド関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015181411000",
       "soWhat": "地政学的リスクの高まりは、投資家にとって警戒材料となる。",
@@ -13,6 +66,19 @@
       },
       "horizon": "short",
       "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182011000",
+      "soWhat": "水道インフラへの投資が関連セクターにプラスの影響を与える見込み。",
+      "assets": {
+        "up": [
+          "インフラ関連",
+          "建設関連"
+        ],
+        "down": []
+      },
+      "horizon": "long",
+      "impact": "up"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015181561000",
@@ -328,74 +394,6 @@
         "up": [],
         "down": [
           "地域関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181211000",
-      "soWhat": "台湾との関係改善の可能性に注意が必要です。",
-      "assets": {
-        "up": [
-          "外交関連株"
-        ],
-        "down": [
-          "軍需関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181061000",
-      "soWhat": "ウクライナ情勢の進展が影響するため、地政学リスクに注意。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": [
-          "エネルギー株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181071000",
-      "soWhat": "原油価格の上昇はエネルギー関連株にプラス影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "エネルギー株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181001000",
-      "soWhat": "ロシアの攻撃が続く中、地政学リスクが高まり、投資家はリスク管理に注意が必要。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": [
-          "インフラ関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015180911000",
-      "soWhat": "台湾の政治情勢が安定するか注視が必要。",
-      "assets": {
-        "up": [
-          "台湾関連株"
-        ],
-        "down": [
-          "中国関連株"
         ]
       },
       "horizon": "short",
