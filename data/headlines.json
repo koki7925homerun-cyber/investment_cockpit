@@ -1,6 +1,64 @@
 {
-  "generatedAt": "2026-07-22T13:17:34.327Z",
+  "generatedAt": "2026-07-22T16:12:44.469Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182871000",
+      "soWhat": "米中関係の進展は市場に影響を与える可能性があり、投資判断の材料となる。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182271000",
+      "soWhat": "ウクライナの軍指導部交代は地政学リスクを高め、投資家は注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "防衛関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183181000",
+      "soWhat": "メコン地域とのエネルギー連携強化は、エネルギー関連株に注目を促す。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183151000",
+      "soWhat": "パレスチナ支援の拡大は、国際的な人道支援関連企業に影響を与える可能性あり。",
+      "assets": {
+        "up": [
+          "人道支援関連企業"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183171000",
+      "soWhat": "イランへの圧力強化は、中東の地政学リスクを高め、エネルギー市場に影響を与える。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015141131000",
       "soWhat": "ロシアの軍事侵攻が続く中、エネルギー価格や安全保障に注意が必要。",
@@ -38,18 +96,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182271000",
-      "soWhat": "ウクライナの軍指導部交代は地政学リスクを高め、投資家は注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "防衛関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182901000",
@@ -93,20 +139,6 @@
       "impact": "mixed"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182331000",
-      "soWhat": "円安進行により輸出関連企業の業績に影響が出る可能性あり。",
-      "assets": {
-        "up": [
-          "輸出関連株"
-        ],
-        "down": [
-          "円建て資産"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182881000",
       "soWhat": "ソフトバンクの新サービスはAI関連株に影響を与える可能性があり、注目が集まる。",
       "assets": {
@@ -117,16 +149,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182871000",
-      "soWhat": "米中関係の進展は市場に影響を与える可能性があり、投資判断の材料となる。",
-      "assets": {
-        "up": [],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182851000",
@@ -347,30 +369,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182121000",
-      "soWhat": "プラスチック容器の価格高騰は小売業のコストに影響を及ぼす可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "小売関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182231000",
-      "soWhat": "中国の軍事活動強化は地域の緊張を高め、関連企業の動向が判断材料に。",
-      "assets": {
-        "up": [],
-        "down": [
-          "防衛関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     }
   ]
 }
