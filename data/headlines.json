@@ -1,6 +1,60 @@
 {
-  "generatedAt": "2026-07-22T05:38:32.800Z",
+  "generatedAt": "2026-07-22T08:05:10.430Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182621000",
+      "soWhat": "JRの貸付料増額が運営コストに影響し、株価に注意が必要。",
+      "assets": {
+        "up": [
+          "インフラ関連"
+        ],
+        "down": [
+          "JR関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141131000",
+      "soWhat": "ロシアの軍事侵攻が続く中、エネルギー価格や安全保障に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連"
+        ],
+        "down": [
+          "防衛関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182701000",
+      "soWhat": "クアッドの海洋安定強調が地域の安全保障に影響、関連株に注目。",
+      "assets": {
+        "up": [
+          "防衛関連"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182641000",
+      "soWhat": "AI関連のリスクが浮き彫りになり、投資判断に影響を及ぼす可能性。",
+      "assets": {
+        "up": [
+          "AI関連"
+        ],
+        "down": [
+          "テクノロジー株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182371000",
       "soWhat": "AI関連企業の動向が投資判断に影響を与える可能性あり。",
@@ -98,18 +152,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182321000",
-      "soWhat": "中東からの原油輸入減少はエネルギー関連株に影響を与える要因となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "エネルギー関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182321000",
@@ -335,45 +377,6 @@
       },
       "horizon": "mid",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181411000",
-      "soWhat": "地政学的リスクの高まりは、投資家にとって警戒材料となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "防衛関連",
-          "観光業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182011000",
-      "soWhat": "水道インフラへの投資が関連セクターにプラスの影響を与える見込み。",
-      "assets": {
-        "up": [
-          "インフラ関連",
-          "建設関連"
-        ],
-        "down": []
-      },
-      "horizon": "long",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181561000",
-      "soWhat": "新たな経済政策は市場にポジティブな影響を与える可能性があり、注視が必要。",
-      "assets": {
-        "up": [
-          "インフラ関連",
-          "金融"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
     }
   ]
 }
