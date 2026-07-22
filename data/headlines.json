@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-07-22T01:21:59.141Z",
+  "generatedAt": "2026-07-22T05:38:32.800Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182371000",
+      "soWhat": "AI関連企業の動向が投資判断に影響を与える可能性あり。",
+      "assets": {
+        "up": [
+          "AI関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182491000",
+      "soWhat": "中国との関係悪化が日本企業の国際展開に影響するか注視。",
+      "assets": {
+        "up": [],
+        "down": [
+          "国際関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182331000",
       "soWhat": "円安進行により輸出関連企業の業績に影響が出る可能性あり。",
@@ -13,6 +37,66 @@
         ]
       },
       "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182411000",
+      "soWhat": "関税政策が医薬品市場に影響し、関連企業の戦略見直しが必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "医薬品関連株"
+        ]
+      },
+      "horizon": "long",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182471000",
+      "soWhat": "中東情勢の不安定さがエネルギー価格に影響を与える可能性に注意。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182451000",
+      "soWhat": "サイバー攻撃の影響が企業の信頼性に影響を及ぼすか注視が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "ニチレイ"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182421000",
+      "soWhat": "半導体関連の強い買いが市場全体に好影響を与える可能性あり。",
+      "assets": {
+        "up": [
+          "半導体関連株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182341000",
+      "soWhat": "イランとの緊張が続く中、地政学リスクが市場に影響を与えるか注視。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "mid",
       "impact": "mixed"
     },
     {
@@ -289,103 +373,6 @@
         "down": []
       },
       "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181491000",
-      "soWhat": "アメリカの攻撃が続くことで、中東の地政学リスクが高まり、投資家は注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "原油関連株",
-          "中東関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181961000",
-      "soWhat": "イラン情勢の不透明感が円安を進行させ、輸出企業に注意が必要。",
-      "assets": {
-        "up": [
-          "輸出関連株"
-        ],
-        "down": [
-          "円建て資産"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015141121000",
-      "soWhat": "ロシアの軍事侵攻が続く中、エネルギー価格や防衛関連株に影響が出る可能性がある。",
-      "assets": {
-        "up": [
-          "エネルギー株",
-          "防衛関連株"
-        ],
-        "down": [
-          "観光関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181881000",
-      "soWhat": "新築マンション価格の上昇は不動産市場の動向に注意を促す要因となる。",
-      "assets": {
-        "up": [
-          "不動産",
-          "建設業"
-        ],
-        "down": [
-          "住宅関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181711000",
-      "soWhat": "夏の商機に関する情報は消費関連株の動向を判断する材料となる。",
-      "assets": {
-        "up": [
-          "小売業",
-          "サービス業"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181591000",
-      "soWhat": "半導体関連の株価上昇は、業界の回復を示す重要なシグナルとなる。",
-      "assets": {
-        "up": [
-          "半導体",
-          "テクノロジー"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181811000",
-      "soWhat": "政府の成長戦略は長期的な投資機会を示唆しており、関連セクターに注目。",
-      "assets": {
-        "up": [
-          "インフラ関連",
-          "再生可能エネルギー",
-          "テクノロジー"
-        ],
-        "down": []
-      },
-      "horizon": "long",
       "impact": "up"
     }
   ]
