@@ -1,6 +1,131 @@
 {
-  "generatedAt": "2026-07-22T08:05:10.430Z",
+  "generatedAt": "2026-07-22T10:56:58.122Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182891000",
+      "soWhat": "輸入肉価格の上昇は、関連企業の利益に影響を与える可能性があるため、注視が必要。",
+      "assets": {
+        "up": [
+          "食品関連株"
+        ],
+        "down": [
+          "輸入業者",
+          "消費者"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182331000",
+      "soWhat": "円安進行により輸出関連企業の業績に影響が出る可能性あり。",
+      "assets": {
+        "up": [
+          "輸出関連株"
+        ],
+        "down": [
+          "円建て資産"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182331000",
+      "soWhat": "円安進行により輸出関連企業の業績に影響が出る可能性あり。",
+      "assets": {
+        "up": [
+          "輸出関連株"
+        ],
+        "down": [
+          "円建て資産"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182881000",
+      "soWhat": "ソフトバンクの新サービスはAI関連株に影響を与える可能性があり、注目が集まる。",
+      "assets": {
+        "up": [
+          "AI関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182871000",
+      "soWhat": "米中関係の進展は市場に影響を与える可能性があり、投資判断の材料となる。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182851000",
+      "soWhat": "ASEANとの協力強化は、日本企業の国際展開にプラスの影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "国際展開企業"
+        ],
+        "down": []
+      },
+      "horizon": "long",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182341000",
+      "soWhat": "イランとの緊張が続く中、地政学リスクが市場に影響を与えるか注視。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182791000",
+      "soWhat": "アフガニスタンの洪水は人道的影響が大きく、関連企業への影響も考慮する必要がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "人道支援関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182451000",
+      "soWhat": "サイバー攻撃の影響が企業の信頼性に影響を及ぼすか注視が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "ニチレイ"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182421000",
+      "soWhat": "半導体関連の強い買いが市場全体に好影響を与える可能性あり。",
+      "assets": {
+        "up": [
+          "半導体関連株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182621000",
       "soWhat": "JRの貸付料増額が運営コストに影響し、株価に注意が必要。",
@@ -80,20 +205,6 @@
       "impact": "mixed"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182331000",
-      "soWhat": "円安進行により輸出関連企業の業績に影響が出る可能性あり。",
-      "assets": {
-        "up": [
-          "輸出関連株"
-        ],
-        "down": [
-          "円建て資産"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182411000",
       "soWhat": "関税政策が医薬品市場に影響し、関連企業の戦略見直しが必要。",
       "assets": {
@@ -113,42 +224,6 @@
           "エネルギー関連株"
         ],
         "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182451000",
-      "soWhat": "サイバー攻撃の影響が企業の信頼性に影響を及ぼすか注視が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "ニチレイ"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182421000",
-      "soWhat": "半導体関連の強い買いが市場全体に好影響を与える可能性あり。",
-      "assets": {
-        "up": [
-          "半導体関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182341000",
-      "soWhat": "イランとの緊張が続く中、地政学リスクが市場に影響を与えるか注視。",
-      "assets": {
-        "up": [],
-        "down": [
-          "エネルギー関連株"
-        ]
       },
       "horizon": "mid",
       "impact": "mixed"
@@ -295,87 +370,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182211000",
-      "soWhat": "円安進行は輸出企業にプラス影響を与える可能性があるため注視が必要。",
-      "assets": {
-        "up": [
-          "輸出関連株",
-          "観光業"
-        ],
-        "down": [
-          "輸入関連株",
-          "円建て資産"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182191000",
-      "soWhat": "ミャンマー情勢の安定化は地域経済に影響を与えるため、関連企業の動向に注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "ミャンマー関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181941000",
-      "soWhat": "高市政権の経済政策が今後の市場に影響を与える可能性に注意。",
-      "assets": {
-        "up": [
-          "インフラ関連"
-        ],
-        "down": [
-          "消費関連"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182051000",
-      "soWhat": "中東情勢の不安定化がエネルギー市場に影響を及ぼす可能性がある。",
-      "assets": {
-        "up": [
-          "エネルギー関連"
-        ],
-        "down": [
-          "安全保障関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182041000",
-      "soWhat": "中国との緊張が高まる中、関連企業のリスク管理が重要になる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "海運関連",
-          "資源関連"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182031000",
-      "soWhat": "インドの社会不安が経済成長に影響を与える可能性に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "インド関連株"
-        ]
-      },
-      "horizon": "mid",
       "impact": "down"
     }
   ]
