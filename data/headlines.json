@@ -1,6 +1,32 @@
 {
-  "generatedAt": "2026-07-22T18:54:01.229Z",
+  "generatedAt": "2026-07-22T21:55:13.034Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183101000",
+      "soWhat": "アルファベットの好決算はIT株にプラス影響が期待される。",
+      "assets": {
+        "up": [
+          "IT株",
+          "テクノロジー"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183101000",
+      "soWhat": "アルファベットの好決算はIT株にプラス影響が期待される。",
+      "assets": {
+        "up": [
+          "IT株",
+          "テクノロジー"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182871000",
       "soWhat": "米中関係の進展は市場に影響を与える可能性があり、投資判断の材料となる。",
@@ -340,30 +366,6 @@
       "assets": {
         "up": [
           "消費関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182221000",
-      "soWhat": "インドの政治不安は投資環境に影響を及ぼす可能性があり注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "インド関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182131000",
-      "soWhat": "鉄道業界の待遇改善は業績向上に寄与する可能性があるため注目。",
-      "assets": {
-        "up": [
-          "鉄道関連株"
         ],
         "down": []
       },
