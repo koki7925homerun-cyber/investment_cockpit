@@ -1,6 +1,68 @@
 {
-  "generatedAt": "2026-07-21T21:53:24.871Z",
+  "generatedAt": "2026-07-22T01:21:59.141Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182331000",
+      "soWhat": "円安進行により輸出関連企業の業績に影響が出る可能性あり。",
+      "assets": {
+        "up": [
+          "輸出関連株"
+        ],
+        "down": [
+          "円建て資産"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182321000",
+      "soWhat": "中東からの原油輸入減少はエネルギー関連株に影響を与える要因となる。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182321000",
+      "soWhat": "中東からの原油輸入減少はエネルギー関連株に影響を与える要因となる。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182241000",
+      "soWhat": "南シナ海の緊張が高まる中、関連企業のリスク管理に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "海運関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182291000",
+      "soWhat": "SNS利用規制は関連企業のビジネスモデルに影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "SNS関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182271000",
       "soWhat": "ウクライナの軍指導部交代は地政学リスクを高め、投資家は注意が必要。",
@@ -12,6 +74,54 @@
       },
       "horizon": "mid",
       "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182301000",
+      "soWhat": "電気料金の税引き下げは消費者の購買力を高める要因となるかもしれない。",
+      "assets": {
+        "up": [
+          "消費関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182221000",
+      "soWhat": "インドの政治不安は投資環境に影響を及ぼす可能性があり注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "インド関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182131000",
+      "soWhat": "鉄道業界の待遇改善は業績向上に寄与する可能性があるため注目。",
+      "assets": {
+        "up": [
+          "鉄道関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015182121000",
+      "soWhat": "プラスチック容器の価格高騰は小売業のコストに影響を及ぼす可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "小売関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182231000",
@@ -277,124 +387,6 @@
       },
       "horizon": "long",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181821000",
-      "soWhat": "エアコン需要の増加は関連企業の業績向上に寄与する可能性がある。",
-      "assets": {
-        "up": [
-          "家電",
-          "製造業"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181721000",
-      "soWhat": "政治的不安定は市場に影響を与える可能性があり、リスク管理が重要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "株式市場",
-          "不動産"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181251000",
-      "soWhat": "新首相の政策が市場に与える影響に注意が必要。",
-      "assets": {
-        "up": [
-          "英国株式",
-          "インフラ関連"
-        ],
-        "down": [
-          "輸出企業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181611000",
-      "soWhat": "リニア中央新幹線の進展は、関連企業にとって成長機会を提供する。",
-      "assets": {
-        "up": [
-          "建設業",
-          "交通インフラ"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181581000",
-      "soWhat": "追加関税は貿易関連企業に影響を及ぼす可能性があり、注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "貿易関連",
-          "農業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181511000",
-      "soWhat": "中東情勢の不安定化がエネルギー市場に影響する可能性に注意。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "輸入依存企業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181441000",
-      "soWhat": "次期戦闘機の開発進展は、防衛関連企業にとってプラス要因となる可能性がある。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": []
-      },
-      "horizon": "long",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181501000",
-      "soWhat": "黒海の安全性が懸念され、海運業界への影響が判断材料となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "海運株",
-          "輸出関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015181311000",
-      "soWhat": "コメ価格の動向が農業関連株に影響を与える可能性があるため注意。",
-      "assets": {
-        "up": [
-          "農業関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     }
   ]
 }
