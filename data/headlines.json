@@ -1,6 +1,120 @@
 {
-  "generatedAt": "2026-07-23T10:57:04.725Z",
+  "generatedAt": "2026-07-23T13:20:22.858Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183951000",
+      "soWhat": "イランの動向が中東情勢に影響し、原油価格に注意が必要。",
+      "assets": {
+        "up": [
+          "原油関連株"
+        ],
+        "down": [
+          "輸入関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184521000",
+      "soWhat": "欧州中銀の金利政策が今後の市場動向に影響を与える可能性あり。",
+      "assets": {
+        "up": [
+          "金融株"
+        ],
+        "down": [
+          "債券"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184201000",
+      "soWhat": "日中韓の協力深化がアジア市場の安定に寄与する可能性に注意。",
+      "assets": {
+        "up": [
+          "アジア市場",
+          "輸出関連"
+        ],
+        "down": []
+      },
+      "horizon": "long",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184541000",
+      "soWhat": "映画祭出品は日本の文化産業にプラスの影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "エンタメ関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184071000",
+      "soWhat": "大手企業の設備投資が経済成長を促進し、関連株に注目が集まる。",
+      "assets": {
+        "up": [
+          "建設株",
+          "設備投資関連"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184511000",
+      "soWhat": "南シナ海の緊張が地域の安定に影響し、関連企業に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "海運関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184401000",
+      "soWhat": "インド太平洋地域の安全保障が市場に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "防衛関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184341000",
+      "soWhat": "香港の政治動向が中国との関係に影響し、投資判断に影響を与える。",
+      "assets": {
+        "up": [],
+        "down": [
+          "香港関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184291000",
+      "soWhat": "尖閣諸島の領海侵入が日本の安全保障に影響し、関連企業に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "海運関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015184231000",
       "soWhat": "タイの治安悪化が地域の投資リスクを高める可能性に注意。",
@@ -23,19 +137,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184201000",
-      "soWhat": "日中韓の協力深化がアジア市場の安定に寄与する可能性に注意。",
-      "assets": {
-        "up": [
-          "アジア市場",
-          "輸出関連"
-        ],
-        "down": []
-      },
-      "horizon": "long",
-      "impact": "up"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015184051000",
@@ -76,19 +177,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183911000",
-      "soWhat": "日米合意の影響が輸出企業の戦略に与える影響を注視する必要あり。",
-      "assets": {
-        "up": [],
-        "down": [
-          "輸出企業",
-          "製造業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015183911000",
@@ -288,88 +376,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183211000",
-      "soWhat": "アメリカとイランの緊張は、エネルギー市場に不安定要因をもたらすため注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "エネルギー株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183011000",
-      "soWhat": "日米合意の不透明さは、貿易関連株に影響を与える可能性があり、注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "貿易関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182871000",
-      "soWhat": "米中関係の進展は市場に影響を与える可能性があり、投資判断の材料となる。",
-      "assets": {
-        "up": [],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182271000",
-      "soWhat": "ウクライナの軍指導部交代は地政学リスクを高め、投資家は注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "防衛関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183181000",
-      "soWhat": "メコン地域とのエネルギー連携強化は、エネルギー関連株に注目を促す。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183151000",
-      "soWhat": "パレスチナ支援の拡大は、国際的な人道支援関連企業に影響を与える可能性あり。",
-      "assets": {
-        "up": [
-          "人道支援関連企業"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183171000",
-      "soWhat": "イランへの圧力強化は、中東の地政学リスクを高め、エネルギー市場に影響を与える。",
-      "assets": {
-        "up": [],
-        "down": [
-          "エネルギー関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     }
   ]
 }
