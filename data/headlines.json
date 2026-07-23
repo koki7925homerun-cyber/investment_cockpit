@@ -1,41 +1,33 @@
 {
-  "generatedAt": "2026-07-23T18:56:35.251Z",
+  "generatedAt": "2026-07-23T21:55:10.014Z",
   "items": [
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184691000",
-      "soWhat": "円安進行は輸出関連企業にプラス影響を与える可能性があるため注視が必要。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184731000",
+      "soWhat": "追加関税の発動は貿易関連株に影響を与える可能性があるため注意が必要。",
       "assets": {
         "up": [
-          "輸出関連株",
-          "観光業",
-          "資源関連"
+          "貿易関連株"
         ],
         "down": [
-          "内需関連株",
-          "輸入企業",
-          "円建て資産"
+          "輸出企業"
         ]
       },
       "horizon": "short",
-      "impact": "up"
+      "impact": "mixed"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184691000",
-      "soWhat": "円安進行は輸出関連企業にプラス影響を与える可能性があるため注視が必要。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184731000",
+      "soWhat": "追加関税の発動は貿易関連株に影響を与える可能性があるため注意が必要。",
       "assets": {
         "up": [
-          "輸出関連株",
-          "観光業",
-          "資源関連"
+          "貿易関連株"
         ],
         "down": [
-          "内需関連株",
-          "輸入企業",
-          "円建て資産"
+          "輸出企業"
         ]
       },
       "horizon": "short",
-      "impact": "up"
+      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015184681000",
@@ -50,6 +42,108 @@
       },
       "horizon": "mid",
       "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184421000",
+      "soWhat": "日中関係の改善期待が市場に与える影響を注視する必要がある。",
+      "assets": {
+        "up": [
+          "日中関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184571000",
+      "soWhat": "新代表選出により韓国の政策が変わる可能性があり、注視が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "韓国関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184471000",
+      "soWhat": "南シナ海問題の進展が地域の安定に寄与するか注視する必要がある。",
+      "assets": {
+        "up": [
+          "ASEAN関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184451000",
+      "soWhat": "新関税の発表が市場に与える影響を注視する必要がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "輸出企業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184451000",
+      "soWhat": "新関税の発表が市場に与える影響を注視する必要がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "輸出企業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184481000",
+      "soWhat": "和平交渉の進展が市場に与える影響を注視する必要がある。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184461000",
+      "soWhat": "国境の緊張が続く中、関連企業への影響を注視する必要がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "国境関連企業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184691000",
+      "soWhat": "円安進行は輸出関連企業にプラス影響を与える可能性があるため注視が必要。",
+      "assets": {
+        "up": [
+          "輸出関連株",
+          "観光業",
+          "資源関連"
+        ],
+        "down": [
+          "内需関連株",
+          "輸入企業",
+          "円建て資産"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015184661000",
@@ -114,20 +208,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184591000",
-      "soWhat": "円安進行は輸出企業に有利だが、輸入コスト上昇に注意。",
-      "assets": {
-        "up": [
-          "輸出関連株"
-        ],
-        "down": [
-          "輸入関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015184591000",
@@ -304,93 +384,6 @@
         "down": [
           "輸出企業",
           "製造業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183751000",
-      "soWhat": "円安が続く中、ドル資産の価値が上昇する可能性があるため、注視が必要。",
-      "assets": {
-        "up": [
-          "ドル資産"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183971000",
-      "soWhat": "世界遺産登録の影響で観光関連株に注目が集まる可能性あり。",
-      "assets": {
-        "up": [
-          "観光関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183761000",
-      "soWhat": "AI・半導体関連の株価上昇は、テクノロジーセクターへの投資判断材料となる。",
-      "assets": {
-        "up": [
-          "AI関連株",
-          "半導体関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184021000",
-      "soWhat": "ガソリン価格の安定がエネルギー関連株に影響を与える可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "エネルギー関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184031000",
-      "soWhat": "日英関係の強化が進めば、国際的なビジネス機会が増加する可能性に注意。",
-      "assets": {
-        "up": [
-          "貿易関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183871000",
-      "soWhat": "福島の廃炉事業進展は、電力関連株に影響を与える可能性があるため注視が必要。",
-      "assets": {
-        "up": [
-          "電力関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183461000",
-      "soWhat": "歴史的な円安は輸出企業に追い風となるが、輸入コスト上昇に注意が必要。",
-      "assets": {
-        "up": [
-          "輸出企業"
-        ],
-        "down": [
-          "輸入企業"
         ]
       },
       "horizon": "short",
