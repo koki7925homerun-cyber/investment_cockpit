@@ -1,6 +1,84 @@
 {
-  "generatedAt": "2026-07-23T16:18:16.009Z",
+  "generatedAt": "2026-07-23T18:56:35.251Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184691000",
+      "soWhat": "円安進行は輸出関連企業にプラス影響を与える可能性があるため注視が必要。",
+      "assets": {
+        "up": [
+          "輸出関連株",
+          "観光業",
+          "資源関連"
+        ],
+        "down": [
+          "内需関連株",
+          "輸入企業",
+          "円建て資産"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184691000",
+      "soWhat": "円安進行は輸出関連企業にプラス影響を与える可能性があるため注視が必要。",
+      "assets": {
+        "up": [
+          "輸出関連株",
+          "観光業",
+          "資源関連"
+        ],
+        "down": [
+          "内需関連株",
+          "輸入企業",
+          "円建て資産"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184681000",
+      "soWhat": "過激派の動向は国際情勢に影響を与える可能性があり、リスク管理が重要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "観光業",
+          "国際関連株",
+          "安全保障関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184661000",
+      "soWhat": "日中関係の緊張は市場に影響を及ぼす可能性があり、関連株に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "日中関連株",
+          "輸出関連株",
+          "観光業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184651000",
+      "soWhat": "グーグルへの制裁はIT業界全体に影響を与える可能性があり、関連株に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "IT関連株",
+          "広告関連",
+          "デジタルサービス"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015184541000",
       "soWhat": "映画祭出品は日本の文化産業にプラスの影響を与える可能性がある。",
@@ -313,68 +391,6 @@
         ],
         "down": [
           "輸入企業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183821000",
-      "soWhat": "日中関係の安定は、関連企業の業績にプラスの影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "日中関連企業"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183631000",
-      "soWhat": "クロマグロ漁獲枠の交渉再開は、水産業関連株に影響を与える可能性があるため注視。",
-      "assets": {
-        "up": [
-          "水産業関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183321000",
-      "soWhat": "セブン-イレブンの不適切事例は、企業のガバナンスに対する投資家の信頼に影響を与えるかもしれない。",
-      "assets": {
-        "up": [],
-        "down": [
-          "セブン-イレブン株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183471000",
-      "soWhat": "サウジとの原子力協定は、エネルギー関連株に影響を与える可能性があるため注視が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183311000",
-      "soWhat": "テスラの利益減少は、EV市場の競争激化を示唆しており注意が必要。",
-      "assets": {
-        "up": [
-          "EV関連株"
-        ],
-        "down": [
-          "テスラ株"
         ]
       },
       "horizon": "short",
