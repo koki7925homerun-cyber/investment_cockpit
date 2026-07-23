@@ -1,6 +1,67 @@
 {
-  "generatedAt": "2026-07-23T05:43:13.336Z",
+  "generatedAt": "2026-07-23T08:08:01.410Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183971000",
+      "soWhat": "世界遺産登録の影響で観光関連株に注目が集まる可能性あり。",
+      "assets": {
+        "up": [
+          "観光関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184051000",
+      "soWhat": "日中関係の改善が進めば、関連企業の株価にプラスの影響が期待される。",
+      "assets": {
+        "up": [
+          "貿易関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183761000",
+      "soWhat": "AI・半導体関連の株価上昇は、テクノロジーセクターへの投資判断材料となる。",
+      "assets": {
+        "up": [
+          "AI関連株",
+          "半導体関連株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184021000",
+      "soWhat": "ガソリン価格の安定がエネルギー関連株に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184031000",
+      "soWhat": "日英関係の強化が進めば、国際的なビジネス機会が増加する可能性に注意。",
+      "assets": {
+        "up": [
+          "貿易関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015183871000",
       "soWhat": "福島の廃炉事業進展は、電力関連株に影響を与える可能性があるため注視が必要。",
@@ -64,31 +125,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183761000",
-      "soWhat": "AI・半導体関連の株価上昇は、テクノロジーセクターへの投資判断材料となる。",
-      "assets": {
-        "up": [
-          "AI関連株",
-          "半導体関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183631000",
-      "soWhat": "クロマグロ漁獲枠の交渉再開は、水産業関連株に影響を与える可能性があるため注視。",
-      "assets": {
-        "up": [
-          "水産業関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015183631000",
@@ -336,44 +372,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182331000",
-      "soWhat": "円安進行により輸出関連企業の業績に影響が出る可能性あり。",
-      "assets": {
-        "up": [
-          "輸出関連株"
-        ],
-        "down": [
-          "円建て資産"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182881000",
-      "soWhat": "ソフトバンクの新サービスはAI関連株に影響を与える可能性があり、注目が集まる。",
-      "assets": {
-        "up": [
-          "AI関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182851000",
-      "soWhat": "ASEANとの協力強化は、日本企業の国際展開にプラスの影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "国際展開企業"
-        ],
-        "down": []
-      },
-      "horizon": "long",
       "impact": "up"
     }
   ]
