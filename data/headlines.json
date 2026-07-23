@@ -1,6 +1,48 @@
 {
-  "generatedAt": "2026-07-22T21:55:13.034Z",
+  "generatedAt": "2026-07-23T01:29:52.133Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183311000",
+      "soWhat": "テスラの利益減少は、EV市場の競争激化を示唆しており注意が必要。",
+      "assets": {
+        "up": [
+          "EV関連株"
+        ],
+        "down": [
+          "テスラ株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183311000",
+      "soWhat": "テスラの利益減少は、EV市場の競争激化を示唆しており注意が必要。",
+      "assets": {
+        "up": [
+          "EV関連株"
+        ],
+        "down": [
+          "テスラ株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183301000",
+      "soWhat": "イエメンの攻撃は中東の地政学リスクを高め、エネルギー市場に影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "エネルギー株"
+        ],
+        "down": [
+          "輸送関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015183101000",
       "soWhat": "アルファベットの好決算はIT株にプラス影響が期待される。",
@@ -26,6 +68,68 @@
       },
       "horizon": "short",
       "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141141000",
+      "soWhat": "ロシアの侵攻継続は、国際的な緊張を高め、資源価格に影響を及ぼす可能性がある。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": [
+          "ロシア関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183281000",
+      "soWhat": "ウクライナの攻撃は、ロシア経済への影響を示唆しており、投資判断材料となる。",
+      "assets": {
+        "up": [],
+        "down": [
+          "ロシア関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183111000",
+      "soWhat": "日本のAIプロジェクト参加は、関連企業の成長機会を示唆し、注目すべき動向。",
+      "assets": {
+        "up": [
+          "AI関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183211000",
+      "soWhat": "アメリカとイランの緊張は、エネルギー市場に不安定要因をもたらすため注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183011000",
+      "soWhat": "日米合意の不透明さは、貿易関連株に影響を与える可能性があり、注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "貿易関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015182871000",
@@ -275,102 +379,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182371000",
-      "soWhat": "AI関連企業の動向が投資判断に影響を与える可能性あり。",
-      "assets": {
-        "up": [
-          "AI関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182491000",
-      "soWhat": "中国との関係悪化が日本企業の国際展開に影響するか注視。",
-      "assets": {
-        "up": [],
-        "down": [
-          "国際関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182411000",
-      "soWhat": "関税政策が医薬品市場に影響し、関連企業の戦略見直しが必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "医薬品関連株"
-        ]
-      },
-      "horizon": "long",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182471000",
-      "soWhat": "中東情勢の不安定さがエネルギー価格に影響を与える可能性に注意。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182321000",
-      "soWhat": "中東からの原油輸入減少はエネルギー関連株に影響を与える要因となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "エネルギー関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182241000",
-      "soWhat": "南シナ海の緊張が高まる中、関連企業のリスク管理に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "海運関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182291000",
-      "soWhat": "SNS利用規制は関連企業のビジネスモデルに影響を与える可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "SNS関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182301000",
-      "soWhat": "電気料金の税引き下げは消費者の購買力を高める要因となるかもしれない。",
-      "assets": {
-        "up": [
-          "消費関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
     }
   ]
 }
