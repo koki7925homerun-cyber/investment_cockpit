@@ -1,16 +1,40 @@
 {
-  "generatedAt": "2026-07-23T08:08:01.410Z",
+  "generatedAt": "2026-07-23T10:57:04.725Z",
   "items": [
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183971000",
-      "soWhat": "世界遺産登録の影響で観光関連株に注目が集まる可能性あり。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184231000",
+      "soWhat": "タイの治安悪化が地域の投資リスクを高める可能性に注意。",
       "assets": {
-        "up": [
-          "観光関連株"
-        ],
+        "up": [],
+        "down": [
+          "観光関連",
+          "インフラ投資"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184221000",
+      "soWhat": "米ロ外交の進展が市場に与える影響を判断材料として注視。",
+      "assets": {
+        "up": [],
         "down": []
       },
       "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184201000",
+      "soWhat": "日中韓の協力深化がアジア市場の安定に寄与する可能性に注意。",
+      "assets": {
+        "up": [
+          "アジア市場",
+          "輸出関連"
+        ],
+        "down": []
+      },
+      "horizon": "long",
       "impact": "up"
     },
     {
@@ -19,6 +43,84 @@
       "assets": {
         "up": [
           "貿易関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141141000",
+      "soWhat": "ロシアの侵攻継続は、国際的な緊張を高め、資源価格に影響を及ぼす可能性がある。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": [
+          "ロシア関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183301000",
+      "soWhat": "イエメンの攻撃は中東の地政学リスクを高め、エネルギー市場に影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "エネルギー株"
+        ],
+        "down": [
+          "輸送関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183911000",
+      "soWhat": "日米合意の影響が輸出企業の戦略に与える影響を注視する必要あり。",
+      "assets": {
+        "up": [],
+        "down": [
+          "輸出企業",
+          "製造業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183911000",
+      "soWhat": "日米合意の影響が輸出企業の戦略に与える影響を注視する必要あり。",
+      "assets": {
+        "up": [],
+        "down": [
+          "輸出企業",
+          "製造業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183751000",
+      "soWhat": "円安が続く中、ドル資産の価値が上昇する可能性があるため、注視が必要。",
+      "assets": {
+        "up": [
+          "ドル資産"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015183971000",
+      "soWhat": "世界遺産登録の影響で観光関連株に注目が集まる可能性あり。",
+      "assets": {
+        "up": [
+          "観光関連株"
         ],
         "down": []
       },
@@ -101,32 +203,6 @@
       "impact": "up"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183751000",
-      "soWhat": "円安が続く中、ドル資産の価値が上昇する可能性があるため、注視が必要。",
-      "assets": {
-        "up": [
-          "ドル資産"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183301000",
-      "soWhat": "イエメンの攻撃は中東の地政学リスクを高め、エネルギー市場に影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "エネルギー株"
-        ],
-        "down": [
-          "輸送関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
       "link": "https://news.web.nhk/newsweb/na/na-k10015183631000",
       "soWhat": "クロマグロ漁獲枠の交渉再開は、水産業関連株に影響を与える可能性があるため注視。",
       "assets": {
@@ -187,20 +263,6 @@
         "down": []
       },
       "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015141141000",
-      "soWhat": "ロシアの侵攻継続は、国際的な緊張を高め、資源価格に影響を及ぼす可能性がある。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": [
-          "ロシア関連株"
-        ]
-      },
-      "horizon": "mid",
       "impact": "up"
     },
     {
@@ -308,71 +370,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015141131000",
-      "soWhat": "ロシアの軍事侵攻が続く中、エネルギー価格や安全保障に注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連"
-        ],
-        "down": [
-          "防衛関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182981000",
-      "soWhat": "ソウル市長の有罪判決は韓国政治の不安定要因となり得る。",
-      "assets": {
-        "up": [],
-        "down": [
-          "韓国株式"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182971000",
-      "soWhat": "南シナ海の行動規範妥結は地域の安定に寄与し、投資環境改善に期待。",
-      "assets": {
-        "up": [
-          "アジア関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182901000",
-      "soWhat": "日米韓の連携強化は北朝鮮リスクの軽減に寄与し、投資家心理を改善する可能性。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015182891000",
-      "soWhat": "輸入肉価格の上昇は、関連企業の利益に影響を与える可能性があるため、注視が必要。",
-      "assets": {
-        "up": [
-          "食品関連株"
-        ],
-        "down": [
-          "輸入業者",
-          "消費者"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
     }
   ]
 }
