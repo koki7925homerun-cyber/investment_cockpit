@@ -1,6 +1,70 @@
 {
-  "generatedAt": "2026-07-23T13:20:22.858Z",
+  "generatedAt": "2026-07-23T16:18:16.009Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184541000",
+      "soWhat": "映画祭出品は日本の文化産業にプラスの影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "エンタメ関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184581000",
+      "soWhat": "地方銀行の統合は地域経済に影響、金融セクターに注目。",
+      "assets": {
+        "up": [
+          "地方銀行"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184291000",
+      "soWhat": "尖閣諸島の領海侵入が日本の安全保障に影響し、関連企業に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "海運関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184591000",
+      "soWhat": "円安進行は輸出企業に有利だが、輸入コスト上昇に注意。",
+      "assets": {
+        "up": [
+          "輸出関連株"
+        ],
+        "down": [
+          "輸入関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184591000",
+      "soWhat": "円安進行は輸出企業に有利だが、輸入コスト上昇に注意。",
+      "assets": {
+        "up": [
+          "輸出関連株"
+        ],
+        "down": [
+          "輸入関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015183951000",
       "soWhat": "イランの動向が中東情勢に影響し、原油価格に注意が必要。",
@@ -40,18 +104,6 @@
         "down": []
       },
       "horizon": "long",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184541000",
-      "soWhat": "映画祭出品は日本の文化産業にプラスの影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "エンタメ関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
       "impact": "up"
     },
     {
@@ -101,18 +153,6 @@
         ]
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184291000",
-      "soWhat": "尖閣諸島の領海侵入が日本の安全保障に影響し、関連企業に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "海運関連株"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     },
     {
@@ -339,43 +379,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183101000",
-      "soWhat": "アルファベットの好決算はIT株にプラス影響が期待される。",
-      "assets": {
-        "up": [
-          "IT株",
-          "テクノロジー"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183281000",
-      "soWhat": "ウクライナの攻撃は、ロシア経済への影響を示唆しており、投資判断材料となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "ロシア関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015183111000",
-      "soWhat": "日本のAIプロジェクト参加は、関連企業の成長機会を示唆し、注目すべき動向。",
-      "assets": {
-        "up": [
-          "AI関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
     }
   ]
 }
