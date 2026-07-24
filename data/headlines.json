@@ -1,6 +1,137 @@
 {
-  "generatedAt": "2026-07-24T08:04:27.959Z",
+  "generatedAt": "2026-07-24T10:52:28.397Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185491000",
+      "soWhat": "イランとの緊張が高まる中、エネルギー関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "輸出関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185361000",
+      "soWhat": "世界遺産登録が実現すれば観光関連株にプラスの影響が期待される。",
+      "assets": {
+        "up": [
+          "観光関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185471000",
+      "soWhat": "ニチレイの復旧により、冷凍食品市場の安定が期待される。",
+      "assets": {
+        "up": [
+          "冷凍食品株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184731000",
+      "soWhat": "追加関税の発動は貿易関連株に影響を与える可能性があるため注意が必要。",
+      "assets": {
+        "up": [
+          "貿易関連株"
+        ],
+        "down": [
+          "輸出企業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184731000",
+      "soWhat": "追加関税の発動は貿易関連株に影響を与える可能性があるため注意が必要。",
+      "assets": {
+        "up": [
+          "貿易関連株"
+        ],
+        "down": [
+          "輸出企業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185441000",
+      "soWhat": "コメ価格の下落は農業関連株にネガティブな影響を及ぼす可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "農業関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185051000",
+      "soWhat": "円安進行は輸出企業にプラスだが、輸入コスト上昇に注意が必要。",
+      "assets": {
+        "up": [
+          "輸出関連株"
+        ],
+        "down": [
+          "輸入関連株",
+          "消費者株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015184761000",
+      "soWhat": "物価上昇が続く中、消費者の購買力に影響を与える可能性があり、注意が必要。",
+      "assets": {
+        "up": [
+          "消費関連株"
+        ],
+        "down": [
+          "輸入関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185381000",
+      "soWhat": "不適切受領問題が企業の信頼性に影響を与えるため、保険株に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "保険関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185241000",
+      "soWhat": "うなぎの価格下落は、関連企業の利益改善に寄与する可能性がある。",
+      "assets": {
+        "up": [
+          "食品関連株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015184971000",
       "soWhat": "原油価格上昇が株価に影響、特にエネルギー関連に注意。",
@@ -142,34 +273,6 @@
       "impact": "mixed"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184731000",
-      "soWhat": "追加関税の発動は貿易関連株に影響を与える可能性があるため注意が必要。",
-      "assets": {
-        "up": [
-          "貿易関連株"
-        ],
-        "down": [
-          "輸出企業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184761000",
-      "soWhat": "物価上昇が続く中、消費者の購買力に影響を与える可能性があり、注意が必要。",
-      "assets": {
-        "up": [
-          "消費関連株"
-        ],
-        "down": [
-          "輸入関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
       "link": "https://news.web.nhk/newsweb/na/na-k10015185021000",
       "soWhat": "PayPayとセブン＆アイのID統合は、デジタル決済市場の競争を激化させる要因となる。",
       "assets": {
@@ -181,21 +284,6 @@
       },
       "horizon": "mid",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185051000",
-      "soWhat": "円安進行は輸出企業にプラスだが、輸入コスト上昇に注意が必要。",
-      "assets": {
-        "up": [
-          "輸出関連株"
-        ],
-        "down": [
-          "輸入関連株",
-          "消費者株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015184801000",
@@ -294,102 +382,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184691000",
-      "soWhat": "円安進行は輸出関連企業にプラス影響を与える可能性があるため注視が必要。",
-      "assets": {
-        "up": [
-          "輸出関連株",
-          "観光業",
-          "資源関連"
-        ],
-        "down": [
-          "内需関連株",
-          "輸入企業",
-          "円建て資産"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184661000",
-      "soWhat": "日中関係の緊張は市場に影響を及ぼす可能性があり、関連株に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "日中関連株",
-          "輸出関連株",
-          "観光業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184651000",
-      "soWhat": "グーグルへの制裁はIT業界全体に影響を与える可能性があり、関連株に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "IT関連株",
-          "広告関連",
-          "デジタルサービス"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184541000",
-      "soWhat": "映画祭出品は日本の文化産業にプラスの影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "エンタメ関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184581000",
-      "soWhat": "地方銀行の統合は地域経済に影響、金融セクターに注目。",
-      "assets": {
-        "up": [
-          "地方銀行"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184291000",
-      "soWhat": "尖閣諸島の領海侵入が日本の安全保障に影響し、関連企業に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "海運関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184591000",
-      "soWhat": "円安進行は輸出企業に有利だが、輸入コスト上昇に注意。",
-      "assets": {
-        "up": [
-          "輸出関連株"
-        ],
-        "down": [
-          "輸入関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
     }
   ]
 }
