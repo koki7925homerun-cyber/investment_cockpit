@@ -1,6 +1,80 @@
 {
-  "generatedAt": "2026-07-24T19:09:06.832Z",
+  "generatedAt": "2026-07-24T21:53:51.630Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185831000",
+      "soWhat": "日本の防衛政策に影響を及ぼす可能性があり、関連株に注意。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": [
+          "中国関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185751000",
+      "soWhat": "地方分権政策が進む中、地域経済への影響を注視する必要がある。",
+      "assets": {
+        "up": [
+          "地方経済"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185691000",
+      "soWhat": "インドの混乱が長期化する場合、関連企業の業績に影響が出る可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "インド関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185811000",
+      "soWhat": "ロシア・ウクライナ情勢の悪化が市場全体にリスクをもたらす可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185721000",
+      "soWhat": "決済代行業界への影響が広がる中、関連企業の動向に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "決済関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185671000",
+      "soWhat": "コメの在庫増加が価格に影響を与える可能性があり、農業関連株に注目。",
+      "assets": {
+        "up": [
+          "農業関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015185661000",
       "soWhat": "サイバー攻撃の影響で情報セキュリティ関連の需要が増加する可能性に注意。",
@@ -50,18 +124,6 @@
         "down": [
           "保険株",
           "農業関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185551000",
-      "soWhat": "フォルクスワーゲンの減益は自動車セクター全体に影響を及ぼす可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "自動車株"
         ]
       },
       "horizon": "short",
@@ -314,74 +376,6 @@
         "down": [
           "国際株式",
           "新興国株式"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184781000",
-      "soWhat": "中東情勢の緊迫化がエネルギー価格に影響を与える可能性があり、注視が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "観光関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185111000",
-      "soWhat": "リニア開業の見通しはJR東海の業績に影響し、関連株の動向に注意が必要。",
-      "assets": {
-        "up": [
-          "インフラ関連株",
-          "鉄道株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184681000",
-      "soWhat": "過激派の動向は国際情勢に影響を与える可能性があり、リスク管理が重要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "観光業",
-          "国際関連株",
-          "安全保障関連"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185021000",
-      "soWhat": "PayPayとセブン＆アイのID統合は、デジタル決済市場の競争を激化させる要因となる。",
-      "assets": {
-        "up": [
-          "フィンテック関連株",
-          "小売株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184801000",
-      "soWhat": "円相場の安定性が市場に影響を与える可能性があるため、注視が必要。",
-      "assets": {
-        "up": [
-          "円建て資産"
-        ],
-        "down": [
-          "輸出関連株"
         ]
       },
       "horizon": "mid",
