@@ -1,6 +1,33 @@
 {
-  "generatedAt": "2026-07-24T13:14:03.581Z",
+  "generatedAt": "2026-07-24T19:09:06.832Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185661000",
+      "soWhat": "サイバー攻撃の影響で情報セキュリティ関連の需要が増加する可能性に注意。",
+      "assets": {
+        "up": [
+          "情報セキュリティ"
+        ],
+        "down": [
+          "冷凍食品"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185761000",
+      "soWhat": "国内投資の促進が期待され、関連企業の動向が判断材料となる。",
+      "assets": {
+        "up": [
+          "フィジカルAI",
+          "研究開発"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015185651000",
       "soWhat": "北朝鮮との対話再開が進む中、地域の政治リスクに注意が必要。",
@@ -359,30 +386,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184741000",
-      "soWhat": "ナスダックの下落がハイテク株に影響を与えるため、ポートフォリオの見直しが必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "ハイテク株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184421000",
-      "soWhat": "日中関係の改善期待が市場に与える影響を注視する必要がある。",
-      "assets": {
-        "up": [
-          "日中関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
     }
   ]
 }
