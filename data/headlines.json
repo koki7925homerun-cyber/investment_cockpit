@@ -1,6 +1,21 @@
 {
-  "generatedAt": "2026-07-24T21:53:51.630Z",
+  "generatedAt": "2026-07-25T01:26:08.741Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185821000",
+      "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "航空株",
+          "観光関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015185831000",
       "soWhat": "日本の防衛政策に影響を及ぼす可能性があり、関連株に注意。",
@@ -364,19 +379,6 @@
           "防衛関連株"
         ],
         "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185101000",
-      "soWhat": "国連事務総長の選出は国際情勢に影響し、投資判断材料となる可能性あり。",
-      "assets": {
-        "up": [],
-        "down": [
-          "国際株式",
-          "新興国株式"
-        ]
       },
       "horizon": "mid",
       "impact": "mixed"
