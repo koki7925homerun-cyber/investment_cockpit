@@ -1,6 +1,36 @@
 {
-  "generatedAt": "2026-07-25T12:56:29.530Z",
+  "generatedAt": "2026-07-25T15:54:29.915Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185821000",
+      "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "航空株",
+          "観光関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186161000",
+      "soWhat": "来場者数の低迷は観光関連株に注意が必要な兆候。",
+      "assets": {
+        "up": [
+          "観光業",
+          "テーマパーク"
+        ],
+        "down": [
+          "運営会社株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015186141000",
       "soWhat": "韓国のAI半導体協力は、関連企業の成長に注意が必要です。",
@@ -41,21 +71,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185821000",
-      "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "航空株",
-          "観光関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015185971000",
@@ -375,18 +390,6 @@
       },
       "horizon": "mid",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185241000",
-      "soWhat": "うなぎの価格下落は、関連企業の利益改善に寄与する可能性がある。",
-      "assets": {
-        "up": [
-          "食品関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
     }
   ]
 }
