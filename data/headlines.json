@@ -1,6 +1,21 @@
 {
-  "generatedAt": "2026-07-25T15:54:29.915Z",
+  "generatedAt": "2026-07-25T18:47:32.484Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141161000",
+      "soWhat": "地政学リスクの高まりが市場に影響を及ぼす可能性に注意。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": [
+          "エネルギー価格",
+          "観光業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015185821000",
       "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
@@ -378,18 +393,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185381000",
-      "soWhat": "不適切受領問題が企業の信頼性に影響を与えるため、保険株に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "保険関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
     }
   ]
 }
