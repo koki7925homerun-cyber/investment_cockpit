@@ -1,6 +1,21 @@
 {
-  "generatedAt": "2026-07-25T07:47:35.738Z",
+  "generatedAt": "2026-07-25T10:19:45.618Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185821000",
+      "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "航空株",
+          "観光関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015185971000",
       "soWhat": "トランプ大統領の発言は政治的不安定要因として注意が必要。",
@@ -37,21 +52,6 @@
         ]
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185821000",
-      "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "航空株",
-          "観光関連株"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     },
     {
