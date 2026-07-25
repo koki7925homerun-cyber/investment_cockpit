@@ -1,6 +1,47 @@
 {
-  "generatedAt": "2026-07-25T18:47:32.484Z",
+  "generatedAt": "2026-07-25T21:42:36.580Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186111000",
+      "soWhat": "トランプ大統領の指示は中東情勢の安定に寄与する可能性がある。",
+      "assets": {
+        "up": [
+          "エネルギー関連"
+        ],
+        "down": [
+          "防衛関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186301000",
+      "soWhat": "サウジアラムコへの攻撃は原油価格の上昇要因となる可能性がある。",
+      "assets": {
+        "up": [
+          "原油関連"
+        ],
+        "down": [
+          "航空関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186331000",
+      "soWhat": "ウクライナ情勢の悪化は市場の不安定要因となりうるため注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "防衛関連",
+          "エネルギー関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015141161000",
       "soWhat": "地政学リスクの高まりが市場に影響を及ぼす可能性に注意。",
@@ -351,47 +392,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185441000",
-      "soWhat": "コメ価格の下落は農業関連株にネガティブな影響を及ぼす可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "農業関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185051000",
-      "soWhat": "円安進行は輸出企業にプラスだが、輸入コスト上昇に注意が必要。",
-      "assets": {
-        "up": [
-          "輸出関連株"
-        ],
-        "down": [
-          "輸入関連株",
-          "消費者株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184761000",
-      "soWhat": "物価上昇が続く中、消費者の購買力に影響を与える可能性があり、注意が必要。",
-      "assets": {
-        "up": [
-          "消費関連株"
-        ],
-        "down": [
-          "輸入関連株"
-        ]
-      },
-      "horizon": "mid",
       "impact": "mixed"
     }
   ]
