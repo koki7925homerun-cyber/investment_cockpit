@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-07-25T05:33:18.832Z",
+  "generatedAt": "2026-07-25T07:47:35.738Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185971000",
+      "soWhat": "トランプ大統領の発言は政治的不安定要因として注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "米国株式市場"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185991000",
+      "soWhat": "台湾の政治動向は地域の安定性に影響し、投資判断材料となる。",
+      "assets": {
+        "up": [
+          "台湾株式市場"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015185921000",
       "soWhat": "追加関税の影響が米企業の業績に波及する可能性に注意。",
@@ -362,30 +386,6 @@
         ]
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015141151000",
-      "soWhat": "ウクライナ情勢の悪化が市場の不安要因となるため、リスク管理が重要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "防衛関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184911000",
-      "soWhat": "原油価格の動向が経済全体に影響、特に輸入関連に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "輸入関連株"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     }
   ]
