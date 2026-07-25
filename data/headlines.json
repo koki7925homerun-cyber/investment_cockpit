@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-07-25T01:26:08.741Z",
+  "generatedAt": "2026-07-25T05:33:18.832Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185921000",
+      "soWhat": "追加関税の影響が米企業の業績に波及する可能性に注意。",
+      "assets": {
+        "up": [
+          "米企業"
+        ],
+        "down": [
+          "輸出関連企業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015185821000",
       "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
@@ -15,6 +29,33 @@
       },
       "horizon": "short",
       "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185881000",
+      "soWhat": "山火事の影響で農業や観光業に打撃が予想され、関連株に注意。",
+      "assets": {
+        "up": [
+          "再生可能エネルギー"
+        ],
+        "down": [
+          "農業関連株",
+          "観光業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185841000",
+      "soWhat": "国際的な信頼性低下が影響し、関連企業の株価に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "国際機関関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015185831000",
@@ -345,42 +386,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185251000",
-      "soWhat": "中東情勢の影響で個人消費が減少する可能性、消費関連に注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "消費関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185231000",
-      "soWhat": "SNS関連企業への勧告は、規制強化の兆しとして注視が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "SNS関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185191000",
-      "soWhat": "政権の動向が市場に影響、特に防衛関連に注意が必要。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
       "impact": "mixed"
     }
   ]
