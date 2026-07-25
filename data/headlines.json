@@ -1,6 +1,47 @@
 {
-  "generatedAt": "2026-07-25T10:19:45.618Z",
+  "generatedAt": "2026-07-25T12:56:29.530Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186141000",
+      "soWhat": "韓国のAI半導体協力は、関連企業の成長に注意が必要です。",
+      "assets": {
+        "up": [
+          "半導体",
+          "AI関連"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186141000",
+      "soWhat": "韓国のAI半導体協力は、関連企業の成長に注意が必要です。",
+      "assets": {
+        "up": [
+          "半導体",
+          "AI関連"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015185881000",
+      "soWhat": "山火事の影響で農業や観光業に打撃が予想され、関連株に注意。",
+      "assets": {
+        "up": [
+          "再生可能エネルギー"
+        ],
+        "down": [
+          "農業関連株",
+          "観光業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015185821000",
       "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
@@ -53,21 +94,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185881000",
-      "soWhat": "山火事の影響で農業や観光業に打撃が予想され、関連株に注意。",
-      "assets": {
-        "up": [
-          "再生可能エネルギー"
-        ],
-        "down": [
-          "農業関連株",
-          "観光業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015185841000",
@@ -361,32 +387,6 @@
       },
       "horizon": "short",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184971000",
-      "soWhat": "原油価格上昇が株価に影響、特にエネルギー関連に注意。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "テクノロジー株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185281000",
-      "soWhat": "対ロシア政策の維持は、関連企業に影響を与える可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "輸出関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     }
   ]
 }
