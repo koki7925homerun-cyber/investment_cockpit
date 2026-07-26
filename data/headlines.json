@@ -1,6 +1,59 @@
 {
-  "generatedAt": "2026-07-25T21:42:36.580Z",
+  "generatedAt": "2026-07-26T01:29:12.372Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186341000",
+      "soWhat": "社会的混乱が続く中、関連企業のリスクに注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "観光業",
+          "小売業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186361000",
+      "soWhat": "米EU間の貿易摩擦が激化する可能性があり、関連株に影響が出るかも。",
+      "assets": {
+        "up": [
+          "IT関連株"
+        ],
+        "down": [
+          "輸出企業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186361000",
+      "soWhat": "米EU間の貿易摩擦が激化する可能性があり、関連株に影響が出るかも。",
+      "assets": {
+        "up": [
+          "IT関連株"
+        ],
+        "down": [
+          "輸出企業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186321000",
+      "soWhat": "政治的不安定が続く中、インド市場への影響を注視する必要がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "インド関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015186111000",
       "soWhat": "トランプ大統領の指示は中東情勢の安定に寄与する可能性がある。",
@@ -86,19 +139,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186141000",
-      "soWhat": "韓国のAI半導体協力は、関連企業の成長に注意が必要です。",
-      "assets": {
-        "up": [
-          "半導体",
-          "AI関連"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015186141000",
@@ -351,44 +391,6 @@
         ],
         "down": [
           "輸出関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185361000",
-      "soWhat": "世界遺産登録が実現すれば観光関連株にプラスの影響が期待される。",
-      "assets": {
-        "up": [
-          "観光関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185471000",
-      "soWhat": "ニチレイの復旧により、冷凍食品市場の安定が期待される。",
-      "assets": {
-        "up": [
-          "冷凍食品株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015184731000",
-      "soWhat": "追加関税の発動は貿易関連株に影響を与える可能性があるため注意が必要。",
-      "assets": {
-        "up": [
-          "貿易関連株"
-        ],
-        "down": [
-          "輸出企業"
         ]
       },
       "horizon": "short",
