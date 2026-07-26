@@ -1,17 +1,19 @@
 {
-  "generatedAt": "2026-07-26T08:04:32.416Z",
+  "generatedAt": "2026-07-26T10:26:57.235Z",
   "items": [
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186341000",
-      "soWhat": "社会的混乱が続く中、関連企業のリスクに注意が必要。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141171000",
+      "soWhat": "地政学リスクの高まりが投資家に影響を与えるため、注意が必要です。",
       "assets": {
-        "up": [],
+        "up": [
+          "防衛関連株"
+        ],
         "down": [
-          "観光業",
-          "小売業"
+          "エネルギー価格",
+          "新興国株"
         ]
       },
-      "horizon": "short",
+      "horizon": "mid",
       "impact": "mixed"
     },
     {
@@ -41,6 +43,19 @@
         ]
       },
       "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186341000",
+      "soWhat": "社会的混乱が続く中、関連企業のリスクに注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "観光業",
+          "小売業"
+        ]
+      },
+      "horizon": "short",
       "impact": "mixed"
     },
     {
@@ -384,18 +399,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185501000",
-      "soWhat": "しょうゆメーカーの値上げは食品業界全体に波及する可能性があるため注意。",
-      "assets": {
-        "up": [],
-        "down": [
-          "食品株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     }
   ]
 }
