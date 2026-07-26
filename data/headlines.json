@@ -1,6 +1,73 @@
 {
-  "generatedAt": "2026-07-26T18:52:28.112Z",
+  "generatedAt": "2026-07-26T21:47:21.112Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186771000",
+      "soWhat": "日銀の政策金利据え置きが経済見通しに影響する可能性に注意。",
+      "assets": {
+        "up": [
+          "金融株",
+          "円安関連株"
+        ],
+        "down": [
+          "輸入関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186961000",
+      "soWhat": "米国とイランの関係が市場に与える影響を注視する必要がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186911000",
+      "soWhat": "ウクライナの攻撃が地政学リスクを高め、関連資産に影響を与えるか注目。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": [
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186781000",
+      "soWhat": "FRBの金融政策がインフレに影響する可能性があり、注視が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "債券",
+          "消費関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186781000",
+      "soWhat": "FRBの金融政策がインフレに影響する可能性があり、注視が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "債券",
+          "消費関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015141171000",
       "soWhat": "地政学リスクの高まりが投資家に影響を与えるため、注意が必要です。",
@@ -70,20 +137,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186361000",
-      "soWhat": "米EU間の貿易摩擦が激化する可能性があり、関連株に影響が出るかも。",
-      "assets": {
-        "up": [
-          "IT関連株"
-        ],
-        "down": [
-          "輸出企業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015186361000",
@@ -348,58 +401,6 @@
       },
       "horizon": "short",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185761000",
-      "soWhat": "国内投資の促進が期待され、関連企業の動向が判断材料となる。",
-      "assets": {
-        "up": [
-          "フィジカルAI",
-          "研究開発"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185651000",
-      "soWhat": "北朝鮮との対話再開が進む中、地域の政治リスクに注意が必要。",
-      "assets": {
-        "up": [
-          "韓国関連株"
-        ],
-        "down": [
-          "防衛関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185581000",
-      "soWhat": "スペインの山火事は保険業界や農業セクターに影響を与える可能性あり。",
-      "assets": {
-        "up": [],
-        "down": [
-          "保険株",
-          "農業関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185551000",
-      "soWhat": "フォルクスワーゲンの減益は自動車セクター全体に影響を及ぼす可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "自動車株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     }
   ]
 }
