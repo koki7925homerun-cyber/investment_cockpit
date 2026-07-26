@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T01:29:12.372Z",
+  "generatedAt": "2026-07-26T05:49:45.465Z",
   "items": [
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015186341000",
@@ -12,6 +12,35 @@
         ]
       },
       "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186461000",
+      "soWhat": "自然災害による影響で、保険関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "保険関連株"
+        ],
+        "down": [
+          "観光業",
+          "農業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186111000",
+      "soWhat": "トランプ大統領の指示は中東情勢の安定に寄与する可能性がある。",
+      "assets": {
+        "up": [
+          "エネルギー関連"
+        ],
+        "down": [
+          "防衛関連"
+        ]
+      },
+      "horizon": "mid",
       "impact": "mixed"
     },
     {
@@ -52,20 +81,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186111000",
-      "soWhat": "トランプ大統領の指示は中東情勢の安定に寄与する可能性がある。",
-      "assets": {
-        "up": [
-          "エネルギー関連"
-        ],
-        "down": [
-          "防衛関連"
-        ]
-      },
-      "horizon": "mid",
       "impact": "mixed"
     },
     {
@@ -381,20 +396,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185491000",
-      "soWhat": "イランとの緊張が高まる中、エネルギー関連株に注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "輸出関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     }
   ]
 }
