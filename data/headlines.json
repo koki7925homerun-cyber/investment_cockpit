@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T10:26:57.235Z",
+  "generatedAt": "2026-07-26T12:53:26.827Z",
   "items": [
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015141171000",
@@ -14,6 +14,19 @@
         ]
       },
       "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186801000",
+      "soWhat": "地政学リスクの高まりに注意が必要。市場の不安定要因となる可能性あり。",
+      "assets": {
+        "up": [],
+        "down": [
+          "株式市場",
+          "防衛関連株"
+        ]
+      },
+      "horizon": "short",
       "impact": "mixed"
     },
     {
@@ -387,18 +400,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185541000",
-      "soWhat": "愛媛の銀行統合は地域金融の再編を示唆し、投資機会に注意が必要。",
-      "assets": {
-        "up": [
-          "地域金融株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     }
   ]
 }
