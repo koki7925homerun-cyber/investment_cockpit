@@ -1,6 +1,36 @@
 {
-  "generatedAt": "2026-07-27T19:08:22.383Z",
+  "generatedAt": "2026-07-27T21:55:40.503Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187671000",
+      "soWhat": "金利引き下げの可能性が高まる中、金融セクターに注意が必要。",
+      "assets": {
+        "up": [
+          "金融関連株"
+        ],
+        "down": [
+          "国債",
+          "預金利回り"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187611000",
+      "soWhat": "山火事の影響で保険や農業セクターに影響が出る可能性がある。",
+      "assets": {
+        "up": [
+          "保険関連株"
+        ],
+        "down": [
+          "農業関連株",
+          "観光業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015187481000",
       "soWhat": "地政学リスクの高まりに注意が必要。市場の不安定要因となる可能性あり。",
@@ -380,36 +410,6 @@
       },
       "horizon": "mid",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015141161000",
-      "soWhat": "地政学リスクの高まりが市場に影響を及ぼす可能性に注意。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": [
-          "エネルギー価格",
-          "観光業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185821000",
-      "soWhat": "米国とイランの緊張が高まる中、エネルギー関連株に注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "航空株",
-          "観光関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     }
   ]
 }
