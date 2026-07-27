@@ -1,6 +1,21 @@
 {
-  "generatedAt": "2026-07-27T12:09:04.800Z",
+  "generatedAt": "2026-07-27T16:52:19.015Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187481000",
+      "soWhat": "地政学リスクの高まりに注意が必要。市場の不安定要因となる可能性あり。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": [
+          "リスク資産",
+          "観光業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015186961000",
       "soWhat": "米国とイランの関係が市場に与える影響を注視する必要がある。",
@@ -395,21 +410,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186161000",
-      "soWhat": "来場者数の低迷は観光関連株に注意が必要な兆候。",
-      "assets": {
-        "up": [
-          "観光業",
-          "テーマパーク"
-        ],
-        "down": [
-          "運営会社株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     }
   ]
 }
