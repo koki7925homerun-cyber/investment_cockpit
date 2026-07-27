@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T01:47:10.168Z",
+  "generatedAt": "2026-07-27T06:16:02.009Z",
   "items": [
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015141191000",
@@ -17,17 +17,30 @@
       "impact": "mixed"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186971000",
-      "soWhat": "ベルリンの事件は、テロリズムリスクの再認識を促す要因となる。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187201000",
+      "soWhat": "北朝鮮情勢の変化に注意が必要で、リスク管理が求められる。",
       "assets": {
         "up": [],
         "down": [
-          "観光業",
-          "小売業"
+          "国際株式",
+          "新興国市場"
         ]
       },
-      "horizon": "short",
+      "horizon": "mid",
       "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187221000",
+      "soWhat": "賃貸市場の上昇は不動産セクターにプラス要因となる可能性あり。",
+      "assets": {
+        "up": [
+          "不動産",
+          "REIT"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015186961000",
@@ -39,6 +52,58 @@
         ]
       },
       "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187171000",
+      "soWhat": "株価の上昇は投資家心理を改善し、さらなる買いを促す可能性がある。",
+      "assets": {
+        "up": [
+          "株式",
+          "ETF"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187131000",
+      "soWhat": "原油価格の下落はエネルギー関連株に影響を与えるため注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー株",
+          "資源関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187111000",
+      "soWhat": "新たなビジネストレンドは投資機会を提供する可能性があるため注視。",
+      "assets": {
+        "up": [
+          "スタートアップ",
+          "消費関連"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186971000",
+      "soWhat": "ベルリンの事件は、テロリズムリスクの再認識を促す要因となる。",
+      "assets": {
+        "up": [],
+        "down": [
+          "観光業",
+          "小売業"
+        ]
+      },
+      "horizon": "short",
       "impact": "mixed"
     },
     {
@@ -98,19 +163,6 @@
         ]
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186781000",
-      "soWhat": "FRBの金融政策がインフレに影響する可能性があり、注視が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "債券",
-          "消費関連株"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     },
     {
@@ -359,56 +411,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185841000",
-      "soWhat": "国際的な信頼性低下が影響し、関連企業の株価に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "国際機関関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185831000",
-      "soWhat": "日本の防衛政策に影響を及ぼす可能性があり、関連株に注意。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": [
-          "中国関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185751000",
-      "soWhat": "地方分権政策が進む中、地域経済への影響を注視する必要がある。",
-      "assets": {
-        "up": [
-          "地方経済"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185691000",
-      "soWhat": "インドの混乱が長期化する場合、関連企業の業績に影響が出る可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "インド関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     }
   ]
 }
