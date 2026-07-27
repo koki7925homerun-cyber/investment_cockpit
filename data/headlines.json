@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-07-27T06:16:02.009Z",
+  "generatedAt": "2026-07-27T12:09:04.800Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015186961000",
+      "soWhat": "米国とイランの関係が市場に与える影響を注視する必要がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015141191000",
       "soWhat": "ロシアの侵攻が続く中、エネルギー価格の変動に注意が必要。",
@@ -17,16 +29,31 @@
       "impact": "mixed"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187201000",
-      "soWhat": "北朝鮮情勢の変化に注意が必要で、リスク管理が求められる。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187451000",
+      "soWhat": "日中関係の悪化が懸念され、関連企業の動向に注意が必要。",
       "assets": {
         "up": [],
         "down": [
-          "国際株式",
-          "新興国市場"
+          "日中関連株",
+          "輸出企業"
         ]
       },
       "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187361000",
+      "soWhat": "フランスの山火事がワイン生産に影響を及ぼす可能性があり、関連セクターに注意。",
+      "assets": {
+        "up": [
+          "ワイン関連株"
+        ],
+        "down": [
+          "観光業",
+          "農業"
+        ]
+      },
+      "horizon": "short",
       "impact": "mixed"
     },
     {
@@ -43,12 +70,52 @@
       "impact": "up"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186961000",
-      "soWhat": "米国とイランの関係が市場に与える影響を注視する必要がある。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187351000",
+      "soWhat": "韓国政治の不安定要因が浮上し、韓国市場への影響が判断材料となる。",
       "assets": {
         "up": [],
         "down": [
-          "エネルギー関連株"
+          "韓国株",
+          "投資信託"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187331000",
+      "soWhat": "円高が進行する可能性があり、輸入企業の利益に影響が出るかもしれない。",
+      "assets": {
+        "up": [],
+        "down": [
+          "輸出企業",
+          "資源関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187341000",
+      "soWhat": "中国の海洋活動の動向が引き続き注視され、関連企業のリスク要因となる。",
+      "assets": {
+        "up": [],
+        "down": [
+          "海運業",
+          "漁業"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187301000",
+      "soWhat": "外交問題がエスカレートする可能性があり、投資家はリスク管理に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "防衛関連株",
+          "国際関係株"
         ]
       },
       "horizon": "mid",
@@ -66,6 +133,19 @@
       },
       "horizon": "short",
       "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187201000",
+      "soWhat": "北朝鮮情勢の変化に注意が必要で、リスク管理が求められる。",
+      "assets": {
+        "up": [],
+        "down": [
+          "国際株式",
+          "新興国市場"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015187131000",
@@ -104,21 +184,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186811000",
-      "soWhat": "米国産ジャガイモの輸入解禁は、国内農業に影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "農産物関連"
-        ],
-        "down": [
-          "国内農業",
-          "輸入農産物"
-        ]
-      },
-      "horizon": "mid",
       "impact": "mixed"
     },
     {
@@ -345,72 +410,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186141000",
-      "soWhat": "韓国のAI半導体協力は、関連企業の成長に注意が必要です。",
-      "assets": {
-        "up": [
-          "半導体",
-          "AI関連"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185881000",
-      "soWhat": "山火事の影響で農業や観光業に打撃が予想され、関連株に注意。",
-      "assets": {
-        "up": [
-          "再生可能エネルギー"
-        ],
-        "down": [
-          "農業関連株",
-          "観光業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185971000",
-      "soWhat": "トランプ大統領の発言は政治的不安定要因として注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "米国株式市場"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185991000",
-      "soWhat": "台湾の政治動向は地域の安定性に影響し、投資判断材料となる。",
-      "assets": {
-        "up": [
-          "台湾株式市場"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015185921000",
-      "soWhat": "追加関税の影響が米企業の業績に波及する可能性に注意。",
-      "assets": {
-        "up": [
-          "米企業"
-        ],
-        "down": [
-          "輸出関連企業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     }
   ]
 }
