@@ -1,6 +1,45 @@
 {
-  "generatedAt": "2026-07-28T05:36:16.182Z",
+  "generatedAt": "2026-07-28T08:11:10.268Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187861000",
+      "soWhat": "新米の作柄次第で米価格が変動するため、農業関連株に注目。",
+      "assets": {
+        "up": [
+          "農業関連株"
+        ],
+        "down": [
+          "コメ価格"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015188071000",
+      "soWhat": "対米投資の資金調達検討は、金融セクターの動向に注目が必要。",
+      "assets": {
+        "up": [
+          "金融セクター"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141201000",
+      "soWhat": "ロシアの軍事侵攻は国際情勢の不安定化を招き、リスク資産に影響。",
+      "assets": {
+        "up": [],
+        "down": [
+          "リスク資産",
+          "エネルギー関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015187891000",
       "soWhat": "ホルムズ海峡の再開は原油価格に影響するため、エネルギー関連株に注意。",
@@ -28,20 +67,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187861000",
-      "soWhat": "新米の作柄次第で米価格が変動するため、農業関連株に注目。",
-      "assets": {
-        "up": [
-          "農業関連株"
-        ],
-        "down": [
-          "コメ価格"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015187781000",
@@ -368,32 +393,6 @@
       },
       "horizon": "mid",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187111000",
-      "soWhat": "新たなビジネストレンドは投資機会を提供する可能性があるため注視。",
-      "assets": {
-        "up": [
-          "スタートアップ",
-          "消費関連"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186971000",
-      "soWhat": "ベルリンの事件は、テロリズムリスクの再認識を促す要因となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "観光業",
-          "小売業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     }
   ]
 }
