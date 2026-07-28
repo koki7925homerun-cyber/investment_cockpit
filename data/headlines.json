@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-07-28T01:21:22.008Z",
+  "generatedAt": "2026-07-28T05:36:16.182Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187891000",
+      "soWhat": "ホルムズ海峡の再開は原油価格に影響するため、エネルギー関連株に注意。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "輸送関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015187711000",
       "soWhat": "半導体関連の影響が広がり、関連株に注意が必要です。",
@@ -14,6 +28,56 @@
       },
       "horizon": "short",
       "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187861000",
+      "soWhat": "新米の作柄次第で米価格が変動するため、農業関連株に注目。",
+      "assets": {
+        "up": [
+          "農業関連株"
+        ],
+        "down": [
+          "コメ価格"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187781000",
+      "soWhat": "猛暑による労働環境の変化が企業の生産性に影響を与える可能性あり。",
+      "assets": {
+        "up": [],
+        "down": [
+          "労働集約型企業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187811000",
+      "soWhat": "北朝鮮の動向は地政学リスクを高めるため、関連株に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "防衛関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187761000",
+      "soWhat": "米国とフランスの対立は国際情勢に影響を与えるため、関連株に注意。",
+      "assets": {
+        "up": [],
+        "down": [
+          "国際関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015187691000",
@@ -329,78 +393,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186811000",
-      "soWhat": "米国産ジャガイモの輸入解禁は、国内農業に影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "農産物関連"
-        ],
-        "down": [
-          "国内農業",
-          "輸入農産物"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186771000",
-      "soWhat": "日銀の政策金利据え置きが経済見通しに影響する可能性に注意。",
-      "assets": {
-        "up": [
-          "金融株",
-          "円安関連株"
-        ],
-        "down": [
-          "輸入関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186911000",
-      "soWhat": "ウクライナの攻撃が地政学リスクを高め、関連資産に影響を与えるか注目。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": [
-          "エネルギー関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186781000",
-      "soWhat": "FRBの金融政策がインフレに影響する可能性があり、注視が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "債券",
-          "消費関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015141171000",
-      "soWhat": "地政学リスクの高まりが投資家に影響を与えるため、注意が必要です。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": [
-          "エネルギー価格",
-          "新興国株"
-        ]
-      },
-      "horizon": "mid",
       "impact": "mixed"
     }
   ]
