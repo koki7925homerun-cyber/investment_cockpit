@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-07-28T13:26:33.773Z",
+  "generatedAt": "2026-07-28T16:27:21.990Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015188891000",
+      "soWhat": "自動車関連株の短期的な影響に注意が必要です。",
+      "assets": {
+        "up": [],
+        "down": [
+          "自動車株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015188951000",
       "soWhat": "米国の防衛関連企業の動向に注意が必要です。",
@@ -36,18 +48,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015188891000",
-      "soWhat": "自動車関連株の短期的な影響に注意が必要です。",
-      "assets": {
-        "up": [],
-        "down": [
-          "自動車株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015188881000",
