@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-07-28T16:27:21.990Z",
+  "generatedAt": "2026-07-28T19:03:40.350Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015189181000",
+      "soWhat": "ジダン氏の就任はフランスサッカーの人気を高める要因に注意。",
+      "assets": {
+        "up": [
+          "スポーツ関連株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015189001000",
+      "soWhat": "ガザ地区の情勢悪化は中東関連資産に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "中東関連株",
+          "エネルギー株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015188891000",
       "soWhat": "自動車関連株の短期的な影響に注意が必要です。",
@@ -350,34 +375,6 @@
         "up": [],
         "down": [
           "エネルギー関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015141191000",
-      "soWhat": "ロシアの侵攻が続く中、エネルギー価格の変動に注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連"
-        ],
-        "down": [
-          "株式市場",
-          "観光業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187451000",
-      "soWhat": "日中関係の悪化が懸念され、関連企業の動向に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "日中関連株",
-          "輸出企業"
         ]
       },
       "horizon": "mid",
