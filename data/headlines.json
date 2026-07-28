@@ -1,6 +1,45 @@
 {
-  "generatedAt": "2026-07-28T08:11:10.268Z",
+  "generatedAt": "2026-07-28T11:07:53.863Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141201000",
+      "soWhat": "ロシアの軍事侵攻は国際情勢の不安定化を招き、リスク資産に影響。",
+      "assets": {
+        "up": [],
+        "down": [
+          "リスク資産",
+          "エネルギー関連"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015188781000",
+      "soWhat": "台湾の総統の発言は、日台関係の強化を示唆し、投資家は注視が必要。",
+      "assets": {
+        "up": [
+          "日台関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015188561000",
+      "soWhat": "通信サービスの影響は、関連企業の業績に影響を与える可能性があるため注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "NTTドコモ",
+          "KDDI",
+          "楽天モバイル"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015187861000",
       "soWhat": "新米の作柄次第で米価格が変動するため、農業関連株に注目。",
@@ -26,19 +65,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015141201000",
-      "soWhat": "ロシアの軍事侵攻は国際情勢の不安定化を招き、リスク資産に影響。",
-      "assets": {
-        "up": [],
-        "down": [
-          "リスク資産",
-          "エネルギー関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015187891000",
@@ -367,32 +393,6 @@
       },
       "horizon": "short",
       "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187201000",
-      "soWhat": "北朝鮮情勢の変化に注意が必要で、リスク管理が求められる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "国際株式",
-          "新興国市場"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187131000",
-      "soWhat": "原油価格の下落はエネルギー関連株に影響を与えるため注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "エネルギー株",
-          "資源関連"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
     }
   ]
 }
