@@ -1,6 +1,106 @@
 {
-  "generatedAt": "2026-07-27T21:55:40.503Z",
+  "generatedAt": "2026-07-28T01:21:22.008Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187711000",
+      "soWhat": "半導体関連の影響が広がり、関連株に注意が必要です。",
+      "assets": {
+        "up": [
+          "半導体関連"
+        ],
+        "down": [
+          "東京株式市場"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187691000",
+      "soWhat": "ロシアの動員計画は地政学リスクを高め、関連市場に影響を与える可能性があります。",
+      "assets": {
+        "up": [],
+        "down": [
+          "地政学リスク"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187511000",
+      "soWhat": "テーマパークの入園料上昇は、消費者の支出動向に影響を与える可能性があります。",
+      "assets": {
+        "up": [
+          "テーマパーク関連"
+        ],
+        "down": [
+          "消費者支出"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187681000",
+      "soWhat": "チャドのICC脱退は国際的な法的枠組みに影響を及ぼす可能性があり、注意が必要です。",
+      "assets": {
+        "up": [],
+        "down": [
+          "国際法関連"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187571000",
+      "soWhat": "イランとの協議の進展は中東情勢に影響し、エネルギー市場に注目が集まります。",
+      "assets": {
+        "up": [
+          "エネルギー関連"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187661000",
+      "soWhat": "ウクライナ支援の強調は、地域の安定性に影響を与え、関連市場に注意が必要です。",
+      "assets": {
+        "up": [],
+        "down": [
+          "地域安定性"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187521000",
+      "soWhat": "エディオンとヤマダHDの統合協議は、家電市場の競争環境に影響を与える可能性があります。",
+      "assets": {
+        "up": [
+          "家電関連"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187531000",
+      "soWhat": "スマホ法に基づく報告書公表は、テクノロジー企業の競争環境に影響を与える要因となります。",
+      "assets": {
+        "up": [
+          "テクノロジー関連"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015187671000",
       "soWhat": "金利引き下げの可能性が高まる中、金融セクターに注意が必要。",
@@ -302,114 +402,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186801000",
-      "soWhat": "地政学リスクの高まりに注意が必要。市場の不安定要因となる可能性あり。",
-      "assets": {
-        "up": [],
-        "down": [
-          "株式市場",
-          "防衛関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186461000",
-      "soWhat": "自然災害による影響で、保険関連株に注意が必要。",
-      "assets": {
-        "up": [
-          "保険関連株"
-        ],
-        "down": [
-          "観光業",
-          "農業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186111000",
-      "soWhat": "トランプ大統領の指示は中東情勢の安定に寄与する可能性がある。",
-      "assets": {
-        "up": [
-          "エネルギー関連"
-        ],
-        "down": [
-          "防衛関連"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186341000",
-      "soWhat": "社会的混乱が続く中、関連企業のリスクに注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "観光業",
-          "小売業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186361000",
-      "soWhat": "米EU間の貿易摩擦が激化する可能性があり、関連株に影響が出るかも。",
-      "assets": {
-        "up": [
-          "IT関連株"
-        ],
-        "down": [
-          "輸出企業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186321000",
-      "soWhat": "政治的不安定が続く中、インド市場への影響を注視する必要がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "インド関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186301000",
-      "soWhat": "サウジアラムコへの攻撃は原油価格の上昇要因となる可能性がある。",
-      "assets": {
-        "up": [
-          "原油関連"
-        ],
-        "down": [
-          "航空関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186331000",
-      "soWhat": "ウクライナ情勢の悪化は市場の不安定要因となりうるため注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "防衛関連",
-          "エネルギー関連"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
     }
   ]
 }
