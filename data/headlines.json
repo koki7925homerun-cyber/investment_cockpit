@@ -1,6 +1,102 @@
 {
-  "generatedAt": "2026-07-28T11:07:53.863Z",
+  "generatedAt": "2026-07-28T13:26:33.773Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015188951000",
+      "soWhat": "米国の防衛関連企業の動向に注意が必要です。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015188961000",
+      "soWhat": "医療関連企業への影響を考慮する必要があります。",
+      "assets": {
+        "up": [],
+        "down": [
+          "医療機関株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015188981000",
+      "soWhat": "円相場の動向が投資戦略に影響を与える可能性があります。",
+      "assets": {
+        "up": [],
+        "down": [
+          "円建て資産"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015188891000",
+      "soWhat": "自動車関連株の短期的な影響に注意が必要です。",
+      "assets": {
+        "up": [],
+        "down": [
+          "自動車株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015188881000",
+      "soWhat": "水産業関連株の動向に影響が出る可能性があります。",
+      "assets": {
+        "up": [],
+        "down": [
+          "水産業株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015188921000",
+      "soWhat": "国際関係の変化が投資環境に影響を与えるかもしれません。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015188211000",
+      "soWhat": "特殊詐欺関連のニュースが投資家心理に影響する可能性があります。",
+      "assets": {
+        "up": [],
+        "down": [
+          "関連企業株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015187711000",
+      "soWhat": "半導体関連の影響が広がり、関連株に注意が必要です。",
+      "assets": {
+        "up": [
+          "半導体関連"
+        ],
+        "down": [
+          "東京株式市場"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015141201000",
       "soWhat": "ロシアの軍事侵攻は国際情勢の不安定化を招き、リスク資産に影響。",
@@ -79,20 +175,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187711000",
-      "soWhat": "半導体関連の影響が広がり、関連株に注意が必要です。",
-      "assets": {
-        "up": [
-          "半導体関連"
-        ],
-        "down": [
-          "東京株式市場"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015187781000",
@@ -300,99 +382,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187361000",
-      "soWhat": "フランスの山火事がワイン生産に影響を及ぼす可能性があり、関連セクターに注意。",
-      "assets": {
-        "up": [
-          "ワイン関連株"
-        ],
-        "down": [
-          "観光業",
-          "農業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187221000",
-      "soWhat": "賃貸市場の上昇は不動産セクターにプラス要因となる可能性あり。",
-      "assets": {
-        "up": [
-          "不動産",
-          "REIT"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187351000",
-      "soWhat": "韓国政治の不安定要因が浮上し、韓国市場への影響が判断材料となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "韓国株",
-          "投資信託"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187331000",
-      "soWhat": "円高が進行する可能性があり、輸入企業の利益に影響が出るかもしれない。",
-      "assets": {
-        "up": [],
-        "down": [
-          "輸出企業",
-          "資源関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187341000",
-      "soWhat": "中国の海洋活動の動向が引き続き注視され、関連企業のリスク要因となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "海運業",
-          "漁業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187301000",
-      "soWhat": "外交問題がエスカレートする可能性があり、投資家はリスク管理に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "防衛関連株",
-          "国際関係株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187171000",
-      "soWhat": "株価の上昇は投資家心理を改善し、さらなる買いを促す可能性がある。",
-      "assets": {
-        "up": [
-          "株式",
-          "ETF"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
     }
   ]
 }
