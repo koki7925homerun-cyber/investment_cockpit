@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-07-28T19:03:40.350Z",
+  "generatedAt": "2026-07-28T21:54:45.313Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015189261000",
+      "soWhat": "米国の軍需産業や防衛関連株に注目が集まる可能性がある。",
+      "assets": {
+        "up": [
+          "防衛関連株",
+          "軍需産業"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015189181000",
       "soWhat": "ジダン氏の就任はフランスサッカーの人気を高める要因に注意。",
@@ -366,18 +379,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015186961000",
-      "soWhat": "米国とイランの関係が市場に与える影響を注視する必要がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "エネルギー関連株"
-        ]
-      },
-      "horizon": "mid",
       "impact": "mixed"
     }
   ]
