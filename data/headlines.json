@@ -1,17 +1,53 @@
 {
-  "generatedAt": "2026-07-29T01:22:43.122Z",
+  "generatedAt": "2026-07-29T05:40:52.615Z",
   "items": [
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189281000",
-      "soWhat": "中東の地政学リスクが高まり、エネルギー関連株に注意が必要。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015189681000",
+      "soWhat": "九州の工場操業影響は、地域経済や関連企業に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "製造業",
+          "九州関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015189601000",
+      "soWhat": "地震による株価下落は、半導体関連の影響が判断材料となる。",
+      "assets": {
+        "up": [],
+        "down": [
+          "半導体株",
+          "日経平均"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015189611000",
+      "soWhat": "イランの提案拒否は、中東情勢の不安定化が投資判断材料に。",
+      "assets": {
+        "up": [],
+        "down": [
+          "エネルギー関連",
+          "中東株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015188781000",
+      "soWhat": "台湾の総統の発言は、日台関係の強化を示唆し、投資家は注視が必要。",
       "assets": {
         "up": [
-          "エネルギー関連株",
-          "防衛関連株"
+          "日台関連株"
         ],
-        "down": [
-          "観光関連株"
-        ]
+        "down": []
       },
       "horizon": "mid",
       "impact": "mixed"
@@ -28,6 +64,33 @@
       },
       "horizon": "short",
       "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015189281000",
+      "soWhat": "中東の地政学リスクが高まり、エネルギー関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株",
+          "防衛関連株"
+        ],
+        "down": [
+          "観光関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015189381000",
+      "soWhat": "ペルー新大統領就任は、南米市場の政治リスクを注視する必要がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "南米関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015189181000",
@@ -162,18 +225,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015188781000",
-      "soWhat": "台湾の総統の発言は、日台関係の強化を示唆し、投資家は注視が必要。",
-      "assets": {
-        "up": [
-          "日台関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015188561000",
@@ -326,60 +377,6 @@
       },
       "horizon": "mid",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187521000",
-      "soWhat": "エディオンとヤマダHDの統合協議は、家電市場の競争環境に影響を与える可能性があります。",
-      "assets": {
-        "up": [
-          "家電関連"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187531000",
-      "soWhat": "スマホ法に基づく報告書公表は、テクノロジー企業の競争環境に影響を与える要因となります。",
-      "assets": {
-        "up": [
-          "テクノロジー関連"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187671000",
-      "soWhat": "金利引き下げの可能性が高まる中、金融セクターに注意が必要。",
-      "assets": {
-        "up": [
-          "金融関連株"
-        ],
-        "down": [
-          "国債",
-          "預金利回り"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187611000",
-      "soWhat": "山火事の影響で保険や農業セクターに影響が出る可能性がある。",
-      "assets": {
-        "up": [
-          "保険関連株"
-        ],
-        "down": [
-          "農業関連株",
-          "観光業"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
     }
   ]
 }
