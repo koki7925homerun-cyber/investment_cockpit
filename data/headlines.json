@@ -1,6 +1,21 @@
 {
-  "generatedAt": "2026-07-28T21:54:45.313Z",
+  "generatedAt": "2026-07-29T01:22:43.122Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015189281000",
+      "soWhat": "中東の地政学リスクが高まり、エネルギー関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株",
+          "防衛関連株"
+        ],
+        "down": [
+          "観光関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015189261000",
       "soWhat": "米国の軍需産業や防衛関連株に注目が集まる可能性がある。",
@@ -365,21 +380,6 @@
       },
       "horizon": "mid",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187481000",
-      "soWhat": "地政学リスクの高まりに注意が必要。市場の不安定要因となる可能性あり。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": [
-          "リスク資産",
-          "観光業"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
     }
   ]
 }
