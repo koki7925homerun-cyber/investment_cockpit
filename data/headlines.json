@@ -1,6 +1,47 @@
 {
-  "generatedAt": "2026-07-29T11:12:55.697Z",
+  "generatedAt": "2026-07-29T13:41:26.043Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015189681000",
+      "soWhat": "九州の工場操業影響は、地域経済や関連企業に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "製造業",
+          "九州関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190101000",
+      "soWhat": "全日空の運航委託はコスト削減策であり、航空業界の動向に注意が必要。",
+      "assets": {
+        "up": [
+          "地域航空会社"
+        ],
+        "down": [
+          "全日空",
+          "航空業界"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190021000",
+      "soWhat": "防衛産業の連携強化は関連企業にプラス要因となり、投資判断の材料となる。",
+      "assets": {
+        "up": [
+          "防衛産業",
+          "ミサイル関連"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015189881000",
       "soWhat": "再稼働が進めば、原発関連株に注目が集まる可能性あり。",
@@ -138,19 +179,6 @@
         "down": []
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189681000",
-      "soWhat": "九州の工場操業影響は、地域経済や関連企業に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "製造業",
-          "九州関連株"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     },
     {
@@ -353,32 +381,6 @@
       },
       "horizon": "short",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187861000",
-      "soWhat": "新米の作柄次第で米価格が変動するため、農業関連株に注目。",
-      "assets": {
-        "up": [
-          "農業関連株"
-        ],
-        "down": [
-          "コメ価格"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015188071000",
-      "soWhat": "対米投資の資金調達検討は、金融セクターの動向に注目が必要。",
-      "assets": {
-        "up": [
-          "金融セクター"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     }
   ]
 }
