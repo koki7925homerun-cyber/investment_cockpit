@@ -1,6 +1,36 @@
 {
-  "generatedAt": "2026-07-29T16:14:02.080Z",
+  "generatedAt": "2026-07-29T18:52:02.759Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190151000",
+      "soWhat": "FRBの金利据え置きは市場の安定を示唆、投資戦略に影響が出る可能性あり。",
+      "assets": {
+        "up": [
+          "金融関連株",
+          "債券市場"
+        ],
+        "down": [
+          "高金利依存株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190151000",
+      "soWhat": "FRBの金利据え置きは市場の安定を示唆、投資戦略に影響が出る可能性あり。",
+      "assets": {
+        "up": [
+          "金融関連株",
+          "債券市場"
+        ],
+        "down": [
+          "高金利依存株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015190131000",
       "soWhat": "政府の出資はレアアース供給の安定化に寄与し、関連企業に注目が集まる可能性あり。",
@@ -353,33 +383,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015187711000",
-      "soWhat": "半導体関連の影響が広がり、関連株に注意が必要です。",
-      "assets": {
-        "up": [
-          "半導体関連"
-        ],
-        "down": [
-          "東京株式市場"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015141201000",
-      "soWhat": "ロシアの軍事侵攻は国際情勢の不安定化を招き、リスク資産に影響。",
-      "assets": {
-        "up": [],
-        "down": [
-          "リスク資産",
-          "エネルギー関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     }
   ]
 }
