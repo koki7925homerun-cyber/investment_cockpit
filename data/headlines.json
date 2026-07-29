@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T18:52:02.759Z",
+  "generatedAt": "2026-07-29T21:45:35.614Z",
   "items": [
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015190151000",
@@ -26,6 +26,20 @@
         ],
         "down": [
           "高金利依存株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190351000",
+      "soWhat": "ウクライナ情勢の緊迫化が防衛関連株に影響する可能性に注意。",
+      "assets": {
+        "up": [
+          "防衛関連株"
+        ],
+        "down": [
+          "エネルギー価格"
         ]
       },
       "horizon": "short",
@@ -370,18 +384,6 @@
         "down": []
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015188211000",
-      "soWhat": "特殊詐欺関連のニュースが投資家心理に影響する可能性があります。",
-      "assets": {
-        "up": [],
-        "down": [
-          "関連企業株"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     }
   ]
