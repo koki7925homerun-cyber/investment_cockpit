@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-07-29T13:41:26.043Z",
+  "generatedAt": "2026-07-29T16:14:02.080Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190131000",
+      "soWhat": "政府の出資はレアアース供給の安定化に寄与し、関連企業に注目が集まる可能性あり。",
+      "assets": {
+        "up": [
+          "レアアース関連株",
+          "ハイテク産業"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015189681000",
       "soWhat": "九州の工場操業影響は、地域経済や関連企業に注意が必要。",
@@ -363,20 +376,6 @@
         "down": [
           "リスク資産",
           "エネルギー関連"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015188561000",
-      "soWhat": "通信サービスの影響は、関連企業の業績に影響を与える可能性があるため注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "NTTドコモ",
-          "KDDI",
-          "楽天モバイル"
         ]
       },
       "horizon": "short",
