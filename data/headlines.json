@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-07-30T10:56:51.840Z",
+  "generatedAt": "2026-07-30T13:22:45.902Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190621000",
+      "soWhat": "山崎製パンの工場稼働停止が食品業界の供給に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "食品関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015191081000",
       "soWhat": "中東情勢の不安定化がエネルギー価格に影響する可能性に注意。",
@@ -36,18 +48,6 @@
         "up": [],
         "down": [
           "地域関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015190621000",
-      "soWhat": "山崎製パンの工場稼働停止が食品業界の供給に影響を与える可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "食品関連株"
         ]
       },
       "horizon": "short",
