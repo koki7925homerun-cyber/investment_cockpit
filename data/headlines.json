@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-07-29T21:45:35.614Z",
+  "generatedAt": "2026-07-30T01:15:31.540Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190431000",
+      "soWhat": "中東情勢の緊迫化が影響し、エネルギー関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "観光関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015190151000",
       "soWhat": "FRBの金利据え置きは市場の安定を示唆、投資戦略に影響が出る可能性あり。",
@@ -30,6 +44,32 @@
       },
       "horizon": "short",
       "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190271000",
+      "soWhat": "米国の軍事行動がエネルギー市場に影響を与える可能性があるため注視。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "リスク資産"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190381000",
+      "soWhat": "FRBの政策に対する懸念が市場に影響を与え、株式市場の動向に注意。",
+      "assets": {
+        "up": [],
+        "down": [
+          "株式市場"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015190351000",
@@ -350,40 +390,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015188981000",
-      "soWhat": "円相場の動向が投資戦略に影響を与える可能性があります。",
-      "assets": {
-        "up": [],
-        "down": [
-          "円建て資産"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015188881000",
-      "soWhat": "水産業関連株の動向に影響が出る可能性があります。",
-      "assets": {
-        "up": [],
-        "down": [
-          "水産業株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015188921000",
-      "soWhat": "国際関係の変化が投資環境に影響を与えるかもしれません。",
-      "assets": {
-        "up": [],
-        "down": []
-      },
-      "horizon": "mid",
       "impact": "mixed"
     }
   ]
