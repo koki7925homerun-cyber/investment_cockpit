@@ -1,6 +1,66 @@
 {
-  "generatedAt": "2026-07-30T13:22:45.902Z",
+  "generatedAt": "2026-07-30T16:19:19.997Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015191381000",
+      "soWhat": "円高進行は輸出企業に影響を与えるため、関連銘柄に注意。",
+      "assets": {
+        "up": [
+          "輸入関連株"
+        ],
+        "down": [
+          "輸出関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190871000",
+      "soWhat": "韓国のサッカーW杯敗退は、関連企業のスポンサーシップに影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015191341000",
+      "soWhat": "アメリカのGDP減速は、グローバル経済の成長鈍化を示唆し、投資判断に影響を与える。",
+      "assets": {
+        "up": [
+          "債券"
+        ],
+        "down": [
+          "株式"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015191321000",
+      "soWhat": "ユーロ圏のGDP成長は市場予想を上回り、欧州関連株の動向に注目が必要。",
+      "assets": {
+        "up": [
+          "欧州株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015191331000",
+      "soWhat": "中国の五中全会は政策の方向性を示すため、関連企業の動向に注意が必要。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015190621000",
       "soWhat": "山崎製パンの工場稼働停止が食品業界の供給に影響を与える可能性がある。",
@@ -317,68 +377,6 @@
       },
       "horizon": "short",
       "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015190021000",
-      "soWhat": "防衛産業の連携強化は関連企業にプラス要因となり、投資判断の材料となる。",
-      "assets": {
-        "up": [
-          "防衛産業",
-          "ミサイル関連"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189881000",
-      "soWhat": "再稼働が進めば、原発関連株に注目が集まる可能性あり。",
-      "assets": {
-        "up": [
-          "原発関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189811000",
-      "soWhat": "地政学的リスクが高まる中、防衛関連株の動向に注意が必要。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015188781000",
-      "soWhat": "台湾の総統の発言は、日台関係の強化を示唆し、投資家は注視が必要。",
-      "assets": {
-        "up": [
-          "日台関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189531000",
-      "soWhat": "イオンの事故は企業イメージに影響し、株価に注意が必要。",
-      "assets": {
-        "up": [],
-        "down": [
-          "イオン株",
-          "小売業全般"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
     }
   ]
 }
