@@ -1,6 +1,94 @@
 {
-  "generatedAt": "2026-07-30T05:29:45.645Z",
+  "generatedAt": "2026-07-30T08:04:04.901Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190651000",
+      "soWhat": "半導体関連銘柄の上昇が投資家にとって注目のポイントとなる。",
+      "assets": {
+        "up": [
+          "半導体関連株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190741000",
+      "soWhat": "消費税減税が消費を刺激する可能性があり、関連企業に注目。",
+      "assets": {
+        "up": [
+          "消費関連株",
+          "食品業界"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015141221000",
+      "soWhat": "地震による影響で金融市場が不安定になる可能性があり注意が必要。",
+      "assets": {
+        "up": [],
+        "down": [
+          "保険関連株",
+          "建設業"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190431000",
+      "soWhat": "中東情勢の緊迫化が影響し、エネルギー関連株に注意が必要。",
+      "assets": {
+        "up": [
+          "エネルギー関連株"
+        ],
+        "down": [
+          "観光関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190541000",
+      "soWhat": "新たな投資枠の設定が経済成長に寄与するかが判断材料となる。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190681000",
+      "soWhat": "被災地支援の動きが金融機関に影響を与え、投資判断の材料となる。",
+      "assets": {
+        "up": [],
+        "down": [
+          "金融株",
+          "不動産"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190701000",
+      "soWhat": "障害者向け市場の拡大が期待され、関連ビジネスに注目が集まる。",
+      "assets": {
+        "up": [
+          "ファッション業界",
+          "医療関連株"
+        ],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "up"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015190691000",
       "soWhat": "北方領土問題の進展が地域経済に影響を与える可能性に注意。",
@@ -34,18 +122,6 @@
       "impact": "down"
     },
     {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015190651000",
-      "soWhat": "半導体関連銘柄の上昇が投資家にとって注目のポイントとなる。",
-      "assets": {
-        "up": [
-          "半導体関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
       "link": "https://news.web.nhk/newsweb/na/na-k10015190561000",
       "soWhat": "アメリカのロボット輸入禁止が関連企業に影響を及ぼす可能性に注意。",
       "assets": {
@@ -56,16 +132,6 @@
       },
       "horizon": "mid",
       "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015190541000",
-      "soWhat": "新たな投資枠の設定が経済成長に寄与するかが判断材料となる。",
-      "assets": {
-        "up": [],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
     },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015190501000",
@@ -86,34 +152,6 @@
         ],
         "down": [
           "メタ関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015190491000",
-      "soWhat": "IT企業の決算結果が市場のセクター別動向に影響を与える可能性がある。",
-      "assets": {
-        "up": [
-          "IT関連株"
-        ],
-        "down": [
-          "メタ関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015190431000",
-      "soWhat": "中東情勢の緊迫化が影響し、エネルギー関連株に注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株"
-        ],
-        "down": [
-          "観光関連株"
         ]
       },
       "horizon": "short",
@@ -340,44 +378,6 @@
         ]
       },
       "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189601000",
-      "soWhat": "地震による株価下落は、半導体関連の影響が判断材料となる。",
-      "assets": {
-        "up": [],
-        "down": [
-          "半導体株",
-          "日経平均"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189731000",
-      "soWhat": "AI開発のペース管理は業界全体に影響を与える可能性があり、関連株に注目。",
-      "assets": {
-        "up": [
-          "AI関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189611000",
-      "soWhat": "イランの提案拒否は、中東情勢の不安定化が投資判断材料に。",
-      "assets": {
-        "up": [],
-        "down": [
-          "エネルギー関連",
-          "中東株"
-        ]
-      },
-      "horizon": "mid",
       "impact": "mixed"
     }
   ]
