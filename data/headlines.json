@@ -1,6 +1,21 @@
 {
-  "generatedAt": "2026-07-30T16:19:19.997Z",
+  "generatedAt": "2026-07-30T19:06:09.978Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015191501000",
+      "soWhat": "米中関係の進展が市場に影響を与える可能性に注意。",
+      "assets": {
+        "up": [
+          "米国株",
+          "中国株"
+        ],
+        "down": [
+          "輸出関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015191381000",
       "soWhat": "円高進行は輸出企業に影響を与えるため、関連銘柄に注意。",
@@ -358,21 +373,6 @@
         "down": [
           "製造業",
           "九州関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015190101000",
-      "soWhat": "全日空の運航委託はコスト削減策であり、航空業界の動向に注意が必要。",
-      "assets": {
-        "up": [
-          "地域航空会社"
-        ],
-        "down": [
-          "全日空",
-          "航空業界"
         ]
       },
       "horizon": "short",
