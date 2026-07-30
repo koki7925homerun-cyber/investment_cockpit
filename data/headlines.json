@@ -1,6 +1,110 @@
 {
-  "generatedAt": "2026-07-30T01:15:31.540Z",
+  "generatedAt": "2026-07-30T05:29:45.645Z",
   "items": [
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190691000",
+      "soWhat": "北方領土問題の進展が地域経済に影響を与える可能性に注意。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190481000",
+      "soWhat": "熊本地震の影響で金融機関の対応が投資環境に影響する可能性がある。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190621000",
+      "soWhat": "山崎製パンの工場稼働停止が食品業界の供給に影響を与える可能性がある。",
+      "assets": {
+        "up": [],
+        "down": [
+          "食品関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190651000",
+      "soWhat": "半導体関連銘柄の上昇が投資家にとって注目のポイントとなる。",
+      "assets": {
+        "up": [
+          "半導体関連株"
+        ],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "up"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190561000",
+      "soWhat": "アメリカのロボット輸入禁止が関連企業に影響を及ぼす可能性に注意。",
+      "assets": {
+        "up": [],
+        "down": [
+          "ロボット関連株"
+        ]
+      },
+      "horizon": "mid",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190541000",
+      "soWhat": "新たな投資枠の設定が経済成長に寄与するかが判断材料となる。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "mid",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190501000",
+      "soWhat": "経済成長率の下方修正が市場全体に影響を与える可能性に注意。",
+      "assets": {
+        "up": [],
+        "down": []
+      },
+      "horizon": "short",
+      "impact": "down"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190491000",
+      "soWhat": "IT企業の決算結果が市場のセクター別動向に影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "IT関連株"
+        ],
+        "down": [
+          "メタ関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
+    {
+      "link": "https://news.web.nhk/newsweb/na/na-k10015190491000",
+      "soWhat": "IT企業の決算結果が市場のセクター別動向に影響を与える可能性がある。",
+      "assets": {
+        "up": [
+          "IT関連株"
+        ],
+        "down": [
+          "メタ関連株"
+        ]
+      },
+      "horizon": "short",
+      "impact": "mixed"
+    },
     {
       "link": "https://news.web.nhk/newsweb/na/na-k10015190431000",
       "soWhat": "中東情勢の緊迫化が影響し、エネルギー関連株に注意が必要。",
@@ -10,21 +114,6 @@
         ],
         "down": [
           "観光関連株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015190151000",
-      "soWhat": "FRBの金利据え置きは市場の安定を示唆、投資戦略に影響が出る可能性あり。",
-      "assets": {
-        "up": [
-          "金融関連株",
-          "債券市場"
-        ],
-        "down": [
-          "高金利依存株"
         ]
       },
       "horizon": "short",
@@ -289,107 +378,6 @@
         ]
       },
       "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189261000",
-      "soWhat": "米国の軍需産業や防衛関連株に注目が集まる可能性がある。",
-      "assets": {
-        "up": [
-          "防衛関連株",
-          "軍需産業"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189281000",
-      "soWhat": "中東の地政学リスクが高まり、エネルギー関連株に注意が必要。",
-      "assets": {
-        "up": [
-          "エネルギー関連株",
-          "防衛関連株"
-        ],
-        "down": [
-          "観光関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189381000",
-      "soWhat": "ペルー新大統領就任は、南米市場の政治リスクを注視する必要がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "南米関連株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189181000",
-      "soWhat": "ジダン氏の就任はフランスサッカーの人気を高める要因に注意。",
-      "assets": {
-        "up": [
-          "スポーツ関連株"
-        ],
-        "down": []
-      },
-      "horizon": "short",
-      "impact": "mixed"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015189001000",
-      "soWhat": "ガザ地区の情勢悪化は中東関連資産に影響を与える可能性がある。",
-      "assets": {
-        "up": [],
-        "down": [
-          "中東関連株",
-          "エネルギー株"
-        ]
-      },
-      "horizon": "mid",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015188891000",
-      "soWhat": "自動車関連株の短期的な影響に注意が必要です。",
-      "assets": {
-        "up": [],
-        "down": [
-          "自動車株"
-        ]
-      },
-      "horizon": "short",
-      "impact": "down"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015188951000",
-      "soWhat": "米国の防衛関連企業の動向に注意が必要です。",
-      "assets": {
-        "up": [
-          "防衛関連株"
-        ],
-        "down": []
-      },
-      "horizon": "mid",
-      "impact": "up"
-    },
-    {
-      "link": "https://news.web.nhk/newsweb/na/na-k10015188961000",
-      "soWhat": "医療関連企業への影響を考慮する必要があります。",
-      "assets": {
-        "up": [],
-        "down": [
-          "医療機関株"
-        ]
-      },
-      "horizon": "short",
       "impact": "mixed"
     }
   ]
