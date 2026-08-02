@@ -1,9 +1,10 @@
 // 週次で data/strategy.json の「骨子(thesis)」と「シナリオ確率(prob)」を
 // 最新のNHK経済・国際ニュースを踏まえて見直す。
-// GitHub Models API (secrets.GITHUB_TOKEN, models: read) を使用。
+// ANTHROPIC_API_KEY があるときのみClaude APIで見直す。未設定なら変更しない。
 // 更新対象は thesis / prob / note / updatedAt のみで、施策リストや文言構造は変更しない。
 // AI呼び出しに失敗した場合はファイルを変更せず正常終了する(コミットはスキップされる)。
 import { readFileSync, writeFileSync } from "node:fs";
+import { askJson, isAvailable, providerNote } from "./lib/llm.mjs";
 
 const FEEDS = [
   { cat: "経済", url: "https://www.nhk.or.jp/rss/news/cat5.xml" },
@@ -69,22 +70,7 @@ ${list}
 次のJSONオブジェクトだけを出力:
 {"horizons":{"short":{"thesis":"..."},"mid":{"thesis":"..."},"long":{"thesis":"..."}},"scenarios":[{"key":"base","prob":50},{"key":"bull","prob":25},{"key":"bear","prob":25}],"note":"..."}`;
 
-  const res = await fetch("https://models.github.ai/inference/chat/completions", {
-    method: "POST",
-    headers: {
-      authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      model: "openai/gpt-4o-mini",
-      temperature: 0.3,
-      response_format: { type: "json_object" },
-      messages: [{ role: "user", content: prompt }],
-    }),
-  });
-  if (!res.ok) throw new Error(`models API HTTP ${res.status}: ${await res.text()}`);
-  const data = await res.json();
-  const p = JSON.parse(data.choices?.[0]?.message?.content);
+  const p = await askJson(prompt, { maxTokens: 10000 });
 
   // 検証: thesisは3本とも妥当な文字列、probは合計がほぼ100
   for (const k of ["short", "mid", "long"]) {
@@ -99,6 +85,13 @@ ${list}
   }
   if (sum < 90 || sum > 110) throw new Error(`prob sum out of range: ${sum}`);
   return p;
+}
+
+console.log(`provider: ${providerNote()}`);
+if (!isAvailable()) {
+  // 戦略の骨子は事実の要約ではなく判断そのものなので、ルールベースでは書き換えない。
+  console.warn("ANTHROPIC_API_KEY not set; keeping strategy.json unchanged");
+  process.exit(0);
 }
 
 const strategy = JSON.parse(readFileSync("data/strategy.json", "utf8"));

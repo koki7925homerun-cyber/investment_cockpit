@@ -557,6 +557,14 @@ function chipsHTML(terms){
   return (terms||[]).map(w=>`<button class="chip" onclick="openTerm('${esc(w)}')">${esc(w)} ?</button>`).join("");
 }
 const HZ={short:"短期",mid:"中期",long:"長期"};
+// ブリーフィングは朝6時の1日1回スナップショット。何時時点の内容かを明示する。
+function briefStamp(b){
+  const t = b.generatedAt ? new Date(b.generatedAt) : null;
+  if(!t || isNaN(t)) return b.date || "";
+  const hm = t.toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"});
+  const sameDay = t.toDateString() === new Date().toDateString();
+  return `${sameDay?"今日":t.toLocaleDateString("ja-JP",{month:"numeric",day:"numeric"})} ${hm} 時点`;
+}
 // So What + 資産チップの共通ブロック(rule=trueならルールエンジンの参考判定として控えめに表示)
 function annotBlockHTML(ann){
   const up=(ann.assets&&Array.isArray(ann.assets.up)?ann.assets.up:[]).filter(Boolean);
@@ -589,8 +597,8 @@ function renderHome(){
       briefBlock = `
       <div class="card card-hi">
         <div class="row" style="align-items:center;margin-bottom:6px">
-          <div class="kicker" style="color:var(--brass);margin:0">AI BRIEFING — 毎朝6時 自動生成</div>
-          <span class="tag">${esc(b.date||"")}</span>
+          <div class="kicker" style="color:var(--brass);margin:0">${b.source==="rules"?"DAILY BRIEFING — 自動整理":"AI BRIEFING — 毎朝6時 自動生成"}</div>
+          <span class="tag">${esc(briefStamp(b))}</span>
         </div>
         <div style="font-size:15px;font-weight:600;color:var(--bright);line-height:1.6">${esc(b.lead)}</div>
         ${(b.events||[]).length?`

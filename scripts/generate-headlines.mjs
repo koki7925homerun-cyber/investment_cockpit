@@ -1,9 +1,11 @@
 // NHK経済・国際RSSの最新10件に投資家向け注釈(soWhat/assets/horizon/impact)を付けた
-// data/headlines.json を生成する。3時間おきに実行される想定。
-// GitHub Models無料枠を節約するため、前回のheadlines.jsonに既にある記事(link一致)は
-// 再生成せずそのまま引き継ぎ、新規記事のみAIに問い合わせる。
-// AI呼び出しが失敗しても、キャッシュ分だけで有効なJSONを必ず出力する。
+// data/headlines.json を生成する。
+// APIコストを抑えるため、前回のheadlines.jsonに既にある記事(link一致)は
+// 再生成せずそのまま引き継ぎ、新規記事のみLLMに問い合わせる。
+// ANTHROPIC_API_KEY 未設定時やAI呼び出し失敗時はキャッシュのみで有効なJSONを出力する
+// (注釈のない記事はフロント側の内蔵ルールエンジンが「参考(自動判定)」を表示する)。
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { askJson, isAvailable, providerNote } from "./lib/llm.mjs";
 
 const FEEDS = [
   { cat: "経済", url: "https://www.nhk.or.jp/rss/news/cat5.xml" },
@@ -83,22 +85,7 @@ async function annotate(newsItems) {
 ニュース一覧:
 ${list}`;
 
-  const res = await fetch("https://models.github.ai/inference/chat/completions", {
-    method: "POST",
-    headers: {
-      authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      model: "openai/gpt-4o-mini",
-      temperature: 0.3,
-      response_format: { type: "json_object" },
-      messages: [{ role: "user", content: prompt }],
-    }),
-  });
-  if (!res.ok) throw new Error(`models API HTTP ${res.status}: ${await res.text()}`);
-  const data = await res.json();
-  const parsed = JSON.parse(data.choices?.[0]?.message?.content);
+  const parsed = await askJson(prompt, { maxTokens: 12000 });
   const allowed = new Set(newsItems.map((n) => n.link));
   const out = [];
   for (const a of parsed.annotations || []) {
@@ -130,10 +117,12 @@ const prevMap = new Map(prev.filter((a) => a && a.link).map((a) => [a.link, a]))
 
 const fresh = current.filter((n) => !prevMap.has(n.link));
 let aiMap = new Map();
-if (fresh.length) {
+if (!isAvailable()) {
+  console.log(`${providerNote()}; serving cache only (フロント側のルールエンジンが未注釈記事を補う)`);
+} else if (fresh.length) {
   try {
     aiMap = new Map((await annotate(fresh)).map((a) => [a.link, a]));
-    console.log(`annotated ${aiMap.size}/${fresh.length} new items via GitHub Models API`);
+    console.log(`annotated ${aiMap.size}/${fresh.length} new items via Claude API`);
   } catch (e) {
     console.warn(`AI annotation failed, serving cache only: ${e.message}`);
   }

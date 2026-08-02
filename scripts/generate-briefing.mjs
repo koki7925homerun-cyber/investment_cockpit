@@ -1,12 +1,17 @@
 // NHKの経済・国際RSSから投資家向け朝ブリーフィング data/briefing.json を生成する。
-// GitHub Models API (secrets.GITHUB_TOKEN, models: read) で要約し、
-// 失敗時はRSS先頭4件から機械的に組み立てるフォールバックで必ず有効なJSONを出力する。
+//
+// ANTHROPIC_API_KEY があればClaude APIで要約し、なければ内蔵ルールエンジンで
+// 生成する(GitHub Modelsは2026-07-30に終了したため、キー不要のLLMは存在しない)。
+// どちらの経路でも lead / body / soWhat が埋まった有効なJSONを必ず出力する。
 import { writeFileSync, mkdirSync } from "node:fs";
+import { askJson, isAvailable, providerNote } from "./lib/llm.mjs";
+import { ruleAnnotate, ruleLead } from "./lib/rules.mjs";
 
 const FEEDS = [
   { cat: "経済", url: "https://www.nhk.or.jp/rss/news/cat5.xml" },
   { cat: "国際", url: "https://www.nhk.or.jp/rss/news/cat6.xml" },
 ];
+const FRESH_WINDOW_MS = 36 * 60 * 60 * 1000; // 直近36時間を「新しい」とみなす
 
 const decode = (s) =>
   (s || "")
@@ -35,7 +40,7 @@ async function fetchFeed({ cat, url }) {
       title: tag(it, "title"),
       link: tag(it, "link"),
       description: tag(it, "description"),
-      pubDate: tag(it, "pubDate"),
+      ts: new Date(tag(it, "pubDate")).getTime() || 0,
     });
   }
   return items.filter((i) => i.title && i.link);
@@ -46,46 +51,77 @@ const cut = (s, n) => {
   return [...t].length <= n ? t : [...t].slice(0, n - 1).join("") + "…";
 };
 
-function nowJst() {
-  const d = new Date(Date.now() + 9 * 3600 * 1000);
-  return { date: d.toISOString().slice(0, 10), generatedAt: new Date().toISOString() };
-}
-
 const BANNED = ["買うべき", "売るべき", "必ず上がる", "必ず下がる", "確実に儲", "全力で買", "全力で売", "今すぐ買", "今すぐ売"];
 const safeText = (s, n) => {
   const t = cut(s, n);
   return BANNED.some((w) => t.includes(w)) ? "" : t;
 };
+const strList = (a, n, len) =>
+  (Array.isArray(a) ? a : []).filter((x) => typeof x === "string" && x.trim()).slice(0, n).map((x) => cut(x, len));
 
-function fallbackBriefing(feeds) {
-  // 経済・国際から交互に先頭記事を取り、機械的に4件組み立てる(創作はしない)
-  const picked = [];
-  for (let i = 0; picked.length < 4 && i < 10; i++) {
-    for (const items of feeds) {
-      if (items[i] && picked.length < 4) picked.push(items[i]);
-    }
-  }
+function nowJst() {
+  const d = new Date(Date.now() + 9 * 3600 * 1000);
+  return { date: d.toISOString().slice(0, 10), generatedAt: new Date().toISOString() };
+}
+
+// 新しい順に並べ、直近36時間の記事を優先して候補を作る。
+// (NHKのRSSには数日前の記事が残ることがあり、放置すると古い記事が選ばれる)
+// 経済と国際のフィードには同じ記事が載ることがあるため、見出しで重複を除く。
+const titleKey = (s) => (s || "").replace(/[\s　「」【】]/g, "").slice(0, 18);
+function rankCandidates(feeds) {
+  const all = feeds.flat().sort((a, b) => b.ts - a.ts);
+  const seen = new Set();
+  const unique = all.filter((n) => {
+    const k = titleKey(n.title);
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+  const fresh = unique.filter((n) => Date.now() - n.ts < FRESH_WINDOW_MS);
+  return (fresh.length >= 6 ? fresh : unique).slice(0, 24);
+}
+
+// ---- ルールベース生成(LLMなしでも実用的な内容を出す) ----
+function ruleBriefing(candidates) {
   const { date, generatedAt } = nowJst();
+  // ルールに該当する記事(=投資家に関係する記事)を優先して4件選ぶ
+  const scored = candidates.map((n) => ({ n, ann: ruleAnnotate(`${n.title} ${n.description || ""}`) }));
+  // 同じテーマ(同じルール)ばかりにならないよう、まず1テーマ1件で拾い、
+  // 4件に満たなければ残りで埋める。
+  const usedTheme = new Set();
+  const primary = [];
+  const spare = [];
+  for (const s of scored) {
+    if (!s.ann) { spare.push(s); continue; }
+    const theme = s.ann.soWhat;
+    if (usedTheme.has(theme)) { spare.push(s); continue; }
+    usedTheme.add(theme);
+    primary.push(s);
+  }
+  const picked = [...primary, ...spare].slice(0, 4);
+
   return {
     date,
     generatedAt,
-    lead: cut("自動要約が利用できないため主要見出しのみ表示中", 40),
+    source: "rules",
+    lead: cut(ruleLead(picked.map((p) => p.n)), 40),
     events: [],
-    items: picked.map((p) => ({
-      cat: p.cat,
-      title: cut(p.title, 25),
-      body: cut(`${p.description || p.title}(NHK配信の見出し情報)`, 90),
-      impact: "mixed",
-      link: p.link,
+    items: picked.map(({ n, ann }) => ({
+      cat: n.cat,
+      title: cut(n.title, 25),
+      body: cut(n.description || n.title, 90),
+      impact: ann?.impact ?? "mixed",
+      link: n.link,
       terms: [],
-      soWhat: "",
-      assets: { up: [], down: [] },
-      horizon: "short",
-      watch: "",
+      soWhat: ann?.soWhat ?? "投資家への影響は個別事情によるため、続報を確認する材料として扱うのが無難です。",
+      assets: { up: ann?.assets.up ?? [], down: ann?.assets.down ?? [] },
+      horizon: ann?.horizon ?? "short",
+      watch: ann?.watch ?? "",
     })),
   };
 }
 
+// ---- LLM生成 ----
 function validate(b, allowedLinks) {
   if (!b || typeof b !== "object") return false;
   if (!Array.isArray(b.items) || b.items.length !== 4) return false;
@@ -99,16 +135,15 @@ function validate(b, allowedLinks) {
       if (!t || typeof t.word !== "string" || typeof t.def !== "string") return false;
     }
   }
-  return typeof b.lead === "string";
+  return typeof b.lead === "string" && b.lead.trim().length > 0;
 }
 
 function tighten(b) {
   const { date, generatedAt } = nowJst();
-  const strList = (a, n, len) =>
-    (Array.isArray(a) ? a : []).filter((x) => typeof x === "string" && x.trim()).slice(0, n).map((x) => cut(x, len));
   return {
     date,
     generatedAt,
+    source: "ai",
     lead: cut(b.lead, 40),
     events: strList(b.events, 3, 40),
     items: b.items.map((it) => ({
@@ -117,23 +152,16 @@ function tighten(b) {
       body: cut(it.body, 90),
       impact: it.impact,
       link: it.link,
-      terms: (it.terms || []).slice(0, 3).map((t) => ({
-        word: cut(t.word, 20),
-        def: cut(t.def, 40),
-      })),
+      terms: (it.terms || []).slice(0, 3).map((t) => ({ word: cut(t.word, 20), def: cut(t.def, 40) })),
       soWhat: safeText(it.soWhat, 110),
-      assets: {
-        up: strList(it.assets?.up, 3, 15),
-        down: strList(it.assets?.down, 3, 15),
-      },
+      assets: { up: strList(it.assets?.up, 3, 15), down: strList(it.assets?.down, 3, 15) },
       horizon: ["short", "mid", "long"].includes(it.horizon) ? it.horizon : "short",
       watch: safeText(it.watch, 45),
     })),
   };
 }
 
-async function aiBriefing(feeds) {
-  const candidates = feeds.flat().slice(0, 30);
+async function aiBriefing(candidates) {
   const list = candidates
     .map((c, i) => `${i + 1}. [${c.cat}] ${c.title} | ${c.description} | ${c.link}`)
     .join("\n");
@@ -141,6 +169,7 @@ async function aiBriefing(feeds) {
 以下のNHKニュース一覧から、投資家(株式・為替・金利に関心)に最も重要な4件を選び、指定のJSONだけを出力してください。
 
 ルール:
+- 一覧は新しい順に並んでいます。直近のニュースを優先して選んでください
 - 「事実」と「解釈」を区別する。body=記事から読み取れる事実の要約、soWhat=あなたの解釈(投資家への示唆)
 - 記事の文章をそのまま写さず、必ず自分の言葉で要約する
 - soWhatは「このニュースが読者のポートフォリオに何を意味しうるか」を1〜2文で。断定的な売買推奨(買うべき/売るべき等)は書かず、「〜に注意」「〜が判断材料」など判断材料の提示にとどめる
@@ -153,49 +182,50 @@ async function aiBriefing(feeds) {
   - soWhat=投資家への示唆1〜2文100字以内
   - assets={"up":[恩恵を受けやすい資産・セクター2〜3個],"down":[打撃を受けやすいもの2〜3個]}(各要素は「日本株」「輸出企業」「金」など15字以内)
   - horizon=short|mid|long(影響が効く時間軸: short=〜1年, mid=1〜5年, long=5年超)
-  - watch=次に確認すべき指標・日付・イベントを1つ40字以内(例: 「来週の米CPI」「日銀総裁会見」)
+  - watch=次に確認すべき指標・日付・イベントを1つ40字以内(例:「来週の米CPI」「日銀総裁会見」)
   - terms=初心者が知らなそうな重要用語1〜2個(defは40字以内の平易な説明)
 
 出力形式(このJSONオブジェクトのみ):
 {"lead":"...","events":["..."],"items":[{"cat":"...","title":"...","body":"...","impact":"mixed","soWhat":"...","assets":{"up":["..."],"down":["..."]},"horizon":"short","watch":"...","link":"...","terms":[{"word":"...","def":"..."}]}]}
 
-ニュース一覧:
+ニュース一覧(新しい順):
 ${list}`;
 
-  const res = await fetch("https://models.github.ai/inference/chat/completions", {
-    method: "POST",
-    headers: {
-      authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      model: "openai/gpt-4o-mini",
-      temperature: 0.3,
-      response_format: { type: "json_object" },
-      messages: [{ role: "user", content: prompt }],
-    }),
-  });
-  if (!res.ok) throw new Error(`models API HTTP ${res.status}: ${await res.text()}`);
-  const data = await res.json();
-  const content = data.choices?.[0]?.message?.content;
-  const parsed = JSON.parse(content);
+  const parsed = await askJson(prompt, { maxTokens: 12000 });
   const allowed = new Set(candidates.map((c) => c.link));
   if (!validate(parsed, allowed)) throw new Error("AI output failed validation");
   return tighten(parsed);
 }
 
-const feeds = await Promise.all(FEEDS.map(fetchFeed));
-if (feeds.flat().length === 0) throw new Error("RSS items empty");
-
-let briefing;
+// ---- main ----
+let feeds;
 try {
-  briefing = await aiBriefing(feeds);
-  console.log("briefing generated via GitHub Models API");
+  feeds = await Promise.all(FEEDS.map(fetchFeed));
 } catch (e) {
-  console.warn(`AI generation failed, using fallback: ${e.message}`);
-  briefing = fallbackBriefing(feeds);
+  console.error(`RSS fetch failed, keeping briefing.json unchanged: ${e.message}`);
+  process.exit(0);
+}
+const candidates = rankCandidates(feeds);
+if (!candidates.length) {
+  console.error("RSS items empty, keeping briefing.json unchanged");
+  process.exit(0);
+}
+
+console.log(`provider: ${providerNote()}`);
+let briefing;
+if (isAvailable()) {
+  try {
+    briefing = await aiBriefing(candidates);
+    console.log("briefing generated via Claude API");
+  } catch (e) {
+    console.warn(`AI generation failed, using rule-based fallback: ${e.message}`);
+    briefing = ruleBriefing(candidates);
+  }
+} else {
+  briefing = ruleBriefing(candidates);
+  console.log("briefing generated via built-in rule engine");
 }
 
 mkdirSync("data", { recursive: true });
 writeFileSync("data/briefing.json", JSON.stringify(briefing, null, 2) + "\n");
-console.log("wrote data/briefing.json");
+console.log(`wrote data/briefing.json (source=${briefing.source}, lead="${briefing.lead}")`);

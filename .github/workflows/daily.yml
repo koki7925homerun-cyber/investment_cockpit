@@ -2,21 +2,25 @@ name: Daily market briefing
 
 on:
   schedule:
-    - cron: "0 */3 * * *" # 3時間おき。briefing.jsonは21:00 UTC(06:00 JST)の回のみ生成
+    - cron: "0 */3 * * *" # 3時間おき。AI生成は21:00 UTC(06:00 JST)と09:00 UTC(18:00 JST)の回のみ
   workflow_dispatch:
     inputs:
-      force_briefing:
-        description: "briefing.jsonとquiz.jsonも強制生成する"
+      force_ai:
+        description: "この回でbriefing/quizも強制生成する"
         type: boolean
         default: false
 
 permissions:
   contents: write
-  models: read
 
 concurrency:
   group: daily-briefing
   cancel-in-progress: false
+
+env:
+  # 未設定でも動く。設定するとClaude APIで本物のAI要約になる。
+  # 未設定時は内蔵ルールエンジン+同梱問題バンクで生成する。
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
 jobs:
   briefing:
@@ -26,22 +30,29 @@ jobs:
 
       - name: Generate data/briefing.json and data/quiz.json (06:00 JST run only)
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FORCE_BRIEFING: ${{ inputs.force_briefing }}
+          FORCE_AI: ${{ inputs.force_ai }}
         run: |
           # スケジュール遅延に備えて21時台・22時台を朝6時(JST)の回とみなす
           hour=$(date -u +%H)
-          if [ "$hour" = "21" ] || [ "$hour" = "22" ] || [ "$FORCE_BRIEFING" = "true" ]; then
+          if [ "$hour" = "21" ] || [ "$hour" = "22" ] || [ "$FORCE_AI" = "true" ]; then
             node scripts/generate-briefing.mjs
             node scripts/generate-quiz.mjs
           else
             echo "skip briefing/quiz (hour=$hour UTC, not the 21:00 UTC run)"
           fi
 
-      - name: Generate data/headlines.json (every run)
+      - name: Annotate data/headlines.json (2 runs per day)
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node scripts/generate-headlines.mjs
+          FORCE_AI: ${{ inputs.force_ai }}
+        run: |
+          # API利用を1日2回に絞る。他の回はキャッシュのままで、
+          # 未注釈の記事はフロント側のルールエンジンが補う。
+          hour=$(date -u +%H)
+          if [ "$hour" = "21" ] || [ "$hour" = "22" ] || [ "$hour" = "09" ] || [ "$FORCE_AI" = "true" ]; then
+            node scripts/generate-headlines.mjs
+          else
+            echo "skip headlines annotation (hour=$hour UTC)"
+          fi
 
       - name: Commit and push
         run: |
@@ -50,7 +61,19 @@ jobs:
           git add data/briefing.json data/headlines.json data/quiz.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
-          else
-            git commit -m "chore: update briefing/headlines ($(date -u +'%Y-%m-%d %H:%M UTC'))"
-            git push
+            exit 0
           fi
+          git commit -m "chore: update briefing/headlines ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          # 他のワークフローが先に押していると non-fast-forward で弾かれるため、
+          # rebaseしてから再試行する(データファイルのみの変更なので衝突しない)
+          for i in 1 2 3 4 5; do
+            if git push; then
+              echo "pushed on attempt $i"
+              exit 0
+            fi
+            echo "push rejected (attempt $i); rebasing onto origin/main"
+            git pull --rebase --autostash origin main || exit 1
+            sleep $((i * 3))
+          done
+          echo "push failed after 5 attempts"
+          exit 1

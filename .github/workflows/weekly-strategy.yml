@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  models: read
 
 concurrency:
   group: weekly-strategy
@@ -21,7 +20,9 @@ jobs:
 
       - name: Review data/strategy.json
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 未設定なら strategy.json は変更されない(戦略の骨子は判断そのものなので
+          # ルールベースでは書き換えない)
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/update-strategy.mjs
 
       - name: Commit and push
@@ -31,7 +32,17 @@ jobs:
           git add data/strategy.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
-          else
-            git commit -m "chore: weekly strategy review ($(date -u +%Y-%m-%d))"
-            git push
+            exit 0
           fi
+          git commit -m "chore: weekly strategy review ($(date -u +%Y-%m-%d))"
+          for i in 1 2 3 4 5; do
+            if git push; then
+              echo "pushed on attempt $i"
+              exit 0
+            fi
+            echo "push rejected (attempt $i); rebasing onto origin/main"
+            git pull --rebase --autostash origin main || exit 1
+            sleep $((i * 3))
+          done
+          echo "push failed after 5 attempts"
+          exit 1
